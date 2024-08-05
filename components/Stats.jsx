@@ -16,8 +16,8 @@ const stats = [
         text: "Years of experience"
     },
     {
-        num: 3,
-        text: "Burguers daily"
+        num: 1,
+        text: "Flexible with time zone communications"
     },
 ];
 
