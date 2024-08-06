@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import { 
   FaJs,
@@ -123,6 +124,44 @@ const education = {
   ]
 };
 
+//education data
+const certifications = {
+  icon: '/assets/resume/cap.svg',
+  title: 'Certifications',
+  description: "mis certificaciones bla bla bla mi educacion bla bla bla mi educacion bla bla bla mi educacion bla bla bla",
+  items: [
+    {
+      institution: "CertiProf",
+      topic: "Scrum Foundation SFPC",
+      year: "2024",
+      pdf: "public/assets/certifications/pdf/certScrum.pdf",
+      image: "public/assets/certifications/images/certScrum.png"
+    },
+    {
+      institution: "CertiProf",
+      topic: "Scrum Foundation SFPC",
+      year: "2024",
+      pdf: "public/assets/certifications/pdf/certScrum.pdf",
+      image: "public/assets/certScrum.png"
+    },
+    {
+      institution: "CertiProf",
+      topic: "Scrum Foundation SFPC",
+      year: "2024",
+      pdf: "public/assets/certifications/pdf/certScrum.pdf",
+      image: "public/assets/imagenTest.jpeg"
+    },
+    {
+      institution: "CertiProf",
+      topic: "Scrum Foundation SFPC",
+      year: "2024",
+      pdf: "public/assets/certifications/pdf/certScrum.pdf",
+      image: "public/assets/certifications/images/certScrum.png"
+    },
+    
+  ]
+};
+
 //skills data
 const skills = {
   title: 'My skills',
@@ -183,6 +222,7 @@ const Resume = () => {
           <TabsTrigger value="about">About Me</TabsTrigger>
           <TabsTrigger value="experience">Experience</TabsTrigger>
           <TabsTrigger value="education">Education</TabsTrigger>
+          <TabsTrigger value="certifications">Certifications</TabsTrigger>
           <TabsTrigger value="skills">Skills</TabsTrigger>
         </TabsList>
 
@@ -258,6 +298,45 @@ const Resume = () => {
             </div>
           </TabsContent>
           
+          {/* certifications */}
+          {/* certifications */}
+          <TabsContent value="certifications" className="w-full">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h3 className="text-4xl font-bold">{certifications.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{certifications.description}</p>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-1 lg:grid-cols-1 gap-[30px]">
+                    {certifications.items.map((item, index) => {
+                      return (
+                        <li key={index} className="bg-[#232329] h-[220px] py-6 px-10 rounded-xl flex flex-col justify-start lg:justify-between items-start lg:items-center lg:flex-row gap-3">
+                          <div className="flex justify-between items-center w-full lg:w-auto lg:flex-1">
+                          <span className="text-accent">{item.year}</span>
+                          <Image 
+                            // src={item.image}
+                            src="https://github.com/manosebas/myPortfolio/blob/master/public/assets/imagenTest.jpeg" // URL de ejemplo
+                            alt={item.topic}
+                            width={50}
+                            height={50}
+                            className="rounded-full" 
+                          />
+                        </div>
+                          <div className="flex flex-col items-center lg:items-start lg:flex-1">
+                            <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.topic}</h3>
+                            <div className="flex items-center gap-3">
+                              <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                              <p className="text-white/60">{item.institution}</p>
+                            </div>
+                          </div>
+                          <a href={item.pdf} download className="text-sm rounded-full font-bold bg-accent text-black hover:bg-white px-3 py-1">Download</a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
+              </div>
+            </TabsContent>
+
+
           {/* skills */}
           <TabsContent value="skills" className ="w-full h-full">
             <div className="flex flex-col gap-[30px]">

@@ -11,6 +11,7 @@ import Socials from "@/components/Socials";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 
+
 const Home = () => {
   const [key, setKey] = useState(0);
   const pathname = usePathname();
