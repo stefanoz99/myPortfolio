@@ -309,11 +309,12 @@ const Resume = () => {
                 <ul className="grid grid-cols-1 lg:grid-cols-1 gap-[30px]">
                   {certifications.items.map((item, index) => {
                     return (
-                      <li key={index} className="bg-[#232329] h-realtive py-6 px-10 rounded-xl flex justify-between lg:justify-between items-center lg:items-center lg:flex-row lg:gap-9">
+                      <li key={index} className="bg-[#232329] py-6 px-10 rounded-xl flex justify-around lg:justify-between items-center lg:items-center lg:flex-row lg:gap-9 gap-3">
                         
-                        <div className="flex flex-col justify-center items-center lg:items-center lg:justify-between w-full lg:w-auto lg:flex-1 gap-3">
-                          
-                          <span className="text-accent">{item.year}</span>
+                        {/* Imagen y año */}
+                        <div className="flex flex-col items-center justify-center lg:justify-between w-auto  lg:flex-1 gap-3">
+
+                          <span className="text-accent text-xl">{item.year}</span>
                           
                           <Image 
                             src={item.image}
@@ -324,7 +325,8 @@ const Resume = () => {
                           />
                         </div>
 
-                        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-20 gap-3">
+                        {/* Titulo, Compañia y Boton */}
+                        <div className="flex flex-col justify-center items-center lg:flex-row lg:items-center lg:gap-20 gap-3">
 
                           <div className="flex flex-col items-center lg:items-start lg:flex-1 gap-3">
                             
@@ -337,7 +339,7 @@ const Resume = () => {
 
                           </div>
 
-                          <a href={item.pdf} download className="text-sm rounded font-bold bg-accent text-black hover:bg-white px-3 py-1 h-[30px]">Download</a>
+                          <a href={item.pdf} download className="text-sm rounded font-bold bg-accent text-black hover:bg-white px-3 py-1 h-[30px] w-[100px] justify-center items-center">Download</a>
 
                         </div>
 
