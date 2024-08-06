@@ -134,29 +134,29 @@ const certifications = {
       institution: "CertiProf",
       topic: "Scrum Foundation SFPC",
       year: "2024",
-      pdf: "https://drive.google.com/file/d/1dLKSgBmLT2fWJGRNpzJstmxLsB9LioaZ/view?usp=drive_link",
-      image: "https://drive.google.com/file/d/1GzeicaYtGf1yaUA8iPh7_ZOkzH2qGfmt/view?usp=drive_link"
+      pdf: "/assets/certifications/pdf/certScrum.pdf",
+      image: "/assets/certifications/images/certScrum.png"
     },
     {
-      institution: "CertiProf",
-      topic: "Scrum Foundation SFPC",
+      institution: "CEA",
+      topic: "Gender Equality and Non-Discrimination",
       year: "2024",
-      pdf: "public/assets/certifications/pdf/certScrum.pdf",
-      image: "public/assets/certScrum.png"
+      pdf: "/assets/certifications/pdf/certIGND.pdf",
+      image: "/assets/certifications/images/certIGND.png"
     },
     {
-      institution: "CertiProf",
-      topic: "Scrum Foundation SFPC",
+      institution: "CONADIS",
+      topic: "Human Rights and Labor Inclusion",
       year: "2024",
-      pdf: "public/assets/certifications/pdf/certScrum.pdf",
-      image: "public/assets/imagenTest.jpeg"
+      pdf: "/assets/certifications/pdf/certIgualdad.pdf",
+      image: "/assets/certifications/images/certIgualdad.png"
     },
     {
-      institution: "CertiProf",
-      topic: "Scrum Foundation SFPC",
+      institution: "SERCOP",
+      topic: "Fundamentals of Public Procurement",
       year: "2024",
-      pdf: "public/assets/certifications/pdf/certScrum.pdf",
-      image: "public/assets/certifications/images/certScrum.png"
+      pdf: "/assets/certifications/pdf/certSERCOP.pdf",
+      image: "/assets/certifications/images/certSERCOP.png"
     },
     
   ]
@@ -299,42 +299,56 @@ const Resume = () => {
           </TabsContent>
           
           {/* certifications */}
-          {/* certifications */}
           <TabsContent value="certifications" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{certifications.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{certifications.description}</p>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-1 gap-[30px]">
-                    {certifications.items.map((item, index) => {
-                      return (
-                        <li key={index} className="bg-[#232329] h-[220px] py-6 px-10 rounded-xl flex flex-col justify-start lg:justify-between items-start lg:items-center lg:flex-row gap-3">
-                          <div className="flex justify-between items-center w-full lg:w-auto lg:flex-1">
+            <div className="flex flex-col gap-[30px] text-center xl:text-left">
+              <h3 className="text-4xl font-bold">{certifications.title}</h3>
+              <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+              {certifications.description}</p>
+              
+              <ScrollArea className="h-[400px]">
+                <ul className="grid grid-cols-1 lg:grid-cols-1 gap-[30px]">
+                  {certifications.items.map((item, index) => {
+                    return (
+                      <li key={index} className="bg-[#232329] h-realtive py-6 px-10 rounded-xl flex justify-between lg:justify-between items-center lg:items-center lg:flex-row lg:gap-9">
+                        
+                        <div className="flex flex-col justify-center items-center lg:items-center lg:justify-between w-full lg:w-auto lg:flex-1 gap-3">
+                          
                           <span className="text-accent">{item.year}</span>
+                          
                           <Image 
-                            // src={item.image}
-                            src="https://github.com/manosebas/myPortfolio/blob/master/public/assets/imagenTest.jpeg" // URL de ejemplo
+                            src={item.image}
                             alt={item.topic}
-                            width={50}
-                            height={50}
-                            className="rounded-full" 
+                            width={120}
+                            height={120}
+                            className="rounded" 
                           />
                         </div>
-                          <div className="flex flex-col items-center lg:items-start lg:flex-1">
+
+                        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-20 gap-3">
+
+                          <div className="flex flex-col items-center lg:items-start lg:flex-1 gap-3">
+                            
                             <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.topic}</h3>
+
                             <div className="flex items-center gap-3">
                               <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
                               <p className="text-white/60">{item.institution}</p>
                             </div>
+
                           </div>
-                          <a href={item.pdf} download className="text-sm rounded-full font-bold bg-accent text-black hover:bg-white px-3 py-1">Download</a>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </ScrollArea>
-              </div>
-            </TabsContent>
+
+                          <a href={item.pdf} download className="text-sm rounded font-bold bg-accent text-black hover:bg-white px-3 py-1 h-[30px]">Download</a>
+
+                        </div>
+
+                      </li>
+                    );
+                  })}
+                </ul>
+              </ScrollArea>
+            </div>
+          </TabsContent>
+
 
 
           {/* skills */}
