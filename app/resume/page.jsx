@@ -134,8 +134,8 @@ const certifications = {
       institution: "CertiProf",
       topic: "Scrum Foundation SFPC",
       year: "2024",
-      pdf: "public/assets/certifications/pdf/certScrum.pdf",
-      image: "public/assets/certifications/images/certScrum.png"
+      pdf: "https://drive.google.com/file/d/1dLKSgBmLT2fWJGRNpzJstmxLsB9LioaZ/view?usp=drive_link",
+      image: "https://drive.google.com/file/d/1GzeicaYtGf1yaUA8iPh7_ZOkzH2qGfmt/view?usp=drive_link"
     },
     {
       institution: "CertiProf",
