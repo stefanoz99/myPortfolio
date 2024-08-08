@@ -56,7 +56,7 @@ const Home = () => {
             <h1 className="h2 mb-8 mt-2">
               Hello, I&apos;m
               <br/> 
-              <span key={key} className="text-accent inline-block min-h-[24px]" id="typed-text"></span>
+              <span key={key} className="text-accent inline-block min-h-[26px] text-4xl" id="typed-text"></span>
             </h1>
 
             <p className="max-w-[500px] mb-9 text-white/80">
