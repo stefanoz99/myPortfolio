@@ -10,9 +10,11 @@ import {
   FaUnity,
 } from "react-icons/fa";
 
-import { 
-  SiTailwindcss, SiNextdotjs,
-} from "react-icons/si";
+import { TbBrandFlutter } from "react-icons/tb";
+import { SiProcessingfoundation, SiCsharp, SiAdobephotoshop, SiAdobeillustrator } from "react-icons/si";
+import { DiMsqlServer } from "react-icons/di";
+import { TiVendorMicrosoft } from "react-icons/ti";
+
 
 //about me data
 const about = {
@@ -187,8 +189,36 @@ const skills = {
       name: "Docker",
     },
     {
-      icon: <FaFigma/>,
-      name: "Figma",
+      icon: <TbBrandFlutter />,
+      name: "Flutter",
+    },
+    {
+      icon: <SiProcessingfoundation />,
+      name: "Processing",
+    },
+    {
+      icon: <SiCsharp />,
+      name: "C#",
+    },
+    {
+      icon: <DiMsqlServer />,
+      name: "SQL Server",
+    },
+    {
+      icon: <TbBrandFlutter />,
+      name: "Flutter",
+    },
+    {
+      icon: <TiVendorMicrosoft />,
+      name: "Microsoft Office",
+    },
+    {
+      icon: <SiAdobephotoshop />,
+      name: "Adobe Photoshop",
+    },
+    {
+      icon: <SiAdobeillustrator />,
+      name: "Adobe Ilustrator",
     },
     
     
@@ -250,35 +280,51 @@ const Resume = () => {
 
           {/* experience */}
           <TabsContent value="experience" className ="w-full">
+
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
               <h3 className="text-4xl font-bold">{experience.title}</h3>
               <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{experience.description}</p>
+              
+              {/* <p className="text-right text-xs">Scroll Down ↓</p> */}
+              
               <ScrollArea className="h-[400px]">
+
+                <p className="text-right text-sm text-white/80 px-5">Scroll Down ↓</p>
+
                 <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                   {experience.items.map((item, index) => {
                     return(
                       <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
                         <span className="text-accent">{item.duration}</span>
                         <h3 className="text-xl max-w-[260px] min-h-[60px]">{item.position}</h3>
+                        
                         <div className="flex items-center gap-3">
                           {/* puntito */}
                           <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
                           <p className="text-white/60">{item.company}</p>
                         </div>
+
                       </li>
                     )
                   })}
                 </ul>
+
               </ScrollArea>
+
             </div>
           </TabsContent>
           
           {/* education */}
           <TabsContent value="education" className ="w-full">
+
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
               <h3 className="text-4xl font-bold">{education.title}</h3>
               <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
+
               <ScrollArea className="h-[400px]">
+                
+                <p className="text-right text-sm text-white/80 px-5">Scroll Down ↓</p>
+
                 <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                   {education.items.map((item, index) => {
                     return(
@@ -300,12 +346,16 @@ const Resume = () => {
           
           {/* certifications */}
           <TabsContent value="certifications" className="w-full">
+
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
               <h3 className="text-4xl font-bold">{certifications.title}</h3>
               <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
               {certifications.description}</p>
               
               <ScrollArea className="h-[400px]">
+
+                <p className="text-right text-sm text-white/80 px-5">Scroll Down ↓</p>
+
                 <ul className="grid grid-cols-1 lg:grid-cols-1 gap-[30px]">
                   {certifications.items.map((item, index) => {
                     return (
@@ -351,8 +401,6 @@ const Resume = () => {
             </div>
           </TabsContent>
 
-
-
           {/* skills */}
           <TabsContent value="skills" className ="w-full h-full">
             <div className="flex flex-col gap-[30px]">
@@ -361,31 +409,37 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
               </div>
 
-              <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                {skills.skillList.map((skill, index) => {
-                  // return <li key={index}>{skill.name}</li>;
-                  return (
-                    <li key={index}>
-                      <TooltipProvider delayDuration={100}>
-                        <Tooltip>
+              <ScrollArea className="h-[350px]">   
 
-                          <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                            <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                              {skill.icon}
-                            </div>
-                          </TooltipTrigger>
+                <p className="text-right text-sm text-white/80 px-5">Scroll Down ↓</p>
 
-                          <TooltipContent className="bg-white text-black rounded-lg p-2 w-auto h-auto justify-center items-center">
-                          {/* <TooltipContent className="font-bold"> */}
-                            <p className="capitalize">{skill.name}</p>
-                          </TooltipContent>
+                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                  {skills.skillList.map((skill, index) => {
+                    // return <li key={index}>{skill.name}</li>;
+                    return (
+                      <li key={index}>
+                        <TooltipProvider delayDuration={100}>
+                          <Tooltip>
 
-                        </Tooltip>
-                      </TooltipProvider>
-                    </li>
-                  );
-                })}
-              </ul>
+                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                {skill.icon}
+                              </div>
+                            </TooltipTrigger>
+
+                            <TooltipContent className="bg-white text-black rounded-lg p-2 w-auto h-auto justify-center items-center">
+                            {/* <TooltipContent className="font-bold"> */}
+                              <p className="capitalize">{skill.name}</p>
+                            </TooltipContent>
+
+                          </Tooltip>
+                        </TooltipProvider>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </ScrollArea> 
+              
             </div>
 
           </TabsContent>

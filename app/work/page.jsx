@@ -2,157 +2,48 @@
 
 import { 
   FaJs,
-  FaFigma,
   FaDocker,
   FaPython,
   FaJava,
   FaUnity,
 } from "react-icons/fa";
 
-import { 
-  SiTailwindcss, SiNextdotjs,
-} from "react-icons/si";
+import { TbBrandFlutter } from "react-icons/tb";
+import { GrProjects } from "react-icons/gr";
+import { SiNextra } from "react-icons/si";
+
 
 //about me data
 const allProjects = {
+  icon: <GrProjects />,
   title: "All Projects",
   description: "A compilation of all type of projects.",
-  info: [
-    {
-      fieldName: "Name",
-      fieldValue: "Manolo Iniguez"
-    },
-    {
-      fieldName: "Phone",
-      fieldValue: "(+593) 96 189 5248"
-    },
-    {
-      fieldName: "Experience",
-      fieldValue: "800+ Years"
-    },
-    {
-      fieldName: "Nationality",
-      fieldValue: "Ecuadorian"
-    },
-    {
-      fieldName: "Freelance",
-      fieldValue: "Available"
-    },
-    {
-      fieldName: "Email",
-      fieldValue: "iniguezms@hotmail.com"
-    },
-    {
-      fieldName: "Otro",
-      fieldValue: "Otra cosa cool"
-    },
-    {
-      fieldName: "Languages",
-      fieldValue: "Spanish, English"
-    },
-  ]
 };
 
 //experience data
-const experience = {
-  icon: '/assets/resume/badge.svg',
-  title: 'My experience',
-  description: "mi experiencia bla bla bla mi experiencia bla bla bla mi experiencia bla bla bla mi experiencia bla bla bla",
-  items: [
-    {
-      company: "LIFE",
-      position: "Tipaso",
-      duration: "2000 - Present",
-    },
-    {
-      company: "TELCONET LATAM",
-      position: "Intern",
-      duration: "2022 - 2023",
-    },
-    {
-      company: "University San Franscisco",
-      position: "Teaching Assistant",
-      duration: "2023 - 2024",
-    },
-    {
-      company: "General Contralory of the State",
-      position: "Project Management Developer",
-      duration: "2024 - Present",
-    },
-    
-  ]
+const unity = {
+  icon: <FaUnity/>,
+  title: 'Unity Projects',
+  description: "A compilation of 2D, 3D, AR, MR and VR developed with Unity.",
 };
 
 //education data
-const education = {
-  icon: '/assets/resume/cap.svg',
-  title: 'My education',
-  description: "mi educacion bla bla bla mi educacion bla bla bla mi educacion bla bla bla mi educacion bla bla bla",
-  items: [
-    {
-      institution: "Streets, Carcelen City",
-      degree: "About life, ganster shit",
-      duration: "2000 - Present",
-    },
-    {
-      institution: "Julius West School, United States",
-      degree: "Middle School",
-      duration: "2012 - 2013",
-    },
-    {
-      institution: "Colegio San Gabriel, Ecuador",
-      degree: "High School",
-      duration: "2011 - 2014",
-    },
-    {
-      institution: "Bachillerato Patria, Colombia",
-      degree: "High School",
-      duration: "2014 - 2016",
-    },
-    {
-      institution: "Instituto Politecnico de Leiria, Portugal",
-      degree: "University",
-      duration: "2017 - 2019",
-    },
-    {
-      institution: "Universidad San Franscisco, Ecuador",
-      degree: "University",
-      duration: "2019 - 2023",
-    },
-    
-  ]
+const flutter = {
+  icon: <TbBrandFlutter />,
+  title: 'Flutter Projects',
+  description: "A compilation of mobile applications developed with Flutter.",
 };
 
-//skills data
-const skills = {
-  title: 'My skills',
-  description: "mis skills bla bla bla mis skills bla bla bla mis skills bla bla bla mis skills bla bla bla mis skills bla bla bla",
-  skillList: [
+//others data
+const others = {
+  icon: <SiNextra />,
+  title: 'Other Projects',
+  description: "A compilation of other projects developed with all kind of languages and tools",
+  othersList: [
     {
       icon: <FaPython/>,
       name: "Python",
-    },
-    {
-      icon: <FaUnity/>,
-      name: "Unity",
-    },{
-      icon: <FaJava/>,
-      name: "Java",
-    },
-    {
-      icon: <FaJs/>,
-      name: "JavaScript",
-    },
-    {
-      icon: <FaDocker/>,
-      name: "Docker",
-    },
-    {
-      icon: <FaFigma/>,
-      name: "Figma",
-    },
-    
-    
+    }
   ]
 };
 
@@ -176,76 +67,123 @@ const Work = () => {
       },
     }}
 
-    className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
-  >
-    <div className="container mx-auto">
-      <Tabs defaultValue="allProjects" className="flex flex-col xl:flex-row gap-[60px]">
-        <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
+    className="flex flex-col items-center justify-center py-12 xl:py-5">
+
+      <Tabs defaultValue="allProjects" className="flex flex-col gap-[60px]">
+        
+        <TabsList className="flex flex-col xl:flex-row xl:items-center xl:justify-center w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
           <TabsTrigger value="allProjects">All Projects</TabsTrigger>
-          <TabsTrigger value="experience">Experience</TabsTrigger>
-          <TabsTrigger value="education">Education</TabsTrigger>
-          <TabsTrigger value="skills">Skills</TabsTrigger>
+          <TabsTrigger value="unity">Unity</TabsTrigger>
+          <TabsTrigger value="flutter">Flutter</TabsTrigger>
+          <TabsTrigger value="others">Others</TabsTrigger>
         </TabsList>
 
         {/* content */}
 
         <div className="min-h-[70vh] w-full">
+          {/* Editar la clase ExpandableCardDemo OJITOOOOOOOOOOOOOOOO */}
+          {/* All projects */}
+          <TabsContent value="allProjects" className ="w-full">
+            <div className="flex flex-col gap-[30px] text-center xl:text-left">
 
-          {/* all projects */}
-          <TabsContent value="allProjects" className ="w-full text-center xl:text-left">
-          <div className="flex flex-col gap-[30px]">
-            <h3 className="text-4xl font-bold">{allProjects.title}</h3>
-            <p className="max-w-[600px] mx-auto xl:mx-0 text-white/60">{allProjects.description}</p>
-            <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
-              <ExpandableCardDemo/>
-            </ul>
-          </div>
+              {/* Titulo y Logo */}
+              <div className="flex flex-row items-center xl:justify-start justify-center gap-10">
+                <h3 className="text-4xl font-bold">{allProjects.title}</h3>
+                <p className="text-4xl">{allProjects.icon}</p>
+              </div>
+
+              {/* Descripcion */}
+              <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{allProjects.description}</p>
+
+              {/* Proyectos */}
+              {/* <ExpandableCardDemo/> */}
+
+            </div>
           </TabsContent>
 
-          {/* experience */}
-          <TabsContent value="experience" className ="w-full">
+          {/* unity */}
+          <TabsContent value="unity" className ="w-full h-full">
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
-              <h3 className="text-4xl font-bold">{experience.title}</h3>
-              <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{experience.description}</p>
-              <ScrollArea className="h-[400px]">
-                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                  <ExpandableCardDemo/>
-                </ul>
-              </ScrollArea>
+
+              {/* Titulo y Logo */}
+              <div className="flex flex-row items-center xl:justify-start justify-center gap-10">
+                <h3 className="text-4xl font-bold">{unity.title}</h3>
+                <p className="text-4xl">{unity.icon}</p>
+              </div>
+
+              {/* Descripcion */}
+              <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{unity.description}</p>
+
+              {/* Proyectos */}
+              {/* <ExpandableCardDemo/> */}
+
             </div>
           </TabsContent>
           
-          {/* education */}
-          <TabsContent value="education" className ="w-full">
+          {/* flutter */}
+          <TabsContent value="flutter" className ="w-full h-full">
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
-              <h3 className="text-4xl font-bold">{education.title}</h3>
-              <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
-              <ScrollArea className="h-[400px]">
-                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                  <ExpandableCardDemo/>
-                </ul>
-              </ScrollArea>
+
+              {/* Titulo y Logo */}
+              <div className="flex flex-row items-center xl:justify-start justify-center gap-10">
+                <h3 className="text-4xl font-bold">{flutter.title}</h3>
+                <p className="text-4xl">{flutter.icon}</p>
+              </div>
+
+              {/* Descripcion */}
+              <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{flutter.description}</p>
+
+              {/* Proyectos */}
+              {/* <ExpandableCardDemo/> */}
+
             </div>
           </TabsContent>
           
-          {/* skills */}
-          <TabsContent value="skills" className ="w-full h-full">
-            <div className="flex flex-col gap-[30px] text-center xl:text-left">
-              <h3 className="text-4xl font-bold">{skills.title}</h3>
-              <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
-              <ScrollArea className="h-[400px]">
-                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                  <ExpandableCardDemo/>
-                </ul>
-              </ScrollArea>
+          {/* others */}
+          <TabsContent value="others" className ="w-full h-full">
+            <div className="flex flex-col gap-[30px]">
+              
+              {/* Titulo y Logo */}
+              <div className="flex flex-row items-center xl:justify-start justify-center gap-10">
+                <h3 className="text-4xl font-bold">{others.title}</h3>
+                <p className="text-4xl">{others.icon}</p>
+              </div>
+
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{others.description}</p>
+
+              <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                {others.othersList.map((others, index) => {
+
+                  return (
+                    <li key={index}>
+                      <TooltipProvider delayDuration={100}>
+                        <Tooltip>
+
+                          <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                            <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                              {others.icon}
+                            </div>
+                          </TooltipTrigger>
+
+                          <TooltipContent className="bg-white text-black rounded-lg p-2 w-auto h-auto justify-center items-center">
+                          {/* <TooltipContent className="font-bold"> */}
+                            <p className="capitalize">{others.name}</p>
+                          </TooltipContent>
+
+                        </Tooltip>
+                      </TooltipProvider>
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
 
           </TabsContent>
+
         </div>
 
-
       </Tabs>
-    </div>
+
     </motion.div>
   );
 }

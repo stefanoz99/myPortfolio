@@ -208,6 +208,7 @@ const cards = [
     src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
     ctaText: "More",
     ctaLink: "https://github.com/manosebas",
+    tag: "unity",
     content: () => {
       return (
         <p>
@@ -231,6 +232,7 @@ const cards = [
     src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
     ctaText: "More",
     ctaLink: "https://github.com/manosebas",
+    tag: "others",
     content: () => {
       return (
         <p>
@@ -253,6 +255,7 @@ const cards = [
     src: "https://assets.aceternity.com/demos/metallica.jpeg",
     ctaText: "Play",
     ctaLink: "https://ui.aceternity.com/templates",
+    tag: "others",
     content: () => {
       return (
         <p>
@@ -275,6 +278,7 @@ const cards = [
     src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
     ctaText: "Play",
     ctaLink: "https://ui.aceternity.com/templates",
+    tag: "others",
     content: () => {
       return (
         <p>
@@ -296,6 +300,7 @@ const cards = [
     src: "https://assets.aceternity.com/demos/toh-phir-aao.jpeg",
     ctaText: "Play",
     ctaLink: "https://ui.aceternity.com/templates",
+    tag: "others",
     content: () => {
       return (
         <p>
