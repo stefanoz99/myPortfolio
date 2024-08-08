@@ -4,7 +4,7 @@ import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 
-export function ExpandableCardDemo() {
+export function ExpandableCardDemo({ filterTag }) {
   const [active, setActive] = useState(null);
   const id = useId();
   const ref = useRef(null);
@@ -28,6 +28,11 @@ export function ExpandableCardDemo() {
 
   useOutsideClick(ref, () => setActive(null));
 
+  // Filtrar las tarjetas según el tag
+  const filteredCards = filterTag === "allProjects"
+    ? cards
+    : cards.filter(card => card.tag === filterTag);
+
   return (
     <>
         {/* Animacion */}
@@ -39,7 +44,6 @@ export function ExpandableCardDemo() {
             exit={{ opacity: 0 }}
             className="fixed inset-0 bg-black/20 h-full w-full z-10"
           />
-          
         )}
       </AnimatePresence>
 
@@ -143,7 +147,7 @@ export function ExpandableCardDemo() {
 
       {/* Tarjeta por fuera */}
       <ul className="max-w-2xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {cards.map((card) => (
+        {filteredCards.map((card) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
@@ -217,7 +221,7 @@ export const CloseIcon = () => {
 
 const cards = [
   {
-    description: "Proyecto 1",
+    description: "Proyecto U",
     title: "DAI",
     src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
     ctaText: "More",
@@ -241,12 +245,12 @@ const cards = [
     },
   },
   {
-    description: "Proyecto 2",
+    description: "Proyecto Py",
     title: "Virtual Platform",
     src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
     ctaText: "More",
     ctaLink: "https://github.com/manosebas",
-    tag: "others",
+    tag: "python",
     content: () => {
       return (
         <p>
@@ -264,12 +268,12 @@ const cards = [
     },
   },
   {
-    description: "Metallica",
+    description: "Proyecto Pr",
     title: "For Whom The Bell",
     src: "https://assets.aceternity.com/demos/metallica.jpeg",
-    ctaText: "Play",
+    ctaText: "More",
     ctaLink: "https://ui.aceternity.com/templates",
-    tag: "others",
+    tag: "processing",
     content: () => {
       return (
         <p>
@@ -287,12 +291,12 @@ const cards = [
     },
   },
   {
-    description: "Led Zeppelin",
+    description: "Proyecto Fl",
     title: "Stairway To Heaven",
     src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
-    ctaText: "Play",
+    ctaText: "More",
     ctaLink: "https://ui.aceternity.com/templates",
-    tag: "others",
+    tag: "flutter",
     content: () => {
       return (
         <p>
@@ -309,10 +313,10 @@ const cards = [
     },
   },
   {
-    description: "Mustafa Zahid",
+    description: "Proyecto Other",
     title: "Toh Phir Aao",
     src: "https://assets.aceternity.com/demos/toh-phir-aao.jpeg",
-    ctaText: "Play",
+    ctaText: "More",
     ctaLink: "https://ui.aceternity.com/templates",
     tag: "others",
     content: () => {

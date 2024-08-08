@@ -62,6 +62,11 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@radix
 import { ExpandableCardDemo } from "../../components/ExpandableCardDemo";
 
 const Work = () => {
+  
+  const handleTabClick = (value) => {
+    document.getElementById(value).scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <motion.div 
       initial={{ opacity: 0 }}
@@ -80,87 +85,86 @@ const Work = () => {
         <Tabs defaultValue="allProjects" className="flex flex-col xl:flex-col gap-[60px] justify-center">
 
           <TabsList className="flex flex-col xl:flex-row w-full max-w-[380px] xl:max-w-[1200px] mx-auto gap-6 ">
-            {/* Tocar y que se baje automaticamente OJITOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */}
-            <TabsTrigger value="allProjects">All Projects</TabsTrigger>
-            <TabsTrigger value="unity">Unity</TabsTrigger>
-            <TabsTrigger value="python">Python</TabsTrigger>
-            <TabsTrigger value="processing">Processing</TabsTrigger>
-            <TabsTrigger value="flutter">Flutter</TabsTrigger>
-            <TabsTrigger value="others">Others</TabsTrigger>
+            <TabsTrigger value="allProjects" onClick={() => handleTabClick('allProjects')}>All Projects</TabsTrigger>
+            <TabsTrigger value="unity" onClick={() => handleTabClick('unity')}>Unity</TabsTrigger>
+            <TabsTrigger value="python" onClick={() => handleTabClick('python')}>Python</TabsTrigger>
+            <TabsTrigger value="processing" onClick={() => handleTabClick('processing')}>Processing</TabsTrigger>
+            <TabsTrigger value="flutter" onClick={() => handleTabClick('flutter')}>Flutter</TabsTrigger>
+            <TabsTrigger value="others" onClick={() => handleTabClick('others')}>Others</TabsTrigger>
           </TabsList>
 
           {/* content */}
           <div className="min-h-[70vh] w-full mt-10">
 
             {/* All projects */}
-            <TabsContent value="allProjects" className="w-full text-center">
+            <TabsContent value="allProjects" className="w-full text-center" id="allProjects">
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-row items-center justify-center gap-10">
                   <h3 className="text-4xl font-bold">{allProjects.title}</h3>
                   <p className="text-4xl">{allProjects.icon}</p>
                 </div>
                 <p className="max-w-[600px] text-white/60 mx-auto">{allProjects.description}</p>
-                <ExpandableCardDemo/>
+                <ExpandableCardDemo filterTag="allProjects" />
               </div>
             </TabsContent>
 
             {/* unity */}
-            <TabsContent value="unity" className="w-full text-center">
+            <TabsContent value="unity" className="w-full text-center" id="unity">
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-row items-center justify-center gap-10">
                   <h3 className="text-4xl font-bold">{unity.title}</h3>
                   <p className="text-4xl">{unity.icon}</p>
                 </div>
                 <p className="max-w-[600px] text-white/60 mx-auto">{unity.description}</p>
-                {/* <ExpandableCardDemo/> */}
+                <ExpandableCardDemo filterTag="unity" />
               </div>
             </TabsContent>
 
             {/* python */}
-            <TabsContent value="python" className="w-full text-center">
+            <TabsContent value="python" className="w-full text-center" id="python">
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-row items-center justify-center gap-10">
                   <h3 className="text-4xl font-bold">{python.title}</h3>
                   <p className="text-4xl">{python.icon}</p>
                 </div>
                 <p className="max-w-[600px] text-white/60 mx-auto">{python.description}</p>
-                {/* <ExpandableCardDemo/> */}
+                <ExpandableCardDemo filterTag="python" />
               </div>
             </TabsContent>
 
             {/* processing */}
-            <TabsContent value="processing" className="w-full text-center">
+            <TabsContent value="processing" className="w-full text-center" id="processing">
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-row items-center justify-center gap-10">
                   <h3 className="text-4xl font-bold">{processing.title}</h3>
                   <p className="text-4xl">{processing.icon}</p>
                 </div>
                 <p className="max-w-[600px] text-white/60 mx-auto">{processing.description}</p>
-                {/* <ExpandableCardDemo/> */}
+                <ExpandableCardDemo filterTag="processing" />
               </div>
             </TabsContent>
 
             {/* flutter */}
-            <TabsContent value="flutter" className="w-full text-center">
+            <TabsContent value="flutter" className="w-full text-center" id="flutter">
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-row items-center justify-center gap-10">
                   <h3 className="text-4xl font-bold">{flutter.title}</h3>
                   <p className="text-4xl">{flutter.icon}</p>
                 </div>
                 <p className="max-w-[600px] text-white/60 mx-auto">{flutter.description}</p>
-                {/* <ExpandableCardDemo/> */}
+                <ExpandableCardDemo filterTag="flutter" />
               </div>
             </TabsContent>
 
             {/* others */}
-            <TabsContent value="others" className="w-full text-center">
+            <TabsContent value="others" className="w-full text-center" id="others">
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-row items-center justify-center gap-10">
                   <h3 className="text-4xl font-bold">{others.title}</h3>
                   <p className="text-4xl">{others.icon}</p>
                 </div>
                 <p className="max-w-[600px] text-white/60 mx-auto">{others.description}</p>
-                {/* <ExpandableCardDemo/> */}
+                <ExpandableCardDemo filterTag="others" />
               </div>
             </TabsContent>
             

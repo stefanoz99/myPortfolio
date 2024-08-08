@@ -232,6 +232,11 @@ import { Item } from "@radix-ui/react-select";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@radix-ui/react-tooltip";
 
 const Resume = () => {
+  
+  const handleTabClick = (value) => {
+    document.getElementById(value).scrollIntoView({ behavior: "smooth" });
+  };
+  
   return (
   <motion.div 
     initial = {{ opacity: 0}}
@@ -251,11 +256,11 @@ const Resume = () => {
       <Tabs defaultValue="about" className="flex flex-col xl:flex-row gap-[60px] justify-center">
 
         <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-          <TabsTrigger value="about">About Me</TabsTrigger>
-          <TabsTrigger value="experience">Experience</TabsTrigger>
-          <TabsTrigger value="education">Education</TabsTrigger>
-          <TabsTrigger value="certifications">Certifications</TabsTrigger>
-          <TabsTrigger value="skills">Skills</TabsTrigger>
+          <TabsTrigger value="about" onClick={() => handleTabClick('about')}>About Me</TabsTrigger>
+          <TabsTrigger value="experience" onClick={() => handleTabClick('experience')}>Experience</TabsTrigger>
+          <TabsTrigger value="education" onClick={() => handleTabClick('education')}>Education</TabsTrigger>
+          <TabsTrigger value="certifications" onClick={() => handleTabClick('certifications')}>Certifications</TabsTrigger>
+          <TabsTrigger value="skills" onClick={() => handleTabClick('skills')}>Skills</TabsTrigger>
         </TabsList>
 
         {/* content */}
@@ -263,7 +268,7 @@ const Resume = () => {
         <div className="min-h-[70vh] w-full">
 
           {/* about me */}
-          <TabsContent value="about" className ="w-full">
+          <TabsContent value="about" className ="w-full" id="about">
 
           <div className="flex flex-col gap-[30px] text-center xl:text-left">
             <h3 className="text-4xl font-bold">{about.title}</h3>
@@ -283,7 +288,7 @@ const Resume = () => {
           </TabsContent>
 
           {/* experience */}
-          <TabsContent value="experience" className ="w-full">
+          <TabsContent value="experience" className ="w-full" id="experience">
 
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
               <h3 className="text-4xl font-bold">{experience.title}</h3>
@@ -317,7 +322,7 @@ const Resume = () => {
           </TabsContent>
           
           {/* education */}
-          <TabsContent value="education" className ="w-full">
+          <TabsContent value="education" className ="w-full" id="education">
 
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
               <h3 className="text-4xl font-bold">{education.title}</h3>
@@ -347,7 +352,7 @@ const Resume = () => {
           </TabsContent>
           
           {/* certifications */}
-          <TabsContent value="certifications" className="w-full">
+          <TabsContent value="certifications" className="w-full" id="certifications">
 
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
               <h3 className="text-4xl font-bold">{certifications.title}</h3>
@@ -404,7 +409,7 @@ const Resume = () => {
           </TabsContent>
 
           {/* skills */}
-          <TabsContent value="skills" className ="w-full h-full">
+          <TabsContent value="skills" className ="w-full h-full" id="skills">
             <div className="flex flex-col gap-[30px]">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{skills.title}</h3>
