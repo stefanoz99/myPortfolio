@@ -1,10 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import {Sheet, SheetContent, SheetTrigger} from '@/components/ui/sheet';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import {CiMenuFries} from 'react-icons/ci'
-import { Heading1 } from 'lucide-react';
 
 
 const links = [
@@ -34,9 +34,12 @@ const links = [
 
 const MobileNav = () => {
 
+    const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname();
 
-    return <Sheet>
+    const closeMenu = () => setIsOpen(false);
+
+    return <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger>
             <CiMenuFries className = "text-[32px] text-accent" />
         </SheetTrigger>
@@ -62,8 +65,9 @@ const MobileNav = () => {
                                 link.path === pathname && 
                                 "text-accent border-b-2 border-accent"
                                 }
-                                capitalize text-xl hover:text-accent transition-all
-                                `}>
+                                capitalize text-xl hover:text-accent transition-all`}
+                            onClick={closeMenu}
+                        >
 
                                 {link.name}
                         </Link>

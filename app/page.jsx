@@ -53,10 +53,10 @@ const Home = () => {
           {/* TEXTO */}
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-lg">Computing Science Engineer</span>
-            <h1 className="h2 mb-8 mt-2">
+            <h1 className="h2 mb-8 mt-2 text-2xl xl:text-4xl">
               Hello, I&apos;m
               <br/> 
-              <span key={key} className="text-accent inline-block min-h-[26px] text-4xl" id="typed-text"></span>
+              <span key={key} className="text-accent inline-block min-h-[26px] text-2xl xl:text-4xl" id="typed-text"></span>
             </h1>
 
             <p className="max-w-[500px] mb-9 text-white/80">
