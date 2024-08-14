@@ -282,8 +282,8 @@ const Resume = () => {
           <TabsContent value="about" className ="w-full" id="about">
 
           <div className="flex flex-col gap-[30px] text-center xl:text-left">
-            <h3 className="text-4xl font-bold">{about.title}</h3>
-            <p className="max-w-[500px] xl:max-w-[800px] text-white/60 mb-6 mx-auto xl:mx-0 leading-relaxed">{about.description}</p>
+            <h3 className="text-2xl xl:text-4xl font-bold">{about.title}</h3>
+            <p className="max-w-[500px] xl:max-w-[800px] text-white/60 mb-6 mx-auto xl:mx-0 leading-relaxed text-sm xl:text-[15px]">{about.description}</p>
 
             <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
               {about.info.map((item, index) => {
@@ -302,9 +302,9 @@ const Resume = () => {
           <TabsContent value="experience" className ="w-full" id="experience">
 
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
-              <h3 className="text-4xl font-bold">{experience.title}</h3>
-              <p className="max-w-[500px] xl:max-w-[800px] text-white/60 mb-6 mx-auto xl:mx-0 leading-relaxed">{experience.description}</p>
-                            
+              <h3 className="text-2xl xl:text-4xl font-bold">{experience.title}</h3>
+              <p className="max-w-[500px] xl:max-w-[800px] text-white/60 mb-6 mx-auto xl:mx-0 leading-relaxed text-sm xl:text-[15px]">{experience.description}</p>
+
               <ScrollArea className="h-[400px]">
 
                 <p className="text-right text-sm text-white/80 px-5">Scroll Down ↓</p>
@@ -336,8 +336,8 @@ const Resume = () => {
           <TabsContent value="education" className ="w-full" id="education">
 
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
-              <h3 className="text-4xl font-bold">{education.title}</h3>
-              <p className="max-w-[500px] xl:max-w-[800px] text-white/60 mb-6 mx-auto xl:mx-0 leading-relaxed">{education.description}</p>
+              <h3 className="text-2xl xl:text-4xl font-bold">{education.title}</h3>
+              <p className="max-w-[500px] xl:max-w-[800px] text-white/60 mb-6 mx-auto xl:mx-0 leading-relaxed text-sm xl:text-[15px]">{education.description}</p>
 
               <ScrollArea className="h-[400px]">
                 
@@ -366,8 +366,8 @@ const Resume = () => {
           <TabsContent value="certifications" className="w-full" id="certifications">
 
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
-              <h3 className="text-4xl font-bold">{certifications.title}</h3>
-              <p className="max-w-[500px] xl:max-w-[800px] text-white/60 mb-6 mx-auto xl:mx-0 leading-relaxed">{certifications.description}</p>
+              <h3 className="text-2xl xl:text-4xl font-bold">{certifications.title}</h3>
+              <p className="max-w-[500px] xl:max-w-[800px] text-white/60 mb-6 mx-auto xl:mx-0 leading-relaxed text-sm xl:text-[15px]">{certifications.description}</p>
               
               <ScrollArea className="h-[400px]">
 
@@ -421,9 +421,10 @@ const Resume = () => {
           {/* skills */}
           <TabsContent value="skills" className ="w-full h-full" id="skills">
             <div className="flex flex-col gap-[30px]">
+              
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{skills.title}</h3>
-                <p className="max-w-[500px] xl:max-w-[800px] text-white/60 mb-6 mx-auto xl:mx-0 leading-relaxed">{skills.description}</p>
+                <h3 className="text-2xl xl:text-4xl font-bold">{skills.title}</h3>
+                <p className="max-w-[500px] xl:max-w-[800px] text-white/60 mb-6 mx-auto xl:mx-0 leading-relaxed text-sm xl:text-[15px]">{skills.description}</p>
               </div>
 
               <ScrollArea className="h-[350px]">   

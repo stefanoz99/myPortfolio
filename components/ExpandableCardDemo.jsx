@@ -224,7 +224,7 @@ const cards = [
   {
     description: "Proyecto U",
     title: "DAI",
-    src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
+    src: "/assets/MainImage1.png",
     btnText: "More",
     btnGitText: "GitHub",
     btnLink: "https://github.com/manosebas",
@@ -247,49 +247,49 @@ const cards = [
     },
   },
   {
-    description: "Proyecto Py",
-    title: "Virtual Platform",
-    src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
+    description: "Text into particles",
+    title: "Clock Particle Display",
+    src: "/assets/projects/images/ClockVectorParticle2.png",
     btnText: "More",
     btnGitText: "GitHub",
-    btnLink: "https://github.com/manosebas",
-    tag: "python",
+    btnLink: "https://github.com/manosebas/ParticlesVectors/tree/master/Clock#readme",
+    tag: "processing",
     content: () => {
       return (
         <p>
-          Babu Maan, a legendary Punjabi singer, is renowned for his soulful
-          voice and profound lyrics that resonate deeply with his audience. Born
-          in the village of Khant Maanpur in Punjab, India, he has become a
-          cultural icon in the Punjabi music industry. <br /> <br /> His songs
-          often reflect the struggles and triumphs of everyday life, capturing
-          the essence of Punjabi culture and traditions. With a career spanning
-          over two decades, Babu Maan has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
+          This project uses particles to display the current time and date. Particles form the digits of a clock, and clicking changes the display to show the current time, date, or other text. This project offers a visually engaging way to present real-time information and is easily adaptable for various types of data and graphical styles.
         </p>
       );
     },
   },
   {
-    description: "Proyecto Pr",
-    title: "For Whom The Bell",
-    src: "https://assets.aceternity.com/demos/metallica.jpeg",
+    description: "Images into BW particles",
+    title: "BW Vector Particle Art",
+    src: "/assets/projects/images/BWVectorParticle.png",
     btnText: "More",
     btnGitText: "GitHub",
-    btnLink: "https://ui.aceternity.com/templates",
+    btnLink: "https://github.com/manosebas/ParticlesVectors/tree/master/BlackAndWhite#readme",
     tag: "processing",
     content: () => {
       return (
         <p>
-          Metallica, an iconic American heavy metal band, is renowned for their
-          powerful sound and intense performances that resonate deeply with
-          their audience. Formed in Los Angeles, California, they have become a
-          cultural icon in the heavy metal music industry. <br /> <br /> Their
-          songs often reflect themes of aggression, social issues, and personal
-          struggles, capturing the essence of the heavy metal genre. With a
-          career spanning over four decades, Metallica has released numerous hit
-          albums and singles that have garnered them a massive fan following
-          both in the United States and abroad.
+          This project transforms a user-uploaded image into a visual representation using black-and-white particles. Each pixel is represented by a particle of a single color, preserving the image's contrast and shading. Clicking allows the user to switch between different graphics, providing a streamlined approach to visual representation with particles.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Images into particles",
+    title: "Vector Particle Art",
+    src: "/assets/projects/images/ColorVectorParticle.png",
+    btnText: "More",
+    btnGitText: "GitHub",
+    btnLink: "https://github.com/manosebas/ParticlesVectors/tree/master/Color#readme",
+    tag: "processing",
+    content: () => {
+      return (
+        <p>
+          This project transforms a user-uploaded image into a visual representation using colored particles. Each pixel of the image is mapped to a particle, recreating the image with a unique particle effect. Clicking changes the display to various images, with particles dynamically adjusting to the new graphic. The project is highly customizable and expandable for diverse visual applications.
         </p>
       );
     },
