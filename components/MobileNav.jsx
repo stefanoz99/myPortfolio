@@ -40,11 +40,14 @@ const MobileNav = () => {
     const closeMenu = () => setIsOpen(false);
 
     return <Sheet open={isOpen} onOpenChange={setIsOpen}>
-        <SheetTrigger>
+
+        <SheetTrigger className="flex gap-4 items-center">
+            <p className="text-sm text-white/80">See more →</p>
             <CiMenuFries className = "text-[32px] text-accent" />
         </SheetTrigger>
+
         <SheetContent className = "flex flex-col">
-            
+    
             {/* LOGO */}
             <div className = "mt-32 mb-40 text-center">
                 <Link href = "/">

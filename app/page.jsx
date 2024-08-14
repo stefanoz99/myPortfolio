@@ -28,7 +28,7 @@ const Home = () => {
         "Manolo Iñiguez.",
         "a Software Developer.",
         "a Game Developer.",
-        "a Technology Enthusiast."
+        "a Tech Enthusiast."
       ],
       typeSpeed: 50,
       backSpeed: 50,
@@ -59,7 +59,8 @@ const Home = () => {
               <span key={key} className="text-accent inline-block min-h-[26px] text-2xl xl:text-4xl" id="typed-text"></span>
             </h1>
 
-            <p className="max-w-[500px] mb-9 text-white/80">
+            {/* <p className="max-w-[500px] mb-9 text-white/80"> */}
+            <p className="max-w-[500px] mb-6 text-white/80 leading-tight text-justify">
               Passionate about invention and in love with the evolution of technology. I enjoy exploring new ideas and working hard until I achieve my goals. Humanistic education in liberal arts, reader to increase knowledge and operationalize information.
             </p>
 

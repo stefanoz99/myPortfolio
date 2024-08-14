@@ -16,12 +16,14 @@ const Photo = () => {
           animate={{ opacity: 1, transition: { delay: 1, duration: 3, ease: "easeInOut" } }}
           className="mix-blend-lighten absolute"
           style={{
-            maskImage: "radial-gradient(circle at center, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0) 100%)",
-            WebkitMaskImage: "radial-gradient(circle at top, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%)"
+            maskImage: "radial-gradient(circle at center, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0) 100%)",
+            WebkitMaskImage: "radial-gradient(circle at center, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0) 100%)",
+            backgroundColor: "rgba(0, 0, 0, 0.8)",
           }}
         >
           <div className="flex justify-center items-center w-full">
             <Image
+              // src="/assets/imagenTest.jpeg"
               src="/assets/imagen2.png"
               priority
               quality={100}
@@ -30,7 +32,6 @@ const Photo = () => {
               height={498}
               alt=""
               className="object-contain"
-              // style={{ transform: "scaleX(-1)" }}  
             />
           </div>
         </motion.div>
