@@ -84,6 +84,7 @@ const Work = () => {
 
         <Tabs defaultValue="allProjects" className="flex flex-col xl:flex-col gap-[60px] justify-center">
 
+          {/* BOTONES */}
           <TabsList className="flex flex-col xl:flex-row w-full max-w-[380px] xl:max-w-[1200px] mx-auto gap-6 ">
             <TabsTrigger value="allProjects" onClick={() => handleTabClick('allProjects')}>All Projects</TabsTrigger>
             <TabsTrigger value="unity" onClick={() => handleTabClick('unity')}>Unity</TabsTrigger>

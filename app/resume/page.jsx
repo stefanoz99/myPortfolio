@@ -283,7 +283,7 @@ const Resume = () => {
 
           <div className="flex flex-col gap-[30px] text-center xl:text-left">
             <h3 className="text-4xl font-bold">{about.title}</h3>
-            <p className="max-w-[600px] mx-auto xl:mx-0 text-white/60">{about.description}</p>
+            <p className="max-w-[500px] xl:max-w-[800px] text-white/60 mb-6 mx-auto xl:mx-0 leading-relaxed">{about.description}</p>
 
             <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
               {about.info.map((item, index) => {
@@ -303,8 +303,7 @@ const Resume = () => {
 
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
               <h3 className="text-4xl font-bold">{experience.title}</h3>
-              {/* <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{experience.description}</p> */}
-              <p className="max-w-[500px] text-white/60 mb-6 leading-relaxed text-left mx-auto xl:mx-0">{experience.description}</p>
+              <p className="max-w-[500px] xl:max-w-[800px] text-white/60 mb-6 mx-auto xl:mx-0 leading-relaxed">{experience.description}</p>
                             
               <ScrollArea className="h-[400px]">
 
@@ -338,7 +337,7 @@ const Resume = () => {
 
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
               <h3 className="text-4xl font-bold">{education.title}</h3>
-              <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
+              <p className="max-w-[500px] xl:max-w-[800px] text-white/60 mb-6 mx-auto xl:mx-0 leading-relaxed">{education.description}</p>
 
               <ScrollArea className="h-[400px]">
                 
@@ -368,8 +367,7 @@ const Resume = () => {
 
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
               <h3 className="text-4xl font-bold">{certifications.title}</h3>
-              <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-              {certifications.description}</p>
+              <p className="max-w-[500px] xl:max-w-[800px] text-white/60 mb-6 mx-auto xl:mx-0 leading-relaxed">{certifications.description}</p>
               
               <ScrollArea className="h-[400px]">
 
@@ -425,7 +423,7 @@ const Resume = () => {
             <div className="flex flex-col gap-[30px]">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{skills.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
+                <p className="max-w-[500px] xl:max-w-[800px] text-white/60 mb-6 mx-auto xl:mx-0 leading-relaxed">{skills.description}</p>
               </div>
 
               <ScrollArea className="h-[350px]">   

@@ -64,11 +64,11 @@ export function ExpandableCardDemo({ filterTag }) {
               onClick={() => setActive(null)}
             >
 
-                <CloseIcon />
+            <CloseIcon />
 
             </motion.button>
 
-          {/* BG Tarjeta Expandida */}
+            {/* Tarjeta Expandida */}
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
@@ -109,11 +109,11 @@ export function ExpandableCardDemo({ filterTag }) {
                   {/* Boton */}
                   <motion.a
                     layoutId={`button-${active.title}-${id}`}
-                    href={active.ctaLink}
+                    href={active.btnLink}
                     target="_blank"
                     className="px-4 py-3 text-sm rounded-full font-bold bg-accent text-white hover:bg-primary hover:text-white"
                   > 
-                    {active.ctaText}
+                    {active.btnGitText}
                   </motion.a>
 
                 </div>
@@ -141,6 +141,7 @@ export function ExpandableCardDemo({ filterTag }) {
 
               </div>
             </motion.div>
+
           </div>
         ) : null}
       </AnimatePresence>
@@ -185,7 +186,7 @@ export function ExpandableCardDemo({ filterTag }) {
                 layoutId={`button-${card.title}-${id}`}
                 className="px-4 py-2 text-sm rounded-full font-bold bg-accent hover:bg-primary hover:text-white text-black mt-4"
                 >
-                {card.ctaText}
+                {card.btnText}
                 </motion.button>
             </div>
             </motion.div>
@@ -224,8 +225,9 @@ const cards = [
     description: "Proyecto U",
     title: "DAI",
     src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
-    ctaText: "More",
-    ctaLink: "https://github.com/manosebas",
+    btnText: "More",
+    btnGitText: "GitHub",
+    btnLink: "https://github.com/manosebas",
     tag: "unity",
     content: () => {
       return (
@@ -248,8 +250,9 @@ const cards = [
     description: "Proyecto Py",
     title: "Virtual Platform",
     src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
-    ctaText: "More",
-    ctaLink: "https://github.com/manosebas",
+    btnText: "More",
+    btnGitText: "GitHub",
+    btnLink: "https://github.com/manosebas",
     tag: "python",
     content: () => {
       return (
@@ -271,8 +274,9 @@ const cards = [
     description: "Proyecto Pr",
     title: "For Whom The Bell",
     src: "https://assets.aceternity.com/demos/metallica.jpeg",
-    ctaText: "More",
-    ctaLink: "https://ui.aceternity.com/templates",
+    btnText: "More",
+    btnGitText: "GitHub",
+    btnLink: "https://ui.aceternity.com/templates",
     tag: "processing",
     content: () => {
       return (
@@ -294,8 +298,9 @@ const cards = [
     description: "Proyecto Fl",
     title: "Stairway To Heaven",
     src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
-    ctaText: "More",
-    ctaLink: "https://ui.aceternity.com/templates",
+    btnText: "More",
+    btnGitText: "GitHub",
+    btnLink: "https://ui.aceternity.com/templates",
     tag: "flutter",
     content: () => {
       return (
@@ -316,8 +321,9 @@ const cards = [
     description: "Proyecto Other",
     title: "Toh Phir Aao",
     src: "https://assets.aceternity.com/demos/toh-phir-aao.jpeg",
-    ctaText: "More",
-    ctaLink: "https://ui.aceternity.com/templates",
+    btnText: "More",
+    btnGitText: "GitHub",
+    btnLink: "https://ui.aceternity.com/templates",
     tag: "others",
     content: () => {
       return (
