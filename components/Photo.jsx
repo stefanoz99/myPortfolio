@@ -16,7 +16,7 @@ const Photo = () => {
           animate={{ opacity: 1, transition: { delay: 1, duration: 3, ease: "easeInOut" } }}
           className="mix-blend-lighten absolute"
           style={{
-            maskImage: "radial-gradient(circle at center, rgba(0, 0, 0, 0.78) 70%, rgba(0, 0, 0, 0) 100%)",
+            maskImage: "radial-gradient(circle at center, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0) 100%)",
             WebkitMaskImage: "radial-gradient(circle at top, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%)"
           }}
         >

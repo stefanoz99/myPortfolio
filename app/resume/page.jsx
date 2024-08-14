@@ -18,7 +18,7 @@ import { TiVendorMicrosoft } from "react-icons/ti";
 
 //about me data
 const about = {
-  title: "About me",
+  title: "About Me",
   description: "Sobre mi bla bla bla bla bla bla bla bla bla bla bla bla ble ble ble ble ble.",
   info: [
     {
@@ -59,27 +59,22 @@ const about = {
 //experience data
 const experience = {
   icon: '/assets/resume/badge.svg',
-  title: 'My experience',
-  description: "mi experiencia bla bla bla mi experiencia bla bla bla mi experiencia bla bla bla mi experiencia bla bla bla",
+  title: 'My Experience',
+  description: "Despite being early in my career, I have gained valuable experience across different roles and industries. My work in various environments, from academic settings and private companies to government institutions, has equipped me with a strong foundation in technical skills, problem-solving, and effective communication. Each experience, though brief, has significantly contributed to my professional growth, allowing me to quickly adapt and excel in any challenge presented.",
   items: [
     {
-      company: "LIFE",
-      position: "Tipaso",
-      duration: "2000 - Present",
-    },
-    {
       company: "TELCONET LATAM",
-      position: "Intern",
-      duration: "2022 - 2023",
+      position: "Intern Developer",
+      duration: "2022 - 2022",
     },
     {
       company: "University San Franscisco",
-      position: "Teaching Assistant",
-      duration: "2023 - 2024",
+      position: "Programming Tutor",
+      duration: "2022 - 2023",
     },
     {
-      company: "General Contralory of the State",
-      position: "Project Management Developer",
+      company: "Office of the Comptroller General of the State",
+      position: "Service Management Developer",
       duration: "2024 - Present",
     },
     
@@ -89,16 +84,11 @@ const experience = {
 //education data
 const education = {
   icon: '/assets/resume/cap.svg',
-  title: 'My education',
-  description: "mi educacion bla bla bla mi educacion bla bla bla mi educacion bla bla bla mi educacion bla bla bla",
+  title: 'My Education',
+  description: "Having pursued my education across multiple countries, I have cultivated a global perspective and adaptability that uniquely positions me to thrive in diverse, dynamic environments. My academic journey, enriched by international experiences, has not only broadened my horizons but also equipped me with the ability to navigate and excel in multicultural settings.",
   items: [
     {
-      institution: "Streets, Carcelen City",
-      degree: "About life, ganster shit",
-      duration: "2000 - Present",
-    },
-    {
-      institution: "Julius West School, United States",
+      institution: "Julius West MS, United States",
       degree: "Middle School",
       duration: "2012 - 2013",
     },
@@ -108,17 +98,17 @@ const education = {
       duration: "2011 - 2014",
     },
     {
-      institution: "Bachillerato Patria, Colombia",
+      institution: "Patria High School, Colombia",
       degree: "High School",
       duration: "2014 - 2016",
     },
     {
-      institution: "Instituto Politecnico de Leiria, Portugal",
+      institution: "Polytechnic Institute of Leiria, Portugal",
       degree: "University",
       duration: "2017 - 2019",
     },
     {
-      institution: "Universidad San Franscisco, Ecuador",
+      institution: "San Francisco de Quito University, Ecuador",
       degree: "University",
       duration: "2019 - 2023",
     },
@@ -126,25 +116,25 @@ const education = {
   ]
 };
 
-//education data
+//certifications data
 const certifications = {
   icon: '/assets/resume/cap.svg',
-  title: 'Certifications',
+  title: 'My Certifications',
   description: "mis certificaciones bla bla bla mi educacion bla bla bla mi educacion bla bla bla mi educacion bla bla bla",
   items: [
     {
-      institution: "CertiProf",
+      institution: "CERTIPROF",
       topic: "Scrum Foundation SFPC",
       year: "2024",
       pdf: "/assets/certifications/pdf/certScrum.pdf",
       image: "/assets/certifications/images/certScrum.png"
     },
     {
-      institution: "CEA",
-      topic: "Gender Equality and Non-Discrimination",
+      institution: "UDEMY",
+      topic: "Mastering Git and GitHub",
       year: "2024",
-      pdf: "/assets/certifications/pdf/certIGND.pdf",
-      image: "/assets/certifications/images/certIGND.png"
+      pdf: "/assets/certifications/pdf/certGit.pdf",
+      image: "/assets/certifications/images/certGit.png"
     },
     {
       institution: "CONADIS",
@@ -154,11 +144,32 @@ const certifications = {
       image: "/assets/certifications/images/certIgualdad.png"
     },
     {
+      institution: "CEA",
+      topic: "Gender Equality and Non-Discrimination",
+      year: "2024",
+      pdf: "/assets/certifications/pdf/certIGND.pdf",
+      image: "/assets/certifications/images/certIGND.png"
+    },
+    {
       institution: "SERCOP",
       topic: "Fundamentals of Public Procurement",
       year: "2024",
       pdf: "/assets/certifications/pdf/certSERCOP.pdf",
       image: "/assets/certifications/images/certSERCOP.png"
+    },
+    {
+      institution: "FCD",
+      topic: "Open Government, Benefits, and Applications",
+      year: "2024",
+      pdf: "/assets/certifications/pdf/certEstadoAbierto.pdf",
+      image: "/assets/certifications/images/certEstadoAbierto.png"
+    },
+    {
+      institution: "USFQ",
+      topic: "Logistics and Port Operations: Challenges and Solutions",
+      year: "2022",
+      pdf: "/assets/certifications/pdf/certOpLogistica.pdf",
+      image: "/assets/certifications/images/certOpLogistica.png"
     },
     
   ]
@@ -166,7 +177,7 @@ const certifications = {
 
 //skills data
 const skills = {
-  title: 'My skills',
+  title: 'My Skills',
   description: "mis skills bla bla bla mis skills bla bla bla mis skills bla bla bla mis skills bla bla bla mis skills bla bla bla",
   skillList: [
     {
