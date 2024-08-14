@@ -120,7 +120,7 @@ const education = {
 const certifications = {
   icon: '/assets/resume/cap.svg',
   title: 'My Certifications',
-  description: "mis certificaciones bla bla bla mi educacion bla bla bla mi educacion bla bla bla mi educacion bla bla bla",
+  description: "Despite being early in my career, I have gained valuable experience across different roles and industries. My work in various environments, from academic settings and private companies to government institutions, has equipped me with a strong foundation in technical skills, problem-solving, and effective communication. Each experience, though brief, has significantly contributed to my professional growth, allowing me to quickly adapt and excel in any challenge presented.",
   items: [
     {
       institution: "CERTIPROF",
@@ -303,7 +303,8 @@ const Resume = () => {
 
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
               <h3 className="text-4xl font-bold">{experience.title}</h3>
-              <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{experience.description}</p>
+              {/* <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{experience.description}</p> */}
+              <p className="max-w-[500px] text-white/60 mb-6 leading-relaxed text-left mx-auto xl:mx-0">{experience.description}</p>
                             
               <ScrollArea className="h-[400px]">
 

@@ -60,7 +60,7 @@ const Home = () => {
             </h1>
 
             {/* <p className="max-w-[500px] mb-9 text-white/80"> */}
-            <p className="max-w-[500px] mb-6 text-white/80 leading-tight text-justify">
+            <p className="max-w-[500px] mb-6 text-white/80 leading-tight text-justify px-5 xl:px-0" style={{ hyphens: 'auto' }}>
               Passionate about invention and in love with the evolution of technology. I enjoy exploring new ideas and working hard until I achieve my goals. Humanistic education in liberal arts, reader to increase knowledge and operationalize information.
             </p>
 
