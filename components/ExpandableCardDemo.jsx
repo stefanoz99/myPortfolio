@@ -300,20 +300,23 @@ const projects = {
       ),
     },
     {
-      description: "Meteorites Game",
+      description: "Meteorite Shooter Game",
       title: "Galaxy Hunt",
       src: "/assets/projects/images/GalaxyHunt2.png",
       btnText: "More",
-      btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas/GalaxyHuntGame/tree/master#readme",
+      // btnGitText: "GitHub",
+      // btnLink: "https://github.com/manosebas/GalaxyHuntGame/tree/master#readme",
+      btnGitText: "Play",
+      btnLink: "https://openprocessing.org/sketch/2328801",
       tag: "processing",
       content: () => (
         <p>
-          This project transforms a user-uploaded image into a visual representation using colored particles. Each pixel of the image is mapped to a particle, recreating the image with a unique particle effect. Clicking changes the display to various images, with particles dynamically adjusting to the new graphic. The project is highly customizable and expandable for diverse visual applications.
+          Galaxy Hunt is an engaging arcade-style game developed using Processing, designed to challenge players reflexes and strategic thinking. Players must shoot falling meteorites before they hit the ground, with each missed meteorite leading to a loss of lives. The game dynamically increases in difficulty and introduces new levels over time, simulating gravity and incorporating fundamental programming concepts for realistic gameplay. The intuitive design and progressive difficulty curve ensure a captivating experience for players while demonstrating core principles of game development and physics simulation.
         </p>
       ),
     },
   ],
+
   flutterProjects: [
     {
       description: "Proyecto Fl",
@@ -337,6 +340,7 @@ const projects = {
       ),
     },
   ],
+
   otherProjects: [
     {
       description: "Proyecto Other",
