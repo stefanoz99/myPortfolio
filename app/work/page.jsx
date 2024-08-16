@@ -99,14 +99,19 @@ const Work = () => {
 
             {/* All projects */}
             <TabsContent value="allProjects" className="w-full text-center" id="allProjects">
+              
               <div className="flex flex-col gap-[30px]">
+                
                 <div className="flex flex-row items-center justify-center gap-10">
                   <h3 className="text-4xl font-bold">{allProjects.title}</h3>
                   <p className="text-4xl">{allProjects.icon}</p>
                 </div>
+
                 <p className="max-w-[600px] text-white/60 mx-auto">{allProjects.description}</p>
-                <ExpandableCardDemo filterTag="allProjects" />
+                <ExpandableCardDemo filterTag="allProjects"/>
+
               </div>
+
             </TabsContent>
 
             {/* unity */}

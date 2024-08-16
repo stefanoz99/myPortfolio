@@ -28,10 +28,11 @@ export function ExpandableCardDemo({ filterTag }) {
 
   useOutsideClick(ref, () => setActive(null));
 
-  // Filtrar las tarjetas según el tag
-  const filteredCards = filterTag === "allProjects"
-    ? cards
-    : cards.filter(card => card.tag === filterTag);
+   // Filtrar las tarjetas según el tag
+   const filteredCards = filterTag === "allProjects"
+   ? Object.values(projects).flat()
+   : Object.values(projects).flat().filter(card => card.tag === filterTag);
+
 
   return (
     <>
@@ -155,9 +156,10 @@ export function ExpandableCardDemo({ filterTag }) {
             onClick={() => setActive(card)}
             className="p-4 flex flex-col md:flex-row justify-center items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
-            <div className="flex flex-col items-between">
-            <motion.div layoutId={`image-${card.title}-${id}`}>
-                {/* Tamanio contenedores */}
+            <div className="flex flex-col items-center">
+
+              <motion.div layoutId={`image-${card.title}-${id}`}>
+                  {/* Imagen */}
                 <Image
                     width={100}
                     height={100}
@@ -165,31 +167,36 @@ export function ExpandableCardDemo({ filterTag }) {
                     alt={card.title}
                     className="h-60 w-60 md:h-60 md:w-60 lg:h-40 lg:w-40 xl:h-40 xl:w-40 rounded-lg object-cover object-top"
                 />
-                </motion.div>
+              </motion.div>
 
-                {/* Titulo */}
-                <div className="text-center md:text-center mt-4">
-                  <motion.h3
-                      layoutId={`title-${card.title}-${id}`}
-                      className="font-medium font-bold text-neutral-500 dark:text-neutral-500"
-                  >
-                      {card.title}
-                  </motion.h3>
-                  <motion.p
-                      layoutId={`description-${card.description}-${id}`}
-                      className="text-neutral-400 dark:text-neutral-500"
-                  >
-                      {card.description}
-                  </motion.p>
-                </div>
-                <motion.button
-                layoutId={`button-${card.title}-${id}`}
-                className="px-4 py-2 text-sm rounded-full font-bold bg-accent hover:bg-primary hover:text-white text-black mt-4"
+                  {/* Titulo y Descripcion */}
+              <div className="text-center mt-4">
+                <motion.h3
+                    layoutId={`title-${card.title}-${id}`}
+                    className="font-medium font-bold text-neutral-400 dark:text-neutral-400"
                 >
+                  {card.title}
+                </motion.h3>
+
+                <motion.p
+                  layoutId={`description-${card.description}-${id}`}
+                  className="text-neutral-600 dark:text-neutral-600"
+                >
+                  {card.description}
+                </motion.p>
+
+              </div>
+
+              {/* Boton */}
+              <motion.button 
+              layoutId={`button-${card.title}-${id}`} 
+              className="w-full px-4 py-2 text-sm rounded-full font-bold bg-accent hover:bg-primary hover:text-white text-black mt-4">
                 {card.btnText}
-                </motion.button>
+              </motion.button>
+              
             </div>
-            </motion.div>
+
+          </motion.div>
         ))}
       </ul>
     </>
@@ -220,17 +227,19 @@ export const CloseIcon = () => {
   );
 };
 
-const cards = [
-  {
-    description: "Proyecto U",
-    title: "DAI",
-    src: "/assets/MainImage1.png",
-    btnText: "More",
-    btnGitText: "GitHub",
-    btnLink: "https://github.com/manosebas",
-    tag: "unity",
-    content: () => {
-      return (
+
+const projects = {
+
+  unityProjects: [
+    {
+      description: "Proyecto U",
+      title: "DAI",
+      src: "/assets/MainImage1.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas",
+      tag: "unity",
+      content: () => (
         <p>
           Lana Del Rey, an iconic American singer-songwriter, is celebrated for
           her melancholic and cinematic music style. Born Elizabeth Woolridge
@@ -243,67 +252,78 @@ const cards = [
           the music industry, earning a dedicated fan base and numerous
           accolades.
         </p>
-      );
+      ),
     },
-  },
-  {
-    description: "Text into particles",
-    title: "Clock Particle Display",
-    src: "/assets/projects/images/ClockVectorParticle2.png",
-    btnText: "More",
-    btnGitText: "GitHub",
-    btnLink: "https://github.com/manosebas/ParticlesVectors/tree/master/Clock#readme",
-    tag: "processing",
-    content: () => {
-      return (
+  ],
+  // Puedo agregar otro boton para que me lleve a la pagina de proyectos de processing sabes de cual te hablo manosebas
+  processingProjects: [
+    {
+      description: "Text into particles",
+      title: "Vector Particle Text Display",
+      src: "/assets/projects/images/ClockVectorParticle.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/ParticlesVectors/tree/master/Clock#readme",
+      tag: "processing",
+      content: () => (
         <p>
-          This project uses particles to display the current time and date. Particles form the digits of a clock, and clicking changes the display to show the current time, date, or other text. This project offers a visually engaging way to present real-time information and is easily adaptable for various types of data and graphical styles.
+          This project uses particles to display the current time and date. Particles form the digits of a clock, with an engaging visual effect of particles flying around the screen. Clicking changes the display to show the current time, date, or other text. This project offers a visually captivating way to present real-time information with interesting particle effects and is easily adaptable for various types of data and graphical styles.
         </p>
-      );
+      ),
     },
-  },
-  {
-    description: "Images into BW particles",
-    title: "BW Vector Particle Art",
-    src: "/assets/projects/images/BWVectorParticle.png",
-    btnText: "More",
-    btnGitText: "GitHub",
-    btnLink: "https://github.com/manosebas/ParticlesVectors/tree/master/BlackAndWhite#readme",
-    tag: "processing",
-    content: () => {
-      return (
+    {
+      description: "Images into BW particles",
+      title: "BW Vector Particle Image Display",
+      src: "/assets/projects/images/BWVectorParticle.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/ParticlesVectors/tree/master/BlackAndWhite#readme",
+      tag: "processing",
+      content: () => (
         <p>
-          This project transforms a user-uploaded image into a visual representation using black-and-white particles. Each pixel is represented by a particle of a single color, preserving the image's contrast and shading. Clicking allows the user to switch between different graphics, providing a streamlined approach to visual representation with particles.
+          This project transforms a user-uploaded image into a visual representation using black-and-white particles. Each pixel is represented by a particle of a single color, preserving the image's contrast and shading. Clicking allows the user to switch between different graphics, offering a streamlined approach with captivating particle effects. The project is easily adaptable for various types of data and graphical styles.
         </p>
-      );
+      ),
     },
-  },
-  {
-    description: "Images into particles",
-    title: "Vector Particle Art",
-    src: "/assets/projects/images/ColorVectorParticle.png",
-    btnText: "More",
-    btnGitText: "GitHub",
-    btnLink: "https://github.com/manosebas/ParticlesVectors/tree/master/Color#readme",
-    tag: "processing",
-    content: () => {
-      return (
+    {
+      description: "Images into particles",
+      title: "Vector Particle Image Display",
+      src: "/assets/projects/images/ColorVectorParticle.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/ParticlesVectors/tree/master/Color#readme",
+      tag: "processing",
+      content: () => (
         <p>
           This project transforms a user-uploaded image into a visual representation using colored particles. Each pixel of the image is mapped to a particle, recreating the image with a unique particle effect. Clicking changes the display to various images, with particles dynamically adjusting to the new graphic. The project is highly customizable and expandable for diverse visual applications.
         </p>
-      );
+      ),
     },
-  },
-  {
-    description: "Proyecto Fl",
-    title: "Stairway To Heaven",
-    src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
-    btnText: "More",
-    btnGitText: "GitHub",
-    btnLink: "https://ui.aceternity.com/templates",
-    tag: "flutter",
-    content: () => {
-      return (
+    {
+      description: "Meteorites Game",
+      title: "Galaxy Hunt",
+      src: "/assets/projects/images/GalaxyHunt2.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/GalaxyHuntGame/tree/master#readme",
+      tag: "processing",
+      content: () => (
+        <p>
+          This project transforms a user-uploaded image into a visual representation using colored particles. Each pixel of the image is mapped to a particle, recreating the image with a unique particle effect. Clicking changes the display to various images, with particles dynamically adjusting to the new graphic. The project is highly customizable and expandable for diverse visual applications.
+        </p>
+      ),
+    },
+  ],
+  flutterProjects: [
+    {
+      description: "Proyecto Fl",
+      title: "Stairway To Heaven",
+      src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://ui.aceternity.com/templates",
+      tag: "flutter",
+      content: () => (
         <p>
           Led Zeppelin, a legendary British rock band, is renowned for their
           innovative sound and profound impact on the music industry. Formed in
@@ -314,19 +334,19 @@ const cards = [
           numerous hit albums and singles that have garnered them a massive fan
           following both in the United Kingdom and abroad.
         </p>
-      );
+      ),
     },
-  },
-  {
-    description: "Proyecto Other",
-    title: "Toh Phir Aao",
-    src: "https://assets.aceternity.com/demos/toh-phir-aao.jpeg",
-    btnText: "More",
-    btnGitText: "GitHub",
-    btnLink: "https://ui.aceternity.com/templates",
-    tag: "others",
-    content: () => {
-      return (
+  ],
+  otherProjects: [
+    {
+      description: "Proyecto Other",
+      title: "Toh Phir Aao",
+      src: "https://assets.aceternity.com/demos/toh-phir-aao.jpeg",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://ui.aceternity.com/templates",
+      tag: "others",
+      content: () => (
         <p>
           "Aawarapan", a Bollywood movie starring Emraan Hashmi, is renowned for
           its intense storyline and powerful performances. Directed by Mohit
@@ -337,7 +357,7 @@ const cards = [
           "Aawarapan" has garnered a massive fan following both in India and
           abroad, solidifying Emraan Hashmi's status as a versatile actor.
         </p>
-      );
+      ),
     },
-  },
-];
+  ],
+};
