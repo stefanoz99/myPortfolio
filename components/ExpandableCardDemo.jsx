@@ -484,5 +484,27 @@ const projects = {
         </p>
       ),
     },
+    {
+      description: "Advanced Security System",
+      title: "Max Security Door System",
+      src: "/assets/projects/images/SecurityDoor.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/MaxSecurityDoor#readme",
+      tag: "others",
+      content: () => (
+        <p>
+          The Maximum Security Door System is an advanced electronic project designed to enhance the security of prison facilities by incorporating multiple sensors and a servo-controlled locking mechanism. <br /> <br />
+          
+          The system utilizes an Arduino Uno to manage various components, including proximity sensors, a keypad, an LCD display, a servo motor and others. <br /> <br />
+          
+          The door can only be unlocked when specific conditions are met: no objects should be too close on the opposite side, a person must be physically present at the keypad and a digital password must be entered. <br /> <br />
+          
+          An alarm and some LED lights are triggered if these conditions are not satisfied, providing an additional layer of security. <br /> <br />
+          
+          This project demonstrates understanding of electronics, programming, and real-world application to address critical security challenges.
+        </p>
+      ),
+    },
   ],
 };
