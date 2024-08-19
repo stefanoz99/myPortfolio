@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 
 import { TbBrandFlutter } from "react-icons/tb";
-import { SiProcessingfoundation, SiCsharp, SiAdobephotoshop, SiAdobeillustrator } from "react-icons/si";
+import { SiProcessingfoundation, SiCsharp, SiAdobephotoshop, SiAdobeillustrator, SiArduino } from "react-icons/si";
 import { DiMsqlServer } from "react-icons/di";
 import { TiVendorMicrosoft } from "react-icons/ti";
 
@@ -206,6 +206,10 @@ const skills = {
     {
       icon: <SiProcessingfoundation />,
       name: "Processing",
+    },
+    {
+      icon: <SiArduino />,
+      name: "Arduino",
     },
     {
       icon: <SiCsharp />,

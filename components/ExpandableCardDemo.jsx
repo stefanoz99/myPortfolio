@@ -230,31 +230,54 @@ export const CloseIcon = () => {
 
 const projects = {
 
-  unityProjects: [
+  unityProjects: [  
+  ],
+
+  pythonProjects: [
     {
-      description: "Proyecto U",
-      title: "DAI",
-      src: "/assets/MainImage1.png",
+      description: "Gesture-Based Control",
+      title: "HandTrack Clicker",
+      src: "/assets/projects/images/HandTrack.png",
       btnText: "More",
       btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas",
-      tag: "unity",
+      btnLink: "https://github.com/manosebas/HandTracker#readme",
+      tag: "python",
       content: () => (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          HandTrack Clicker leverages computer vision and hand-tracking technologies to create an intuitive interface for controlling the computer through hand gestures. <br /> <br /> 
+
+          Using OpenCV and MediaPipe, this project captures real-time video from the webcam to detect and track hand movements. <br /> <br /> 
+
+          The system calculates the distance between the user's thumb and index finger to simulate mouse clicks when the fingers are pinched together. <br /> <br /> 
+          
+          The software also maps hand movements to the screen, allowing for precise cursor control. <br /> <br /> 
+          
+          This implementation showcases advanced hand gesture recognition and interaction capabilities, offering a novel approach to user interface design.
+        </p>
+      ),
+    },
+    {
+      description: "Giveaway Winner",
+      title: "Instagram Giveaway Automation",
+      src: "/assets/projects/images/GiveawayGenius.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/GiveawayGenius#readme",
+      tag: "python",
+      content: () => (
+        <p>
+          This project automates the process of participating in Instagram giveaways by utilizing Selenium for browser automation. <br /> <br />
+          
+          It logs into Instagram, navigates to specified posts, and posts random comments from a user-defined list. <br /> <br />
+          
+          Designed to optimize giveaway entries, the bot includes functionalities for interval-based commenting and manual comment management through a user-friendly GUI. <br /> <br />
+          
+          It integrates error handling and logging mechanisms to ensure smooth operation and user accountability.
         </p>
       ),
     },
   ],
+
   // Puedo agregar otro boton para que me lleve a la pagina de proyectos de processing sabes de cual te hablo manosebas
   processingProjects: [
     {
@@ -267,7 +290,12 @@ const projects = {
       tag: "processing",
       content: () => (
         <p>
-          This project uses particles to display the current time and date. Particles form the digits of a clock, with an engaging visual effect of particles flying around the screen. Clicking changes the display to show the current time, date, or other text. This project offers a visually captivating way to present real-time information with interesting particle effects and is easily adaptable for various types of data and graphical styles.
+          This project uses particles to display the current time and date. <br /> <br /> 
+          Particles form the digits of a clock, with an engaging visual effect of particles flying around the screen. <br /> <br /> 
+          
+          Clicking changes the display to show the current time, date, or other text. <br /> <br /> 
+          
+          This project offers a visually captivating way to present real-time information with interesting particle effects and is easily adaptable for various types of data and graphical styles.
         </p>
       ),
     },
@@ -281,7 +309,13 @@ const projects = {
       tag: "processing",
       content: () => (
         <p>
-          This project transforms a user-uploaded image into a visual representation using black-and-white particles. Each pixel is represented by a particle of a single color, preserving the image's contrast and shading. Clicking allows the user to switch between different graphics, offering a streamlined approach with captivating particle effects. The project is easily adaptable for various types of data and graphical styles.
+          This project transforms a user-uploaded image into a visual representation using black-and-white particles. <br /> <br /> 
+
+          Each pixel is represented by a particle of a single color, preserving the image's contrast and shading. <br /> <br /> 
+          
+          Clicking allows the user to switch between different graphics, offering a streamlined approach with captivating particle effects. <br /> <br /> 
+          
+          The project is easily adaptable for various types of data and graphical styles.
         </p>
       ),
     },
@@ -295,14 +329,20 @@ const projects = {
       tag: "processing",
       content: () => (
         <p>
-          This project transforms a user-uploaded image into a visual representation using colored particles. Each pixel of the image is mapped to a particle, recreating the image with a unique particle effect. Clicking changes the display to various images, with particles dynamically adjusting to the new graphic. The project is highly customizable and expandable for diverse visual applications.
+          This project transforms a user-uploaded image into a visual representation using colored particles. <br /> <br /> 
+          
+          Each pixel of the image is mapped to a particle, recreating the image with a unique particle effect. <br /> <br /> 
+          
+          Clicking changes the display to various images, with particles dynamically adjusting to the new graphic. <br /> <br /> 
+          
+          The project is highly customizable and expandable for diverse visual applications.
         </p>
       ),
     },
     {
       description: "Meteorite Shooter Game",
       title: "Galaxy Hunt",
-      src: "/assets/projects/images/GalaxyHunt2.png",
+      src: "/assets/projects/images/GalaxyHunt.png",
       btnText: "More",
       // btnGitText: "GitHub",
       // btnLink: "https://github.com/manosebas/GalaxyHuntGame/tree/master#readme",
@@ -311,7 +351,13 @@ const projects = {
       tag: "processing",
       content: () => (
         <p>
-          Galaxy Hunt is an engaging arcade-style game developed using Processing, designed to challenge players reflexes and strategic thinking. Players must shoot falling meteorites before they hit the ground, with each missed meteorite leading to a loss of lives. The game dynamically increases in difficulty and introduces new levels over time, simulating gravity and incorporating fundamental programming concepts for realistic gameplay. The intuitive design and progressive difficulty curve ensure a captivating experience for players while demonstrating core principles of game development and physics simulation.
+          Galaxy Hunt is an engaging arcade-style game developed using Processing, designed to challenge players reflexes and strategic thinking. <br /> <br /> 
+          
+          Players must shoot falling meteorites before they hit the ground, with each missed meteorite leading to a loss of lives. <br /> <br /> 
+          
+          The game dynamically increases in difficulty and introduces new levels over time, simulating gravity and incorporating fundamental programming concepts for realistic gameplay. <br /> <br /> 
+          
+          The intuitive design and progressive difficulty curve ensure a captivating experience for players while demonstrating core principles of game development and physics simulation.
         </p>
       ),
     },
@@ -343,23 +389,20 @@ const projects = {
 
   otherProjects: [
     {
-      description: "Proyecto Other",
-      title: "Toh Phir Aao",
-      src: "https://assets.aceternity.com/demos/toh-phir-aao.jpeg",
+      description: "This Portfolio",
+      title: "Professional Portfolio Website",
+      src: "/assets/projects/images/Portfolio.png",
       btnText: "More",
       btnGitText: "GitHub",
-      btnLink: "https://ui.aceternity.com/templates",
+      btnLink: "https://github.com/manosebas/myPortfolio#readme",
       tag: "others",
       content: () => (
         <p>
-          "Aawarapan", a Bollywood movie starring Emraan Hashmi, is renowned for
-          its intense storyline and powerful performances. Directed by Mohit
-          Suri, the film has become a significant work in the Indian film
-          industry. <br /> <br /> The movie explores themes of love,
-          redemption, and sacrifice, capturing the essence of human emotions and
-          relationships. With a gripping narrative and memorable music,
-          "Aawarapan" has garnered a massive fan following both in India and
-          abroad, solidifying Emraan Hashmi's status as a versatile actor.
+          This project involves the development and design of a professional portfolio website using JSX, CSS, TypeScript (TSX), Next.js, Tailwind CSS, and Framer Motion. <br /> <br />
+          
+          The website aims to showcase my professional profile, including my education, skills, experience, and projects. <br /> <br />
+          
+          It is designed as a single-purpose site to present myself effectively to potential clients or employers, highlighting my capabilities and accomplishments in a visually engaging manner.
         </p>
       ),
     },
