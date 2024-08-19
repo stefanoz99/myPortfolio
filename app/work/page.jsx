@@ -11,6 +11,7 @@ import {
 import { TbBrandFlutter } from "react-icons/tb";
 import { GrProjects } from "react-icons/gr";
 import { SiNextra, SiProcessingfoundation } from "react-icons/si";
+import { CgGames } from "react-icons/cg";
 
 //all projects data
 const allProjects = {
@@ -19,11 +20,11 @@ const allProjects = {
   description: "A compilation of all type of projects.",
 };
 
-//unity data
-const unity = {
-  icon: <FaUnity/>,
-  title: 'Unity Projects',
-  description: "A compilation of 2D, 3D, AR, MR and VR projects developed with Unity.",
+//games data
+const games = {
+  icon: <CgGames/>,
+  title: 'Games Related Projects',
+  description: "A compilation of 2D, 3D, AR, MR and VR projects.",
 };
 
 // python data
@@ -87,17 +88,22 @@ const Work = () => {
           {/* BOTONES */}
           <TabsList className="flex flex-col xl:flex-row w-full max-w-[380px] xl:max-w-[1200px] mx-auto gap-6 ">
             <TabsTrigger value="allProjects" onClick={() => handleTabClick('allProjects')}>All Projects</TabsTrigger>
-            <TabsTrigger value="unity" onClick={() => handleTabClick('unity')}>Unity</TabsTrigger>
+
+            <TabsTrigger value="games" onClick={() => handleTabClick('games')}>Games Related</TabsTrigger>
+
             <TabsTrigger value="python" onClick={() => handleTabClick('python')}>Python</TabsTrigger>
+
             <TabsTrigger value="processing" onClick={() => handleTabClick('processing')}>Processing</TabsTrigger>
+
             <TabsTrigger value="flutter" onClick={() => handleTabClick('flutter')}>Flutter</TabsTrigger>
+
             <TabsTrigger value="others" onClick={() => handleTabClick('others')}>Others</TabsTrigger>
           </TabsList>
 
           {/* content */}
           <div className="min-h-[70vh] w-full mt-10">
 
-            {/* All projects */}
+            {/* allProjects */}
             <TabsContent value="allProjects" className="w-full text-center" id="allProjects">
               
               <div className="flex flex-col gap-[30px]">
@@ -114,15 +120,15 @@ const Work = () => {
 
             </TabsContent>
 
-            {/* unity */}
-            <TabsContent value="unity" className="w-full text-center" id="unity">
+            {/* games */}
+            <TabsContent value="games" className="w-full text-center" id="games">
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-row items-center justify-center gap-10">
-                  <h3 className="text-4xl font-bold">{unity.title}</h3>
-                  <p className="text-4xl">{unity.icon}</p>
+                  <h3 className="text-4xl font-bold">{games.title}</h3>
+                  <p className="text-4xl">{games.icon}</p>
                 </div>
-                <p className="max-w-[600px] text-white/60 mx-auto">{unity.description}</p>
-                <ExpandableCardDemo filterTag="unity" />
+                <p className="max-w-[600px] text-white/60 mx-auto">{games.description}</p>
+                <ExpandableCardDemo filterTag="games" />
               </div>
             </TabsContent>
 

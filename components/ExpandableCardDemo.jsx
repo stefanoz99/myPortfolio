@@ -230,7 +230,68 @@ export const CloseIcon = () => {
 
 const projects = {
 
-  unityProjects: [  
+  gamesProjects: [
+    {
+      description: "Portal 2 Level Design",
+      title: "Level Design Document",
+      src: "/assets/projects/images/LevelDesign.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/Portal2LevelDesign#readme",
+      tag: "games",
+      content: () => (
+        <p>
+          This project showcases a custom level design for the game Portal 2, demonstrating creativity and technical skills in game and level design. <br /> <br />
+          
+          The document details a well-structured level that requires players to solve puzzles using portals, manage laser emitters, and navigate through challenging environments. <br /> <br />
+          
+          The design emphasizes strategic thinking and problem-solving, highlighting my ability to create engaging and immersive gameplay experiences. <br /> <br />
+          
+          This project reflects my capacity for creative level design and my understanding of game mechanics, making it a valuable addition to my portfolio.
+          
+        </p>
+      ),
+    },
+    {
+      description: "Space Invaders Update Design",
+      title: "Update Design Document",
+      src: "/assets/projects/images/UpdateDesign.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/UDD_SpaceInvaders#readme",
+      tag: "games",
+      content: () => (
+        <p>
+          This project outlines a comprehensive update for the classic 1978 game, Space Invaders, aimed at revitalizing its gameplay for modern audiences while preserving its iconic essence. <br /> <br />
+          
+          The document proposes enhancements such as improved graphics, advanced animations, and additional gameplay modes, including online multiplayer, cooperative play, speedrun, and tryhard modes. <br /> <br />
+          
+          New mechanics like different firing options and secret power-ups add strategic depth and excitement. <br /> <br />
+          
+          The update maintains the original challenge and flow of the game, with an emphasis on modernizing the aesthetics and introducing new ways to engage players, making it suitable for contemporary gaming platforms.
+        </p>
+      ),
+    },
+    {
+      description: "Defeated By AI (DAI) GDD",
+      title: "Game Design Document",
+      src: "/assets/projects/images/GameDesign.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/GDD_DAI#readme",
+      tag: "games",
+      content: () => (
+        <p>
+          This Game Design Document (GDD) provides a comprehensive blueprint for the creation of a fully immersive game titled "Defeated By Artificial Intelligence (DAI)." <br /> <br />
+          
+          The document includes detailed sections on game analysis, storyline, character development, gameplay mechanics, level design, and user interface aesthetics. <br /> <br />
+          
+          The game is set in a post-apocalyptic world where players must navigate through intense challenges, solve complex puzzles, and engage in strategic combat to survive and uncover the truth about their existence. <br /> <br />
+          
+          The GDD serves as a complete guide for developers to bring this innovative and thrilling game to life, showcasing a blend of strategy, action, and adventure.
+        </p>
+      ),
+    },
   ],
 
   pythonProjects: [
@@ -257,22 +318,24 @@ const projects = {
       ),
     },
     {
-      description: "Giveaway Winner",
-      title: "Instagram Giveaway Automation",
-      src: "/assets/projects/images/GiveawayGenius2.png",
+      description: "Sign Language Recognition with CNN and ViT",
+      title: "Sign Language AI",
+      src: "/assets/projects/images/SignLanguage.png",
       btnText: "More",
       btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas/GiveawayGenius#readme",
+      btnLink: "https://github.com/manosebas/VoiceAssistant#readme",
       tag: "python",
       content: () => (
         <p>
-          This project automates the process of participating in Instagram giveaways by utilizing Selenium for browser automation. <br /> <br />
+          This project focuses on comparing the performance of Convolutional Neural Networks (CNN) and Vision Transformers (ViT) in the classification of sign language images. <br /> <br />
           
-          It logs into Instagram, navigates to specified posts, and posts random comments from a user-defined list. <br /> <br />
+          The project utilizes datasets with tabular images representing different sign language gestures, each labeled accordingly. <br /> <br />
           
-          Designed to optimize giveaway entries, the bot includes functionalities for interval-based commenting and manual comment management through a user-friendly GUI. <br /> <br />
+          CNNs extract features through convolutional layers, while ViTs divide images into patches and use attention mechanisms for classification. <br /> <br />
           
-          It integrates error handling and logging mechanisms to ensure smooth operation and user accountability.
+          Additionally, the project includes a live camera feature that allows users to perform sign language gestures in real-time, detecting and identifying the letters being shown. <br /> <br />
+          
+          This combination of deep learning models and real-time detection showcases a robust approach to sign language recognition.
         </p>
       ),
     },
@@ -296,9 +359,28 @@ const projects = {
         </p>
       ),
     },
+    {
+      description: "Giveaway Winner",
+      title: "Instagram Giveaway Automation",
+      src: "/assets/projects/images/GiveawayGenius2.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/GiveawayGenius#readme",
+      tag: "python",
+      content: () => (
+        <p>
+          This project automates the process of participating in Instagram giveaways by utilizing Selenium for browser automation. <br /> <br />
+          
+          It logs into Instagram, navigates to specified posts, and posts random comments from a user-defined list. <br /> <br />
+          
+          Designed to optimize giveaway entries, the bot includes functionalities for interval-based commenting and manual comment management through a user-friendly GUI. <br /> <br />
+          
+          It integrates error handling and logging mechanisms to ensure smooth operation and user accountability.
+        </p>
+      ),
+    },
   ],
 
-  // Puedo agregar otro boton para que me lleve a la pagina de proyectos de processing sabes de cual te hablo manosebas
   processingProjects: [
     {
       description: "Text into particles",
@@ -381,6 +463,52 @@ const projects = {
         </p>
       ),
     },
+    {
+      description: "Classic Pong Recreation",
+      title: "Pong Game",
+      src: "/assets/projects/images/Pong.png",
+      btnText: "More",
+      btnGitText: "Github",
+      btnLink: "https://github.com/manosebas/PongGame#readme",
+      tag: "processing",
+      content: () => (
+        <p>
+          This project is a simple recreation of the classic Pong game, developed using Processing. <br /> <br />
+          
+          It features basic paddle and ball mechanics, with two-player controls using the keyboard. <br /> <br />
+          
+          Players can control their paddles to bounce the ball back and forth, with the objective of scoring points by getting the ball past the opponent’s paddle. <br /> <br />
+          
+          The game includes score tracking, collision detection, and basic physics for realistic ball movement. <br /> <br /> 
+          
+          This project serves as an example of how to implement fundamental game mechanics in a straightforward and effective manner.
+        </p>
+      ),
+    },
+    {
+      description: "Classic Snake Recreation",
+      title: "Snake Game",
+      src: "/assets/projects/images/Snake3.png",
+      btnText: "More",
+      btnGitText: "Github",
+      btnLink: "https://github.com/manosebas/SnakeGame#readme",
+      tag: "processing",
+      content: () => (
+        <p>
+           This project is a recreation of the classic Snake game, developed using Processing. <br /> <br />
+           
+           Players control a snake that moves around the screen, growing longer each time it eats food. <br /> <br />
+           
+           The objective is to navigate the snake without crashing into the walls or its own body. <br /> <br />
+           
+           The game features basic mechanics, including movement, collision detection, and scoring. <br /> <br />
+           
+           It also includes a start screen and a game over screen with the final score. <br /> <br />
+           
+           This project demonstrates the implementation of classic game logic and design in a simple, yet engaging way.
+        </p>
+      ),
+    },
   ],
 
   flutterProjects: [
@@ -420,67 +548,6 @@ const projects = {
           The website aims to showcase my professional profile, including my education, skills, experience, and projects. <br /> <br />
           
           It is designed as a single-purpose site to present myself effectively to potential clients or employers, highlighting my capabilities and accomplishments in a visually engaging manner.
-        </p>
-      ),
-    },
-    {
-      description: "Portal 2 Level Design",
-      title: "Level Design Document",
-      src: "/assets/projects/images/LevelDesign.png",
-      btnText: "More",
-      btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas/Portal2LevelDesign#readme",
-      tag: "others",
-      content: () => (
-        <p>
-          This project showcases a custom level design for the game Portal 2, demonstrating creativity and technical skills in game and level design. <br /> <br />
-          
-          The document details a well-structured level that requires players to solve puzzles using portals, manage laser emitters, and navigate through challenging environments. <br /> <br />
-          
-          The design emphasizes strategic thinking and problem-solving, highlighting my ability to create engaging and immersive gameplay experiences. <br /> <br />
-          
-          This project reflects my capacity for creative level design and my understanding of game mechanics, making it a valuable addition to my portfolio.
-          
-        </p>
-      ),
-    },
-    {
-      description: "Space Invaders Update Design",
-      title: "Update Design Document",
-      src: "/assets/projects/images/UpdateDesign.png",
-      btnText: "More",
-      btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas/UDD_SpaceInvaders#readme",
-      tag: "others",
-      content: () => (
-        <p>
-          This project outlines a comprehensive update for the classic 1978 game, Space Invaders, aimed at revitalizing its gameplay for modern audiences while preserving its iconic essence. <br /> <br />
-          
-          The document proposes enhancements such as improved graphics, advanced animations, and additional gameplay modes, including online multiplayer, cooperative play, speedrun, and tryhard modes. <br /> <br />
-          
-          New mechanics like different firing options and secret power-ups add strategic depth and excitement. <br /> <br />
-          
-          The update maintains the original challenge and flow of the game, with an emphasis on modernizing the aesthetics and introducing new ways to engage players, making it suitable for contemporary gaming platforms.
-        </p>
-      ),
-    },
-    {
-      description: "Defeated By AI (DAI) GDD",
-      title: "Game Design Document",
-      src: "/assets/projects/images/GameDesign.png",
-      btnText: "More",
-      btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas/GDD_DAI#readme",
-      tag: "others",
-      content: () => (
-        <p>
-          This Game Design Document (GDD) provides a comprehensive blueprint for the creation of a fully immersive game titled "Defeated By Artificial Intelligence (DAI)." <br /> <br />
-          
-          The document includes detailed sections on game analysis, storyline, character development, gameplay mechanics, level design, and user interface aesthetics. <br /> <br />
-          
-          The game is set in a post-apocalyptic world where players must navigate through intense challenges, solve complex puzzles, and engage in strategic combat to survive and uncover the truth about their existence. <br /> <br />
-          
-          The GDD serves as a complete guide for developers to bring this innovative and thrilling game to life, showcasing a blend of strategy, action, and adventure.
         </p>
       ),
     },
