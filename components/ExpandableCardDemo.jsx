@@ -259,7 +259,7 @@ const projects = {
     {
       description: "Giveaway Winner",
       title: "Instagram Giveaway Automation",
-      src: "/assets/projects/images/GiveawayGenius.png",
+      src: "/assets/projects/images/GiveawayGenius2.png",
       btnText: "More",
       btnGitText: "GitHub",
       btnLink: "https://github.com/manosebas/GiveawayGenius#readme",
@@ -273,6 +273,26 @@ const projects = {
           Designed to optimize giveaway entries, the bot includes functionalities for interval-based commenting and manual comment management through a user-friendly GUI. <br /> <br />
           
           It integrates error handling and logging mechanisms to ensure smooth operation and user accountability.
+        </p>
+      ),
+    },
+    {
+      description: "AI Voice Assistant",
+      title: "Voice Assistant",
+      src: "/assets/projects/images/VoiceAssistant.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/VoiceAssistant#readme",
+      tag: "python",
+      content: () => (
+        <p>
+          Voice Assistant is a Python-based AI-driven conversational assistant designed to emulate natural human interaction. <br /> <br />
+          
+          Utilizing OpenAI's Whisper V3 for real-time speech recognition, GPT-3.5 Turbo for intelligent response generation, and OpenAI's Text-to-Speech (TTS) for verbal output, this script enables seamless conversations with the AI. <br /> <br />
+          
+          The assistant is equipped with hotword detection, allowing it to actively listen and respond to specific trigger words. <br /> <br />
+          
+          The project demonstrates advanced integration of speech-to-text, natural language processing, and TTS technologies, making it a comprehensive solution for creating intelligent voice-driven applications.
         </p>
       ),
     },
@@ -365,23 +385,20 @@ const projects = {
 
   flutterProjects: [
     {
-      description: "Proyecto Fl",
-      title: "Stairway To Heaven",
-      src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
+      description: "To-Do App",
+      title: "To-Do List App",
+      src: "/assets/projects/images/ToDoApp.png",
       btnText: "More",
       btnGitText: "GitHub",
-      btnLink: "https://ui.aceternity.com/templates",
+      btnLink: "https://github.com/manosebas/ToDoApp#readme",
       tag: "flutter",
       content: () => (
         <p>
-          Led Zeppelin, a legendary British rock band, is renowned for their
-          innovative sound and profound impact on the music industry. Formed in
-          London in 1968, they have become a cultural icon in the rock music
-          world. <br /> <br /> Their songs often reflect a blend of blues, hard
-          rock, and folk music, capturing the essence of the 1970s rock era.
-          With a career spanning over a decade, Led Zeppelin has released
-          numerous hit albums and singles that have garnered them a massive fan
-          following both in the United Kingdom and abroad.
+          This project is a to-do list application developed using Flutter and Dart, designed to be executable on both iOS and Android platforms. <br /> <br />
+          
+          Despite its simplicity, the app is built on a robust programming foundation, providing a comprehensive base for developing more complex applications. <br /> <br />
+          
+          It effectively demonstrates essential programming concepts and practices, making it a valuable resource for understanding core app development principles.
         </p>
       ),
     },
@@ -403,6 +420,67 @@ const projects = {
           The website aims to showcase my professional profile, including my education, skills, experience, and projects. <br /> <br />
           
           It is designed as a single-purpose site to present myself effectively to potential clients or employers, highlighting my capabilities and accomplishments in a visually engaging manner.
+        </p>
+      ),
+    },
+    {
+      description: "Portal 2 Level Design",
+      title: "Level Design Document",
+      src: "/assets/projects/images/LevelDesign.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/Portal2LevelDesign#readme",
+      tag: "others",
+      content: () => (
+        <p>
+          This project showcases a custom level design for the game Portal 2, demonstrating creativity and technical skills in game and level design. <br /> <br />
+          
+          The document details a well-structured level that requires players to solve puzzles using portals, manage laser emitters, and navigate through challenging environments. <br /> <br />
+          
+          The design emphasizes strategic thinking and problem-solving, highlighting my ability to create engaging and immersive gameplay experiences. <br /> <br />
+          
+          This project reflects my capacity for creative level design and my understanding of game mechanics, making it a valuable addition to my portfolio.
+          
+        </p>
+      ),
+    },
+    {
+      description: "Space Invaders Update Design",
+      title: "Update Design Document",
+      src: "/assets/projects/images/UpdateDesign.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/UDD_SpaceInvaders#readme",
+      tag: "others",
+      content: () => (
+        <p>
+          This project outlines a comprehensive update for the classic 1978 game, Space Invaders, aimed at revitalizing its gameplay for modern audiences while preserving its iconic essence. <br /> <br />
+          
+          The document proposes enhancements such as improved graphics, advanced animations, and additional gameplay modes, including online multiplayer, cooperative play, speedrun, and tryhard modes. <br /> <br />
+          
+          New mechanics like different firing options and secret power-ups add strategic depth and excitement. <br /> <br />
+          
+          The update maintains the original challenge and flow of the game, with an emphasis on modernizing the aesthetics and introducing new ways to engage players, making it suitable for contemporary gaming platforms.
+        </p>
+      ),
+    },
+    {
+      description: "Defeated By AI (DAI) GDD",
+      title: "Game Design Document",
+      src: "/assets/projects/images/GameDesign.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/GDD_DAI#readme",
+      tag: "others",
+      content: () => (
+        <p>
+          This Game Design Document (GDD) provides a comprehensive blueprint for the creation of a fully immersive game titled "Defeated By Artificial Intelligence (DAI)." <br /> <br />
+          
+          The document includes detailed sections on game analysis, storyline, character development, gameplay mechanics, level design, and user interface aesthetics. <br /> <br />
+          
+          The game is set in a post-apocalyptic world where players must navigate through intense challenges, solve complex puzzles, and engage in strategic combat to survive and uncover the truth about their existence. <br /> <br />
+          
+          The GDD serves as a complete guide for developers to bring this innovative and thrilling game to life, showcasing a blend of strategy, action, and adventure.
         </p>
       ),
     },
