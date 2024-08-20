@@ -3,17 +3,49 @@ import Image from "next/image";
 
 import { 
   FaJs,
-  FaFigma,
+  FaGithub,
   FaDocker,
   FaPython,
   FaJava,
   FaUnity,
+  FaGitAlt,
+  FaPhp,
 } from "react-icons/fa";
 
-import { TbBrandFlutter } from "react-icons/tb";
-import { SiProcessingfoundation, SiCsharp, SiAdobephotoshop, SiAdobeillustrator, SiArduino } from "react-icons/si";
-import { DiMsqlServer } from "react-icons/di";
-import { TiVendorMicrosoft } from "react-icons/ti";
+import { 
+  SiProcessingfoundation,
+  SiCplusplus,
+  SiCsharp, 
+  SiAdobephotoshop, 
+  SiAdobeillustrator, 
+  SiArduino, 
+  SiMicrosoftexcel, 
+  SiMicrosoftword, 
+  SiCanva, 
+  SiVisualstudiocode,
+  SiAndroidstudio,
+  SiMicrosoftpowerpoint,
+  SiSublimetext,
+  SiXampp,
+  SiVirtualbox,
+  SiAutodeskmaya,
+  SiNotion,
+} from "react-icons/si";
+
+import { 
+  TbBrandFlutter,
+  TbAugmentedReality2, 
+} from "react-icons/tb";
+
+import { 
+  DiMsqlServer, 
+  DiVisualstudio,
+} from "react-icons/di";
+
+import { 
+  PiVirtualReality 
+} from "react-icons/pi";
+
 
 
 //about me data
@@ -180,14 +212,24 @@ const skills = {
   title: 'My Skills',
   description: "mis skills bla bla bla mis skills bla bla bla mis skills bla bla bla mis skills bla bla bla mis skills bla bla bla",
   skillList: [
+    // Lenguajes de Programación
     {
       icon: <FaPython/>,
       name: "Python",
     },
     {
-      icon: <FaUnity/>,
-      name: "Unity",
-    },{
+      icon: <SiCsharp />,
+      name: "C#",
+    },
+    {
+      icon: <SiCplusplus />,
+      name: "C++",
+    },
+    {
+      icon: <FaPhp />,
+      name: "PHP",
+    },
+    {
       icon: <FaJava/>,
       name: "Java",
     },
@@ -195,37 +237,75 @@ const skills = {
       icon: <FaJs/>,
       name: "JavaScript",
     },
+
+    // Tecnologías y Herramientas
+    {
+      icon: <FaUnity/>,
+      name: "Unity",
+    },
     {
       icon: <FaDocker/>,
       name: "Docker",
-    },
-    {
-      icon: <TbBrandFlutter />,
-      name: "Flutter",
-    },
-    {
-      icon: <SiProcessingfoundation />,
-      name: "Processing",
-    },
-    {
-      icon: <SiArduino />,
-      name: "Arduino",
-    },
-    {
-      icon: <SiCsharp />,
-      name: "C#",
     },
     {
       icon: <DiMsqlServer />,
       name: "SQL Server",
     },
     {
+      icon: <SiVirtualbox />,
+      name: "Oracle VM VirtualBox",
+    },
+    {
+      icon: <FaGithub />,
+      name: "GitHub",
+    },
+    {
+      icon: <FaGitAlt />,
+      name: "Git",
+    },
+    {
+      icon: <SiXampp />,
+      name: "Xampp",
+    },
+    {
+      icon: <SiProcessingfoundation />,
+      name: "Processing",
+    },
+    {
       icon: <TbBrandFlutter />,
       name: "Flutter",
     },
     {
-      icon: <TiVendorMicrosoft />,
-      name: "Microsoft Office",
+      icon: <SiArduino />,
+      name: "Arduino",
+    },
+    {
+      icon: <SiAutodeskmaya />,
+      name: "Autodesk Maya 3D",
+    },
+    {
+      icon: <SiAndroidstudio />,
+      name: "Android Studio",
+    },
+    {
+      icon: <DiVisualstudio />,
+      name: "Visual Studio",
+    },
+    {
+      icon: <SiVisualstudiocode />,
+      name: "Visual Studio Code",
+    },
+    {
+      icon: <SiNotion />,
+      name: "Notion",
+    },
+    {
+      icon: <PiVirtualReality />,
+      name: "Virtual Reality",
+    },
+    {
+      icon: <TbAugmentedReality2 />,
+      name: "Augmented Reality",
     },
     {
       icon: <SiAdobephotoshop />,
@@ -233,12 +313,27 @@ const skills = {
     },
     {
       icon: <SiAdobeillustrator />,
-      name: "Adobe Ilustrator",
+      name: "Adobe Illustrator",
     },
-    
-    
+    {
+      icon: <SiCanva />,
+      name: "Canva",
+    },
+    {
+      icon: <SiMicrosoftword />,
+      name: "Microsoft Word", 
+    },
+    {
+      icon: <SiMicrosoftexcel />,
+      name: "Microsoft Excel",
+    },
+    {
+      icon: <SiMicrosoftpowerpoint />,
+      name: "Microsoft PowerPoint",
+    },
   ]
 };
+
 
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs';
 import {ScrollArea} from '@/components/ui/scroll-area'

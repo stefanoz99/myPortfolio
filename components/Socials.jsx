@@ -4,18 +4,8 @@ import {FaGithub, FaGithubAlt, FaGithubSquare, FaLinkedinIn, FaLinkedin, Fa, FaI
 
 
 const socials = [
-    {icons: <FaGithub />, path:"" },
-    // {icons: <FaGithubAlt />, path:"" },
-    // {icons: <FaGithubSquare />, path:"" },
-
-    {icons: <FaLinkedinIn />, path:"" },
-    // {icons: <FaLinkedin />, path:"" },
-
-    {icons: <FaInstagram />, path:"" },
-    // {icons: <FaInstagramSquare />, path:"" },
-    {icons: <FaWhatsapp />, path:"" },
-
-
+    {icons: <FaGithub />, path:"https://github.com/manosebas?tab=repositories" },
+    {icons: <FaLinkedin />, path:"" },
 ]
 
 
