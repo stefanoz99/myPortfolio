@@ -8,7 +8,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from 'react-icons/fa';
 import { motion } from "framer-motion";
 import emailjs from 'emailjs-com';
 // Contact.js
-import { serviceID, templateID, publicKey } from '../../../config';
+import { serviceID, templateID, publicKey } from 'config';
 
 
 const info = [
