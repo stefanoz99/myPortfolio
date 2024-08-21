@@ -1,17 +1,33 @@
 "use client";
 // voy a usar los iconos cuando pongas lo proyectos como parte de la descripcion
 import { 
-  FaJs,
-  FaDocker,
   FaPython,
-  FaJava,
-  FaUnity,
 } from "react-icons/fa";
 
-import { TbBrandFlutter } from "react-icons/tb";
-import { GrProjects } from "react-icons/gr";
-import { SiNextra, SiProcessingfoundation } from "react-icons/si";
-import { CgGames } from "react-icons/cg";
+import { 
+  TbBrandFlutter 
+} from "react-icons/tb";
+
+import { 
+  GrProjects
+} from "react-icons/gr";
+
+import { 
+  SiNextra, 
+  SiProcessingfoundation 
+} from "react-icons/si";
+
+import { 
+  CgGames 
+} from "react-icons/cg";
+
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { ScrollArea } from '@/components/ui/scroll-area';
+import { animate, motion } from 'framer-motion';
+import { Item } from "@radix-ui/react-select";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@radix-ui/react-tooltip";
+import { ExpandableCardDemo } from "../../components/ExpandableCardDemo";
+
 
 //all projects data
 const allProjects = {
@@ -55,12 +71,7 @@ const others = {
   description: "A compilation of other projects developed with all kind of languages and tools",
 };
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { ScrollArea } from '@/components/ui/scroll-area';
-import { animate, motion } from 'framer-motion';
-import { Item } from "@radix-ui/react-select";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@radix-ui/react-tooltip";
-import { ExpandableCardDemo } from "../../components/ExpandableCardDemo";
+
 
 const Work = () => {
   

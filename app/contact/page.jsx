@@ -1,22 +1,12 @@
 "use client";
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { GlobeDemo } from "@/components/ui/gridGlobe.tsx";
-
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-
-
-import {FaPhoneAlt, FaEnvelope, FaMapMarkedAlt} from 'react-icons/fa'
+import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from 'react-icons/fa';
+import { motion } from "framer-motion";
+import emailjs from 'emailjs-com';
 
 const info = [
   {
@@ -27,7 +17,7 @@ const info = [
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "iniguezms@hotmail.com",
+    description: "iniguez.dev@gmail.com",
   },
   {
     icon: <FaMapMarkedAlt />,
@@ -36,10 +26,52 @@ const info = [
   },
 ];
 
-import { motion } from "framer-motion";
-
-
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    firstname: '',
+    lastname: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+  const [isSending, setIsSending] = useState(false);
+  const [isSent, setIsSent] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevData => ({ ...prevData, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSending(true);
+    // OJOOOO PASAR A UN ARCHIVO SEGUROOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    const serviceID = 'service_b6ezaw7'; // Tu Service ID
+    const templateID = 'template_xxa6qar'; // El ID de tu plantilla en EmailJS
+    const publicKey = 'j7acwzWxWtRxjWZqS'; // Tu API Key Pública
+
+    try {
+      await emailjs.send(
+        serviceID,
+        templateID,
+        {
+          from_name: `${formData.firstname} ${formData.lastname}`, // Nombre completo del remitente
+          reply_to: formData.email, // Correo electrónico del remitente
+          phone: formData.phone, // Número de teléfono del remitente
+          message: formData.message, // Mensaje del remitente
+          to_name: "Manolo", // Nombre del destinatario
+        },
+        publicKey
+      );
+      setIsSent(true);
+      setFormData({ firstname: '', lastname: '', email: '', phone: '', message: '' });
+    } catch (error) {
+      console.error('Error sending email:', error);
+    } finally {
+      setIsSending(false);
+    }
+  };
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -50,51 +82,42 @@ const Contact = () => {
           duration: 1, 
           ease: "easeIn" },
         }}
-        className="py-6"
+      className="py-6"
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-[30px]">
 
-          {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-2">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-              <h3 className="text-4xl text-accent">Lets work together!</h3>
-              <p className="text-white/60">Contrateme no sea malito.</p>
+            {/* form */}
+            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl" onSubmit={handleSubmit}>
+              
+              {/* Titulo y frase */}
+              <h3 className="text-4xl text-accent">Let's work together!</h3>
+              <p className="text-white/60">Provide your contact info and send a message.</p>
 
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
-                <Input type="email" placeholder="Email address" />
-                <Input type="phone" placeholder="Phone number" />
+                <Input type="text" name="firstname" placeholder="Firstname" value={formData.firstname} onChange={handleChange} />
+                <Input type="text" name="lastname" placeholder="Lastname" value={formData.lastname} onChange={handleChange} />
+                <Input type="email" name="email" placeholder="Email address" value={formData.email} onChange={handleChange} />
+                <Input type="text" name="phone" placeholder="Phone number" value={formData.phone} onChange={handleChange} />
               </div>
-
-              {/* select */}
-              {/* <Select>
-                <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Select a service" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectGroup>
-                    <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est">mi Servicio 1</SelectItem>
-                    <SelectItem value="cst">mi Servicio 2</SelectItem>
-                    <SelectItem value="mst">capaz se que poner</SelectItem>
-                  </SelectGroup>
-                </SelectContent>
-              </Select> */}
 
               {/* textarea */}
               <Textarea 
                 className="h-[200px]"
+                name="message"
                 placeholder="Type your message here."
+                value={formData.message}
+                onChange={handleChange}
               />
 
               {/* boton */}
-              <Button size="md" className="max-w-40">
-                Send message
+              <Button size="md" className="max-w-40" type="submit" disabled={isSending}>
+                {isSending ? 'Sending...' : 'Send message'}
               </Button>
 
+              {isSent && <p className="text-green-500 mt-4">Message sent successfully!</p>}
             </form>
           </div>
           
@@ -105,7 +128,7 @@ const Contact = () => {
                   return (
                     <li key={index} className="flex items-center gap-6">
                       <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
-                        <div className="text-[28px]">{item.icon}</div>
+                        <div className="text-[24px]">{item.icon}</div>
                       </div>
                       <div className="flex-1">
                         <p className="text-white/60">{item.title}</p>
@@ -115,50 +138,13 @@ const Contact = () => {
                   );
                 })}
               </ul>
-            </div>
-
-          {/* <div className="xl:w-[46%] order-1 xl:order-1 flex flex-col gap-[30px]"> */}
-
-            {/* globe */}
-            {/* <div className="rounded-xl justify-end">
-              <p className="text-xl text-white/80 mb-4 text-center">
-                I'm very flexible with time zone communications
-              </p>
-              <div className="relative rounded-xl w-full h-64 overflow-hidden justify-center ithems-center">
-                <div className="absolute w-full h-full top-1/2 transform -translate-y-1/2 scale-95">
-                  <GlobeDemo />
-                </div>
-              </div>
-            </div> */}
-
-            {/* info */}
-            {/* <div className="flex-1 flex items-center xl:justify-center mb-8 xl:mb-0 order-1 xl:order-none">
-              <ul className="flex flex-col gap-10">
-                {info.map((item, index) => {
-                  return (
-                    <li key={index} className="flex items-center gap-6">
-                      <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
-                        <div className="text-[28px]">{item.icon}</div>
-                      </div>
-                      <div className="flex-1">
-                        <p className="text-white/60">{item.title}</p>
-                        <h3 className="text-xl">{item.description}</h3>
-                      </div>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div> */}
-
-          {/* </div> */}
+          
+          </div>
 
         </div>
-
       </div>
     </motion.section>
   );
 };
-
-
 
 export default Contact;

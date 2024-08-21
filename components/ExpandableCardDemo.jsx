@@ -320,10 +320,10 @@ const projects = {
     {
       description: "Sign Language Recognition with CNN and ViT",
       title: "Sign Language AI",
-      src: "/assets/projects/images/SignLanguage.png",
+      src: "/assets/projects/images/x.png",
       btnText: "More",
       btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas/VoiceAssistant#readme",
+      btnLink: "https://github.com/manosebas/SignLanguageRecognition#readme",
       tag: "python",
       content: () => (
         <p>

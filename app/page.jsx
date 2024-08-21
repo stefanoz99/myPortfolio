@@ -67,7 +67,7 @@ const Home = () => {
             {/* BOTON Y SOCIAL */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               
-              <a href="/components/public/assets/cv/CV.pdf" download="CV.pdf">
+              <a href="/assets/cv/CV.pdf" download="CV.pdf">
                 <Button variant="outline" size="md" className="uppercase flex items-center gap-2">
                   <span>Download CV</span>
                   <FiDownload className="text-xl" />

@@ -51,39 +51,39 @@ import {
 //about me data
 const about = {
   title: "About Me",
-  description: "Sobre mi bla bla bla bla bla bla bla bla bla bla bla bla ble ble ble ble ble.",
+  description: "I am a versatile and driven developer with a strong background in computer science and a passion for technology. My experience spans multiple sectors, including academia, private industry, and government, where I have honed my technical skills and problem-solving abilities. I am constantly seeking new challenges that allow me to grow both personally and professionally.",
   info: [
     {
       fieldName: "Name",
       fieldValue: "Manolo Iniguez"
     },
     {
-      fieldName: "Phone",
-      fieldValue: "(+593) 96 189 5248"
+      fieldName: "Nationality",
+      fieldValue: "Ecuadorian"
+    },
+    {
+      fieldName: "Languages",
+      fieldValue: "Spanish, English"
     },
     {
       fieldName: "Experience",
-      fieldValue: "800+ Years"
-    },
-    {
-      fieldName: "Nationality",
-      fieldValue: "Ecuadorian"
+      fieldValue: "2+ Years"
     },
     {
       fieldName: "Freelance",
       fieldValue: "Available"
     },
     {
+      fieldName: "Availability",
+      fieldValue: "Open to remote work"
+    },
+    {
+      fieldName: "Phone",
+      fieldValue: "(+593) 96 189 5248"
+    },
+    {
       fieldName: "Email",
-      fieldValue: "iniguezms@hotmail.com"
-    },
-    {
-      fieldName: "Otro",
-      fieldValue: "Otra cosa cool"
-    },
-    {
-      fieldName: "Languages",
-      fieldValue: "Spanish, English"
+      fieldValue: "iniguez.dev@gmail.com"
     },
   ]
 };
@@ -117,7 +117,7 @@ const experience = {
 const education = {
   icon: '/assets/resume/cap.svg',
   title: 'My Education',
-  description: "Having pursued my education across multiple countries, I have cultivated a global perspective and adaptability that uniquely positions me to thrive in diverse, dynamic environments. My academic journey, enriched by international experiences, has not only broadened my horizons but also equipped me with the ability to navigate and excel in multicultural settings.",
+  description: "Having pursued my education across multiple countries, I have cultivated a global perspective and adaptability that uniquely positions me to thrive in diverse, dynamic environments. This international experience has broadened my horizons and sharpened my ability to navigate and excel in multicultural settings.",
   items: [
     {
       institution: "Julius West MS, United States",
@@ -152,7 +152,7 @@ const education = {
 const certifications = {
   icon: '/assets/resume/cap.svg',
   title: 'My Certifications',
-  description: "Despite being early in my career, I have gained valuable experience across different roles and industries. My work in various environments, from academic settings and private companies to government institutions, has equipped me with a strong foundation in technical skills, problem-solving, and effective communication. Each experience, though brief, has significantly contributed to my professional growth, allowing me to quickly adapt and excel in any challenge presented.",
+  description: "Throughout my career, I have pursued various certifications to enhance my knowledge and skills in key areas. These certifications demonstrate my commitment to continuous learning and my ability to apply industry best practices in my work.",
   items: [
     {
       institution: "CERTIPROF",
@@ -210,7 +210,7 @@ const certifications = {
 //skills data
 const skills = {
   title: 'My Skills',
-  description: "mis skills bla bla bla mis skills bla bla bla mis skills bla bla bla mis skills bla bla bla mis skills bla bla bla",
+  description: "With a diverse skill set in programming languages and tools, I am equipped to tackle a wide range of projects, from game development to web applications. My technical expertise is complemented by my adaptability and eagerness to learn new technologies.",
   skillList: [
     // Lenguajes de Programación
     {
@@ -365,12 +365,19 @@ const Resume = () => {
 
       <Tabs defaultValue="about" className="flex flex-col xl:flex-row gap-[60px] justify-center">
 
+        {/* Botones */}
         <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
+
           <TabsTrigger value="about" onClick={() => handleTabClick('about')}>About Me</TabsTrigger>
+
           <TabsTrigger value="experience" onClick={() => handleTabClick('experience')}>Experience</TabsTrigger>
+
           <TabsTrigger value="education" onClick={() => handleTabClick('education')}>Education</TabsTrigger>
+
           <TabsTrigger value="certifications" onClick={() => handleTabClick('certifications')}>Certifications</TabsTrigger>
+
           <TabsTrigger value="skills" onClick={() => handleTabClick('skills')}>Skills</TabsTrigger>
+
         </TabsList>
 
         {/* content */}
@@ -384,7 +391,7 @@ const Resume = () => {
             <h3 className="text-2xl xl:text-4xl font-bold">{about.title}</h3>
             <p className="max-w-[500px] xl:max-w-[800px] text-white/60 mb-6 mx-auto xl:mx-0 leading-relaxed text-sm xl:text-[15px]">{about.description}</p>
 
-            <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+            <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 xl:gap-x-10 max-w-[620px] mx-auto xl:mx-0">
               {about.info.map((item, index) => {
                 return (
                   <li key={index} className="flex items-center justify-center xl:justify-start gap-4">

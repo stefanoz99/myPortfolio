@@ -4,16 +4,16 @@ import CountUp from "react-countup";
 
 const stats = [
     {
+        num: 30,
+        text: "Technical skills"
+    },
+    {
         num: 7,
         text: "Online Certifications"
     },
     {
         num: 6,
         text: "Programming Languages"
-    },
-    {
-        num: 30,
-        text: "Technical skills"
     },
     {
         num: 'YES',
