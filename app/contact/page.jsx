@@ -49,9 +49,14 @@ const Contact = () => {
     e.preventDefault();
     setIsSending(true);
 
+    //.env.local
+    const serviceID = process.env.MAIL_SERVICE_ID;
+    const templateID = process.env.MAIL_TEMPLATE_ID;
+    const publicKey = process.env.MAIL_PUBLIC_KEY;
+
     try {
       await emailjs.send(
-        //config.js
+
         serviceID,
         templateID,
         {
