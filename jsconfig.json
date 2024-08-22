@@ -9,7 +9,6 @@
     "strict": true,
     "paths": {
       "@/*": ["./*"],
-      "config": ["./config.js"]
     }
   },
   "include": [
