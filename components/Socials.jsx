@@ -5,7 +5,7 @@ import {FaGithub, FaGithubAlt, FaGithubSquare, FaLinkedinIn, FaLinkedin, Fa, FaI
 
 const socials = [
     {icons: <FaGithub />, path:"https://github.com/manosebas?tab=repositories" },
-    {icons: <FaLinkedin />, path:"" },
+    {icons: <FaLinkedin />, path:"https://www.linkedin.com/in/manolo-iniguez/" },
 ]
 
 
