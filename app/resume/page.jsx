@@ -155,6 +155,20 @@ const certifications = {
   description: "Throughout my career, I have pursued various certifications to enhance my knowledge and skills in key areas. These certifications demonstrate my commitment to continuous learning and my ability to apply industry best practices in my work.",
   items: [
     {
+      institution: "USFQ",
+      topic: "Bachelor Engineer Title",
+      year: "2023",
+      pdf: "/assets/certifications/pdf/certTitleBachelor.pdf",
+      image: "/assets/certifications/images/certTitleBachelor2.png"
+    },
+    {
+      institution: "USFQ",
+      topic: "Minor Game Developer Title",
+      year: "2023",
+      pdf: "/assets/certifications/pdf/certMinorGameDev.pdf",
+      image: "/assets/certifications/images/certMinorGameDev2.png"
+    },
+    {
       institution: "CERTIPROF",
       topic: "Scrum Foundation SFPC",
       year: "2024",
