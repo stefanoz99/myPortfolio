@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from 'react-icons/fa';
 import { motion } from "framer-motion";
 import emailjs from 'emailjs-com';
+import { serviceID, templateID, publicKey } from 'config';
 
 const info = [
   {
@@ -46,14 +47,9 @@ const Contact = () => {
     e.preventDefault();
     setIsSending(true);
 
-    //.env.local
-    // const serviceID = process.env.MAIL_SERVICE_ID;
-    // const templateID = process.env.MAIL_TEMPLATE_ID;
-    // const publicKey = process.env.MAIL_PUBLIC_KEY;
-    const serviceID = "service_b6ezaw7";
-    const templateID = "template_xxa6qar";
-    const publicKey = "j7acwzWxWtRxjWZqS";
-    
+    //config
+    //serviceID, templateID, publicKey
+
     try {
       await emailjs.send(
 
