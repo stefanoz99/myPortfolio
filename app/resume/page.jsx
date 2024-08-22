@@ -156,17 +156,17 @@ const certifications = {
   items: [
     {
       institution: "USFQ",
-      topic: "Bachelor Engineer Title",
+      topic: "Bachelor in Computer Science",
       year: "2023",
       pdf: "/assets/certifications/pdf/certTitleBachelor.pdf",
-      image: "/assets/certifications/images/certTitleBachelor2.png"
+      image: "/assets/certifications/images/certTitleBachelor.png"
     },
     {
       institution: "USFQ",
-      topic: "Minor Game Developer Title",
+      topic: "Minor in Game Developement",
       year: "2023",
       pdf: "/assets/certifications/pdf/certMinorGameDev.pdf",
-      image: "/assets/certifications/images/certMinorGameDev2.png"
+      image: "/assets/certifications/images/certMinorGameDev.png"
     },
     {
       institution: "CERTIPROF",

@@ -30,8 +30,8 @@ export function ExpandableCardDemo({ filterTag }) {
 
    // Filtrar las tarjetas según el tag
    const filteredCards = filterTag === "allProjects"
-   ? Object.values(projects).flat()
-   : Object.values(projects).flat().filter(card => card.tag === filterTag);
+  ? Object.values(projects).flat()
+  : Object.values(projects).flat().filter(card => card.tags.includes(filterTag));
 
 
   return (
@@ -230,6 +230,201 @@ export const CloseIcon = () => {
 
 const projects = {
 
+  pythonProjects: [
+    {
+      description: "Gesture-Based Control",
+      title: "HandTrack Clicker",
+      src: "/assets/projects/images/HandTrack.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/HandTracker#readme",
+      tags: ["python"],
+      content: () => (
+        <p>
+          HandTrack Clicker leverages computer vision and hand-tracking technologies to create an intuitive interface for controlling the computer through hand gestures. <br /> <br /> 
+
+          Using OpenCV and MediaPipe, this project captures real-time video from the webcam to detect and track hand movements. <br /> <br /> 
+
+          The system calculates the distance between the user's thumb and index finger to simulate mouse clicks when the fingers are pinched together. <br /> <br /> 
+          
+          The software also maps hand movements to the screen, allowing for precise cursor control. <br /> <br /> 
+          
+          This implementation showcases advanced hand gesture recognition and interaction capabilities, offering a novel approach to user interface design.
+        </p>
+      ),
+    },
+    {
+      description: "AI Voice Assistant",
+      title: "Voice Assistant",
+      src: "/assets/projects/images/VoiceAssistant.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/VoiceAssistant#readme",
+      tags: ["python"],
+      content: () => (
+        <p>
+          Voice Assistant is a Python-based AI-driven conversational assistant designed to emulate natural human interaction. <br /> <br />
+          
+          Utilizing OpenAI's Whisper V3 for real-time speech recognition, GPT-3.5 Turbo for intelligent response generation, and OpenAI's Text-to-Speech (TTS) for verbal output, this script enables seamless conversations with the AI. <br /> <br />
+          
+          The assistant is equipped with hotword detection, allowing it to actively listen and respond to specific trigger words. <br /> <br />
+          
+          The project demonstrates advanced integration of speech-to-text, natural language processing, and TTS technologies, making it a comprehensive solution for creating intelligent voice-driven applications.
+        </p>
+      ),
+    },
+    {
+      description: "Giveaway Winner",
+      title: "Instagram Giveaway Automation",
+      src: "/assets/projects/images/GiveawayGenius2.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/GiveawayGenius#readme",
+      tags: ["python"],
+      content: () => (
+        <p>
+          This project automates the process of participating in Instagram giveaways by utilizing Selenium for browser automation. <br /> <br />
+          
+          It logs into Instagram, navigates to specified posts, and posts random comments from a user-defined list. <br /> <br />
+          
+          Designed to optimize giveaway entries, the bot includes functionalities for interval-based commenting and manual comment management through a user-friendly GUI. <br /> <br />
+          
+          It integrates error handling and logging mechanisms to ensure smooth operation and user accountability.
+        </p>
+      ),
+    },
+    {
+      description: "Tell it what to know",
+      title: "Customizable AI Assistant",
+      src: "/assets/projects/images/CustomChatbot.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/CustomChatbot#readme",
+      tags: ["python"],
+      content: () => (
+        <p>
+          This project is a highly customizable AI assistant that leverages OpenAI's advanced technologies, enabling personalized interactions for virtually any topic. <br /> <br />
+          
+          The assistant uses OpenAI’s APIs, including Whisper for real-time speech recognition, GPT-3.5 Turbo for context-aware response generation, and TTS (Text-to-Speech) for verbalizing responses. <br /> <br />
+          
+          It allows users to ask questions via text or voice, with responses tailored to their specific needs. <br /> <br />
+          
+          By integrating with OpenAI's assistant framework, this project offers a flexible platform that can be adapted to serve as a personal assistant across various domains. <br /> <br />
+          
+          The assistant can be configured with custom hotwords, response styles, and specialized knowledge, making it an ideal tool for personalized user experiences. <br /> <br />
+          
+          This project also complements the Voice Assistant project, allowing for seamless integration of voice-based interactions.
+        </p>
+      ),
+    },
+    {
+      description: "Sign Language Recognition with CNN and ViT",
+      title: "Sign Language AI",
+      src: "/assets/projects/images/SignLanguage.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/SignLanguageRecognition#readme",
+      tags: ["python"],
+      content: () => (
+        <p>
+          This project focuses on comparing the performance of Convolutional Neural Networks (CNN) and Vision Transformers (ViT) in the classification of sign language images. <br /> <br />
+          
+          The project utilizes datasets with tabular images representing different sign language gestures, each labeled accordingly. <br /> <br />
+          
+          CNNs extract features through convolutional layers, while ViTs divide images into patches and use attention mechanisms for classification. <br /> <br />
+          
+          Additionally, the project includes a live camera feature that allows users to perform sign language gestures in real-time, detecting and identifying the letters being shown. <br /> <br />
+          
+          This combination of deep learning models and real-time detection showcases a robust approach to sign language recognition.
+        </p>
+      ),
+    },
+  ],
+
+  flutterProjects: [
+    {
+      description: "To-Do App",
+      title: "To-Do List App",
+      src: "/assets/projects/images/ToDoApp.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/ToDoApp#readme",
+      tags: ["flutter"],
+      content: () => (
+        <p>
+          This project is a to-do list application developed using Flutter and Dart, designed to be executable on both iOS and Android platforms. <br /> <br />
+          
+          Despite its simplicity, the app is built on a robust programming foundation, providing a comprehensive base for developing more complex applications. <br /> <br />
+          
+          It effectively demonstrates essential programming concepts and practices, making it a valuable resource for understanding core app development principles.
+        </p>
+      ),
+    },
+  ],
+
+  otherProjects: [
+    {
+      description: "Expandable VR Platform",
+      title: "Multi-User VR Educational Platform",
+      src: "/assets/projects/images/aa.jpg", 
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/ProyectoIntegrador#readme",
+      tags: ["others"],
+      content: () => (
+        <p>
+          This project involves the implementation of a virtual reality (VR) educational platform for multi-user environments, with a focus on its extensive expandability and adaptability to any subject, number of users, and scenarios. It is currently being used at Universidad San Francisco de Quito as an advanced learning methodology, providing immersive and collaborative experiences. <br /> <br />
+
+          The platform facilitates interaction and learning in a controlled environment and is highly flexible and customizable. It can be applied across a wide range of educational disciplines, from sciences to humanities, with the ability to create and manage various scenes and situations, allowing multiple users to interact simultaneously. <br /> <br />
+
+          A notable application of this platform was in the field of psychology, where I created a virtual environment for students to practice with virtual patients. This practice enhanced students' communication and diagnostic skills, offering a safe space for experimentation and learning without risks. The integration with OpenAI's AI also allows for personalized interaction based on educational needs, offering a dynamic and tailored learning experience for each user. <br /> <br />
+
+          The platform marks a significant advancement in virtual education, setting a model for future research and development in the field of education and technology, demonstrating how VR can transform teaching and learning in a global context.
+        </p>
+      ),
+    },
+    {
+      description: "This Portfolio",
+      title: "Professional Portfolio Website",
+      src: "/assets/projects/images/Portfolio.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/myPortfolio#readme",
+      tags: ["others"],
+      content: () => (
+        <p>
+          This project involves the development and design of a professional portfolio website using JSX, CSS, TypeScript (TSX), Next.js, Tailwind CSS, and Framer Motion. <br /> <br />
+          
+          The website aims to showcase my professional profile, including my education, skills, experience, and projects. <br /> <br />
+          
+          It is designed as a single-purpose site to present myself effectively to potential clients or employers, highlighting my capabilities and accomplishments in a visually engaging manner.
+        </p>
+      ),
+    },
+    {
+      description: "Advanced Security System",
+      title: "Max Security Door System",
+      src: "/assets/projects/images/SecurityDoor.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/MaxSecurityDoor#readme",
+      tags: ["others"],
+      content: () => (
+        <p>
+          The Maximum Security Door System is an advanced electronic project designed to enhance the security of prison facilities by incorporating multiple sensors and a servo-controlled locking mechanism. <br /> <br />
+          
+          The system utilizes an Arduino Uno to manage various components, including proximity sensors, a keypad, an LCD display, a servo motor and others. <br /> <br />
+          
+          The door can only be unlocked when specific conditions are met: no objects should be too close on the opposite side, a person must be physically present at the keypad and a digital password must be entered. <br /> <br />
+          
+          An alarm and some LED lights are triggered if these conditions are not satisfied, providing an additional layer of security. <br /> <br />
+          
+          This project demonstrates understanding of electronics, programming, and real-world application to address critical security challenges.
+        </p>
+      ),
+    },
+  ],
+
   gamesProjects: [
     {
       description: "Portal 2 Level Design",
@@ -238,7 +433,7 @@ const projects = {
       btnText: "More",
       btnGitText: "GitHub",
       btnLink: "https://github.com/manosebas/Portal2LevelDesign#readme",
-      tag: "games",
+      tags: ["games"],
       content: () => (
         <p>
           This project showcases a custom level design for the game Portal 2, demonstrating creativity and technical skills in game and level design. <br /> <br />
@@ -259,7 +454,7 @@ const projects = {
       btnText: "More",
       btnGitText: "GitHub",
       btnLink: "https://github.com/manosebas/UDD_SpaceInvaders#readme",
-      tag: "games",
+      tags: ["games"],
       content: () => (
         <p>
           This project outlines a comprehensive update for the classic 1978 game, Space Invaders, aimed at revitalizing its gameplay for modern audiences while preserving its iconic essence. <br /> <br />
@@ -279,7 +474,7 @@ const projects = {
       btnText: "More",
       btnGitText: "GitHub",
       btnLink: "https://github.com/manosebas/GDD_DAI#readme",
-      tag: "games",
+      tags: ["games"],
       content: () => (
         <p>
           This Game Design Document (GDD) provides a comprehensive blueprint for the creation of a fully immersive game titled "Defeated By Artificial Intelligence (DAI)." <br /> <br />
@@ -294,93 +489,6 @@ const projects = {
     },
   ],
 
-  pythonProjects: [
-    {
-      description: "Gesture-Based Control",
-      title: "HandTrack Clicker",
-      src: "/assets/projects/images/HandTrack.png",
-      btnText: "More",
-      btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas/HandTracker#readme",
-      tag: "python",
-      content: () => (
-        <p>
-          HandTrack Clicker leverages computer vision and hand-tracking technologies to create an intuitive interface for controlling the computer through hand gestures. <br /> <br /> 
-
-          Using OpenCV and MediaPipe, this project captures real-time video from the webcam to detect and track hand movements. <br /> <br /> 
-
-          The system calculates the distance between the user's thumb and index finger to simulate mouse clicks when the fingers are pinched together. <br /> <br /> 
-          
-          The software also maps hand movements to the screen, allowing for precise cursor control. <br /> <br /> 
-          
-          This implementation showcases advanced hand gesture recognition and interaction capabilities, offering a novel approach to user interface design.
-        </p>
-      ),
-    },
-    {
-      description: "Sign Language Recognition with CNN and ViT",
-      title: "Sign Language AI",
-      src: "/assets/projects/images/x.png",
-      btnText: "More",
-      btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas/SignLanguageRecognition#readme",
-      tag: "python",
-      content: () => (
-        <p>
-          This project focuses on comparing the performance of Convolutional Neural Networks (CNN) and Vision Transformers (ViT) in the classification of sign language images. <br /> <br />
-          
-          The project utilizes datasets with tabular images representing different sign language gestures, each labeled accordingly. <br /> <br />
-          
-          CNNs extract features through convolutional layers, while ViTs divide images into patches and use attention mechanisms for classification. <br /> <br />
-          
-          Additionally, the project includes a live camera feature that allows users to perform sign language gestures in real-time, detecting and identifying the letters being shown. <br /> <br />
-          
-          This combination of deep learning models and real-time detection showcases a robust approach to sign language recognition.
-        </p>
-      ),
-    },
-    {
-      description: "AI Voice Assistant",
-      title: "Voice Assistant",
-      src: "/assets/projects/images/VoiceAssistant.png",
-      btnText: "More",
-      btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas/VoiceAssistant#readme",
-      tag: "python",
-      content: () => (
-        <p>
-          Voice Assistant is a Python-based AI-driven conversational assistant designed to emulate natural human interaction. <br /> <br />
-          
-          Utilizing OpenAI's Whisper V3 for real-time speech recognition, GPT-3.5 Turbo for intelligent response generation, and OpenAI's Text-to-Speech (TTS) for verbal output, this script enables seamless conversations with the AI. <br /> <br />
-          
-          The assistant is equipped with hotword detection, allowing it to actively listen and respond to specific trigger words. <br /> <br />
-          
-          The project demonstrates advanced integration of speech-to-text, natural language processing, and TTS technologies, making it a comprehensive solution for creating intelligent voice-driven applications.
-        </p>
-      ),
-    },
-    {
-      description: "Giveaway Winner",
-      title: "Instagram Giveaway Automation",
-      src: "/assets/projects/images/GiveawayGenius2.png",
-      btnText: "More",
-      btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas/GiveawayGenius#readme",
-      tag: "python",
-      content: () => (
-        <p>
-          This project automates the process of participating in Instagram giveaways by utilizing Selenium for browser automation. <br /> <br />
-          
-          It logs into Instagram, navigates to specified posts, and posts random comments from a user-defined list. <br /> <br />
-          
-          Designed to optimize giveaway entries, the bot includes functionalities for interval-based commenting and manual comment management through a user-friendly GUI. <br /> <br />
-          
-          It integrates error handling and logging mechanisms to ensure smooth operation and user accountability.
-        </p>
-      ),
-    },
-  ],
-
   processingProjects: [
     {
       description: "Text into particles",
@@ -389,7 +497,7 @@ const projects = {
       btnText: "More",
       btnGitText: "GitHub",
       btnLink: "https://github.com/manosebas/ParticlesVectors/tree/master/Clock#readme",
-      tag: "processing",
+      tags: ["processing"],
       content: () => (
         <p>
           This project uses particles to display the current time and date. <br /> <br /> 
@@ -408,7 +516,7 @@ const projects = {
       btnText: "More",
       btnGitText: "GitHub",
       btnLink: "https://github.com/manosebas/ParticlesVectors/tree/master/BlackAndWhite#readme",
-      tag: "processing",
+      tags: ["processing"],
       content: () => (
         <p>
           This project transforms a user-uploaded image into a visual representation using black-and-white particles. <br /> <br /> 
@@ -428,7 +536,7 @@ const projects = {
       btnText: "More",
       btnGitText: "GitHub",
       btnLink: "https://github.com/manosebas/ParticlesVectors/tree/master/Color#readme",
-      tag: "processing",
+      tags: ["processing"],
       content: () => (
         <p>
           This project transforms a user-uploaded image into a visual representation using colored particles. <br /> <br /> 
@@ -450,7 +558,7 @@ const projects = {
       // btnLink: "https://github.com/manosebas/GalaxyHuntGame/tree/master#readme",
       btnGitText: "Play",
       btnLink: "https://openprocessing.org/sketch/2328801",
-      tag: "processing",
+      tags: ["processing","games"],
       content: () => (
         <p>
           Galaxy Hunt is an engaging arcade-style game developed using Processing, designed to challenge players reflexes and strategic thinking. <br /> <br /> 
@@ -470,7 +578,7 @@ const projects = {
       btnText: "More",
       btnGitText: "Github",
       btnLink: "https://github.com/manosebas/PongGame#readme",
-      tag: "processing",
+      tags: ["processing","games"],
       content: () => (
         <p>
           This project is a simple recreation of the classic Pong game, developed using Processing. <br /> <br />
@@ -488,11 +596,11 @@ const projects = {
     {
       description: "Classic Snake Recreation",
       title: "Snake Game",
-      src: "/assets/projects/images/Snake3.png",
+      src: "/assets/projects/images/Snake.png",
       btnText: "More",
       btnGitText: "Github",
       btnLink: "https://github.com/manosebas/SnakeGame#readme",
-      tag: "processing",
+      tags: ["processing", "games"],
       content: () => (
         <p>
            This project is a recreation of the classic Snake game, developed using Processing. <br /> <br />
@@ -511,67 +619,4 @@ const projects = {
     },
   ],
 
-  flutterProjects: [
-    {
-      description: "To-Do App",
-      title: "To-Do List App",
-      src: "/assets/projects/images/ToDoApp.png",
-      btnText: "More",
-      btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas/ToDoApp#readme",
-      tag: "flutter",
-      content: () => (
-        <p>
-          This project is a to-do list application developed using Flutter and Dart, designed to be executable on both iOS and Android platforms. <br /> <br />
-          
-          Despite its simplicity, the app is built on a robust programming foundation, providing a comprehensive base for developing more complex applications. <br /> <br />
-          
-          It effectively demonstrates essential programming concepts and practices, making it a valuable resource for understanding core app development principles.
-        </p>
-      ),
-    },
-  ],
-
-  otherProjects: [
-    {
-      description: "This Portfolio",
-      title: "Professional Portfolio Website",
-      src: "/assets/projects/images/Portfolio.png",
-      btnText: "More",
-      btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas/myPortfolio#readme",
-      tag: "others",
-      content: () => (
-        <p>
-          This project involves the development and design of a professional portfolio website using JSX, CSS, TypeScript (TSX), Next.js, Tailwind CSS, and Framer Motion. <br /> <br />
-          
-          The website aims to showcase my professional profile, including my education, skills, experience, and projects. <br /> <br />
-          
-          It is designed as a single-purpose site to present myself effectively to potential clients or employers, highlighting my capabilities and accomplishments in a visually engaging manner.
-        </p>
-      ),
-    },
-    {
-      description: "Advanced Security System",
-      title: "Max Security Door System",
-      src: "/assets/projects/images/SecurityDoor.png",
-      btnText: "More",
-      btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas/MaxSecurityDoor#readme",
-      tag: "others",
-      content: () => (
-        <p>
-          The Maximum Security Door System is an advanced electronic project designed to enhance the security of prison facilities by incorporating multiple sensors and a servo-controlled locking mechanism. <br /> <br />
-          
-          The system utilizes an Arduino Uno to manage various components, including proximity sensors, a keypad, an LCD display, a servo motor and others. <br /> <br />
-          
-          The door can only be unlocked when specific conditions are met: no objects should be too close on the opposite side, a person must be physically present at the keypad and a digital password must be entered. <br /> <br />
-          
-          An alarm and some LED lights are triggered if these conditions are not satisfied, providing an additional layer of security. <br /> <br />
-          
-          This project demonstrates understanding of electronics, programming, and real-world application to address critical security challenges.
-        </p>
-      ),
-    },
-  ],
 };
