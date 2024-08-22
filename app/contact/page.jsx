@@ -27,6 +27,12 @@ const info = [
 ];
 
 const Contact = () => {
+
+  //secret
+  const serviceID = "service_b6ezaw7";
+  const templateID = "template_xxa6qar";
+  const publicKey = "j7acwzWxWtRxjWZqS";
+
   const [formData, setFormData] = useState({
     firstname: '',
     lastname: '',
@@ -45,11 +51,6 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSending(true);
-
-    //secret
-    const serviceID = "service_b6ezaw7";
-    const templateID = "template_xxa6qar";
-    const publicKey = "j7acwzWxWtRxjWZqS";
 
     try {
       await emailjs.send(
