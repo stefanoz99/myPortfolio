@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from 'react-icons/fa';
 import { motion } from "framer-motion";
 import emailjs from 'emailjs-com';
-import { serviceID, templateID, publicKey } from 'config';
+import { serviceID, templateID, publicKey } from '../../config';
 
 const info = [
   {
@@ -49,10 +49,11 @@ const Contact = () => {
 
     //config
     //serviceID, templateID, publicKey
+    console.log(serviceID, templateID, publicKey);
+    console.log(formData);
 
     try {
       await emailjs.send(
-
         serviceID,
         templateID,
         {
