@@ -364,9 +364,9 @@ const projects = {
 
   otherProjects: [
     {
-      description: "Expandable VR Platform",
+      description: "Expandable Virtual Reality Platform",
       title: "Multi-User VR Educational Platform",
-      src: "/assets/projects/images/aa.jpg", 
+      src: "/assets/projects/images/ProyectoIntegrador.png", 
       btnText: "More",
       btnGitText: "GitHub",
       btnLink: "https://github.com/manosebas/ProyectoIntegrador#readme",
