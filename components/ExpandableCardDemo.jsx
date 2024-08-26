@@ -230,7 +230,7 @@ export const CloseIcon = () => {
 
 const projects = {
 
-  pythonProjects: [
+  softwareProjects: [
     {
       description: "Gesture-Based Control",
       title: "HandTrack Clicker",
@@ -238,7 +238,7 @@ const projects = {
       btnText: "More",
       btnGitText: "GitHub",
       btnLink: "https://github.com/manosebas/HandTracker#readme",
-      tags: ["python"],
+      tags: ["software","featured"],
       content: () => (
         <p>
           HandTrack Clicker leverages computer vision and hand-tracking technologies to create an intuitive interface for controlling the computer through hand gestures. <br /> <br /> 
@@ -260,7 +260,7 @@ const projects = {
       btnText: "More",
       btnGitText: "GitHub",
       btnLink: "https://github.com/manosebas/VoiceAssistant#readme",
-      tags: ["python"],
+      tags: ["software"],
       content: () => (
         <p>
           Voice Assistant is a Python-based AI-driven conversational assistant designed to emulate natural human interaction. <br /> <br />
@@ -300,7 +300,7 @@ const projects = {
       btnText: "More",
       btnGitText: "GitHub",
       btnLink: "https://github.com/manosebas/CustomChatbot#readme",
-      tags: ["python"],
+      tags: ["software"],
       content: () => (
         <p>
           This project is a highly customizable AI assistant that leverages OpenAI's advanced technologies, enabling personalized interactions for virtually any topic. <br /> <br />
@@ -324,7 +324,7 @@ const projects = {
       btnText: "More",
       btnGitText: "GitHub",
       btnLink: "https://github.com/manosebas/SignLanguageRecognition#readme",
-      tags: ["python"],
+      tags: ["software"],
       content: () => (
         <p>
           This project focuses on comparing the performance of Convolutional Neural Networks (CNN) and Vision Transformers (ViT) in the classification of sign language images. <br /> <br />
@@ -336,90 +336,6 @@ const projects = {
           Additionally, the project includes a live camera feature that allows users to perform sign language gestures in real-time, detecting and identifying the letters being shown. <br /> <br />
           
           This combination of deep learning models and real-time detection showcases a robust approach to sign language recognition.
-        </p>
-      ),
-    },
-  ],
-
-  flutterProjects: [
-    {
-      description: "To-Do App",
-      title: "To-Do List App",
-      src: "/assets/projects/images/ToDoApp.png",
-      btnText: "More",
-      btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas/ToDoApp#readme",
-      tags: ["flutter"],
-      content: () => (
-        <p>
-          This project is a to-do list application developed using Flutter and Dart, designed to be executable on both iOS and Android platforms. <br /> <br />
-          
-          Despite its simplicity, the app is built on a robust programming foundation, providing a comprehensive base for developing more complex applications. <br /> <br />
-          
-          It effectively demonstrates essential programming concepts and practices, making it a valuable resource for understanding core app development principles.
-        </p>
-      ),
-    },
-  ],
-
-  otherProjects: [
-    {
-      description: "Expandable Virtual Reality Platform",
-      title: "Multi-User VR Educational Platform",
-      src: "/assets/projects/images/ProyectoIntegrador.png", 
-      btnText: "More",
-      btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas/ProyectoIntegrador#readme",
-      tags: ["others"],
-      content: () => (
-        <p>
-          This project involves the implementation of a virtual reality (VR) educational platform for multi-user environments, with a focus on its extensive expandability and adaptability to any subject, number of users, and scenarios. It is currently being used at Universidad San Francisco de Quito as an advanced learning methodology, providing immersive and collaborative experiences. <br /> <br />
-
-          The platform facilitates interaction and learning in a controlled environment and is highly flexible and customizable. It can be applied across a wide range of educational disciplines, from sciences to humanities, with the ability to create and manage various scenes and situations, allowing multiple users to interact simultaneously. <br /> <br />
-
-          A notable application of this platform was in the field of psychology, where I created a virtual environment for students to practice with virtual patients. This practice enhanced students' communication and diagnostic skills, offering a safe space for experimentation and learning without risks. The integration with OpenAI's AI also allows for personalized interaction based on educational needs, offering a dynamic and tailored learning experience for each user. <br /> <br />
-
-          The platform marks a significant advancement in virtual education, setting a model for future research and development in the field of education and technology, demonstrating how VR can transform teaching and learning in a global context.
-        </p>
-      ),
-    },
-    {
-      description: "This Portfolio",
-      title: "Professional Portfolio Website",
-      src: "/assets/projects/images/Portfolio.png",
-      btnText: "More",
-      btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas/myPortfolio#readme",
-      tags: ["others"],
-      content: () => (
-        <p>
-          This project involves the development and design of a professional portfolio website using JSX, CSS, TypeScript (TSX), Next.js, Tailwind CSS, and Framer Motion. <br /> <br />
-          
-          The website aims to showcase my professional profile, including my education, skills, experience, and projects. <br /> <br />
-          
-          It is designed as a single-purpose site to present myself effectively to potential clients or employers, highlighting my capabilities and accomplishments in a visually engaging manner.
-        </p>
-      ),
-    },
-    {
-      description: "Advanced Security System",
-      title: "Max Security Door System",
-      src: "/assets/projects/images/SecurityDoor.png",
-      btnText: "More",
-      btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas/MaxSecurityDoor#readme",
-      tags: ["others"],
-      content: () => (
-        <p>
-          The Maximum Security Door System is an advanced electronic project designed to enhance the security of prison facilities by incorporating multiple sensors and a servo-controlled locking mechanism. <br /> <br />
-          
-          The system utilizes an Arduino Uno to manage various components, including proximity sensors, a keypad, an LCD display, a servo motor and others. <br /> <br />
-          
-          The door can only be unlocked when specific conditions are met: no objects should be too close on the opposite side, a person must be physically present at the keypad and a digital password must be entered. <br /> <br />
-          
-          An alarm and some LED lights are triggered if these conditions are not satisfied, providing an additional layer of security. <br /> <br />
-          
-          This project demonstrates understanding of electronics, programming, and real-world application to address critical security challenges.
         </p>
       ),
     },
@@ -474,7 +390,7 @@ const projects = {
       btnText: "More",
       btnGitText: "GitHub",
       btnLink: "https://github.com/manosebas/GDD_DAI#readme",
-      tags: ["games"],
+      tags: ["games", "featured"],
       content: () => (
         <p>
           This Game Design Document (GDD) provides a comprehensive blueprint for the creation of a fully immersive game titled "Defeated By Artificial Intelligence (DAI)." <br /> <br />
@@ -487,78 +403,14 @@ const projects = {
         </p>
       ),
     },
-  ],
-
-  processingProjects: [
-    {
-      description: "Text into particles",
-      title: "Vector Particle Text Display",
-      src: "/assets/projects/images/ClockVectorParticle.png",
-      btnText: "More",
-      btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas/ParticlesVectors/tree/master/Clock#readme",
-      tags: ["processing"],
-      content: () => (
-        <p>
-          This project uses particles to display the current time and date. <br /> <br /> 
-          Particles form the digits of a clock, with an engaging visual effect of particles flying around the screen. <br /> <br /> 
-          
-          Clicking changes the display to show the current time, date, or other text. <br /> <br /> 
-          
-          This project offers a visually captivating way to present real-time information with interesting particle effects and is easily adaptable for various types of data and graphical styles.
-        </p>
-      ),
-    },
-    {
-      description: "Images into BW particles",
-      title: "BW Vector Particle Image Display",
-      src: "/assets/projects/images/BWVectorParticle.png",
-      btnText: "More",
-      btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas/ParticlesVectors/tree/master/BlackAndWhite#readme",
-      tags: ["processing"],
-      content: () => (
-        <p>
-          This project transforms a user-uploaded image into a visual representation using black-and-white particles. <br /> <br /> 
-
-          Each pixel is represented by a particle of a single color, preserving the image's contrast and shading. <br /> <br /> 
-          
-          Clicking allows the user to switch between different graphics, offering a streamlined approach with captivating particle effects. <br /> <br /> 
-          
-          The project is easily adaptable for various types of data and graphical styles.
-        </p>
-      ),
-    },
-    {
-      description: "Images into particles",
-      title: "Vector Particle Image Display",
-      src: "/assets/projects/images/ColorVectorParticle.png",
-      btnText: "More",
-      btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas/ParticlesVectors/tree/master/Color#readme",
-      tags: ["processing"],
-      content: () => (
-        <p>
-          This project transforms a user-uploaded image into a visual representation using colored particles. <br /> <br /> 
-          
-          Each pixel of the image is mapped to a particle, recreating the image with a unique particle effect. <br /> <br /> 
-          
-          Clicking changes the display to various images, with particles dynamically adjusting to the new graphic. <br /> <br /> 
-          
-          The project is highly customizable and expandable for diverse visual applications.
-        </p>
-      ),
-    },
     {
       description: "Meteorite Shooter Game",
       title: "Galaxy Hunt",
       src: "/assets/projects/images/GalaxyHunt.png",
       btnText: "More",
-      // btnGitText: "GitHub",
-      // btnLink: "https://github.com/manosebas/GalaxyHuntGame/tree/master#readme",
-      btnGitText: "Play",
-      btnLink: "https://openprocessing.org/sketch/2328801",
-      tags: ["processing","games"],
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/GalaxyHuntGame/tree/master#readme",
+      tags: ["games"],
       content: () => (
         <p>
           Galaxy Hunt is an engaging arcade-style game developed using Processing, designed to challenge players reflexes and strategic thinking. <br /> <br /> 
@@ -578,7 +430,7 @@ const projects = {
       btnText: "More",
       btnGitText: "Github",
       btnLink: "https://github.com/manosebas/PongGame#readme",
-      tags: ["processing","games"],
+      tags: ["games"],
       content: () => (
         <p>
           This project is a simple recreation of the classic Pong game, developed using Processing. <br /> <br />
@@ -600,7 +452,7 @@ const projects = {
       btnText: "More",
       btnGitText: "Github",
       btnLink: "https://github.com/manosebas/SnakeGame#readme",
-      tags: ["processing", "games"],
+      tags: ["games"],
       content: () => (
         <p>
            This project is a recreation of the classic Snake game, developed using Processing. <br /> <br />
@@ -619,4 +471,145 @@ const projects = {
     },
   ],
 
+  otherProjects: [
+    {
+      description: "Expandable Virtual Reality Platform",
+      title: "Multi-User VR Educational Platform",
+      src: "/assets/projects/images/ProyectoIntegrador.png", 
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/ProyectoIntegrador#readme",
+      tags: ["others", "featured"],
+      content: () => (
+        <p>
+          This project involves the implementation of a virtual reality (VR) educational platform for multi-user environments, with a focus on its extensive expandability and adaptability to any subject, number of users, and scenarios. It is currently being used at Universidad San Francisco de Quito as an advanced learning methodology, providing immersive and collaborative experiences. <br /> <br />
+
+          The platform facilitates interaction and learning in a controlled environment and is highly flexible and customizable. It can be applied across a wide range of educational disciplines, from sciences to humanities, with the ability to create and manage various scenes and situations, allowing multiple users to interact simultaneously. <br /> <br />
+
+          A notable application of this platform was in the field of psychology, where I created a virtual environment for students to practice with virtual patients. This practice enhanced students' communication and diagnostic skills, offering a safe space for experimentation and learning without risks. The integration with OpenAI's AI also allows for personalized interaction based on educational needs, offering a dynamic and tailored learning experience for each user. <br /> <br />
+
+          The platform marks a significant advancement in virtual education, setting a model for future research and development in the field of education and technology, demonstrating how VR can transform teaching and learning in a global context.
+        </p>
+      ),
+    },
+    {
+      description: "This Portfolio",
+      title: "Professional Portfolio Website",
+      src: "/assets/projects/images/Portfolio.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/myPortfolio#readme",
+      tags: ["others"],
+      content: () => (
+        <p>
+          This project involves the development and design of a professional portfolio website using JSX, CSS, TypeScript (TSX), Next.js, Tailwind CSS, and Framer Motion. <br /> <br />
+          
+          The website aims to showcase my professional profile, including my education, skills, experience, and projects. <br /> <br />
+          
+          It is designed as a single-purpose site to present myself effectively to potential clients or employers, highlighting my capabilities and accomplishments in a visually engaging manner.
+        </p>
+      ),
+    },
+    {
+      description: "Advanced Security System",
+      title: "Max Security Door System",
+      src: "/assets/projects/images/SecurityDoor.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/MaxSecurityDoor#readme",
+      tags: ["others"],
+      content: () => (
+        <p>
+          The Maximum Security Door System is an advanced electronic project designed to enhance the security of prison facilities by incorporating multiple sensors and a servo-controlled locking mechanism. <br /> <br />
+          
+          The system utilizes an Arduino Uno to manage various components, including proximity sensors, a keypad, an LCD display, a servo motor and others. <br /> <br />
+          
+          The door can only be unlocked when specific conditions are met: no objects should be too close on the opposite side, a person must be physically present at the keypad and a digital password must be entered. <br /> <br />
+          
+          An alarm and some LED lights are triggered if these conditions are not satisfied, providing an additional layer of security. <br /> <br />
+          
+          This project demonstrates understanding of electronics, programming, and real-world application to address critical security challenges.
+        </p>
+      ),
+    },
+    {
+      description: "To-Do App",
+      title: "To-Do List App",
+      src: "/assets/projects/images/ToDoApp.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/ToDoApp#readme",
+      tags: ["others"],
+      content: () => (
+        <p>
+          This project is a to-do list application developed using Flutter and Dart, designed to be executable on both iOS and Android platforms. <br /> <br />
+          
+          Despite its simplicity, the app is built on a robust programming foundation, providing a comprehensive base for developing more complex applications. <br /> <br />
+          
+          It effectively demonstrates essential programming concepts and practices, making it a valuable resource for understanding core app development principles.
+        </p>
+      ),
+    },
+    {
+      description: "Text into particles",
+      title: "Vector Particle Text Display",
+      src: "/assets/projects/images/ClockVectorParticle.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/ParticlesVectors/tree/master/Clock#readme",
+      tags: ["others"],
+      content: () => (
+        <p>
+          This project uses particles to display the current time and date. <br /> <br /> 
+          Particles form the digits of a clock, with an engaging visual effect of particles flying around the screen. <br /> <br /> 
+          
+          Clicking changes the display to show the current time, date, or other text. <br /> <br /> 
+          
+          This project offers a visually captivating way to present real-time information with interesting particle effects and is easily adaptable for various types of data and graphical styles.
+        </p>
+      ),
+    },
+    {
+      description: "Images into BW particles",
+      title: "BW Vector Particle Image Display",
+      src: "/assets/projects/images/BWVectorParticle.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/ParticlesVectors/tree/master/BlackAndWhite#readme",
+      tags: ["others"],
+      content: () => (
+        <p>
+          This project transforms a user-uploaded image into a visual representation using black-and-white particles. <br /> <br /> 
+
+          Each pixel is represented by a particle of a single color, preserving the image's contrast and shading. <br /> <br /> 
+          
+          Clicking allows the user to switch between different graphics, offering a streamlined approach with captivating particle effects. <br /> <br /> 
+          
+          The project is easily adaptable for various types of data and graphical styles.
+        </p>
+      ),
+    },
+    {
+      description: "Images into particles",
+      title: "Vector Particle Image Display",
+      src: "/assets/projects/images/ColorVectorParticle.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/ParticlesVectors/tree/master/Color#readme",
+      tags: ["others"],
+      content: () => (
+        <p>
+          This project transforms a user-uploaded image into a visual representation using colored particles. <br /> <br /> 
+          
+          Each pixel of the image is mapped to a particle, recreating the image with a unique particle effect. <br /> <br /> 
+          
+          Clicking changes the display to various images, with particles dynamically adjusting to the new graphic. <br /> <br /> 
+          
+          The project is highly customizable and expandable for diverse visual applications.
+        </p>
+      ),
+    },
+  ],
+
+ 
 };

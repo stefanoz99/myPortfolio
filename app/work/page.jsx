@@ -1,25 +1,25 @@
 "use client";
-// voy a usar los iconos cuando pongas lo proyectos como parte de la descripcion
-import { 
-  FaPython,
-} from "react-icons/fa";
-
-import { 
-  TbBrandFlutter 
-} from "react-icons/tb";
 
 import { 
   GrProjects
 } from "react-icons/gr";
 
 import { 
-  SiNextra, 
-  SiProcessingfoundation 
+  SiNextra
 } from "react-icons/si";
 
 import { 
   CgGames 
 } from "react-icons/cg";
+
+import { 
+  LiaLaptopCodeSolid
+} from "react-icons/lia";
+
+import { 
+  BsBookmarkStar 
+} from "react-icons/bs";
+
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ScrollArea } from '@/components/ui/scroll-area';
@@ -33,35 +33,28 @@ import { ExpandableCardDemo } from "../../components/ExpandableCardDemo";
 const allProjects = {
   icon: <GrProjects />,
   title: "All Projects",
-  description: "A compilation of all type of projects.",
+  description: "An overview of all available projects.",
+};
+
+// software data
+const featured = {
+  icon: <BsBookmarkStar />,
+  title: 'Featured Projects',
+  description: "A collection of projects selected for their relevance or quality.",
+};
+
+// software data
+const software = {
+  icon: <LiaLaptopCodeSolid/>,
+  title: 'Software Projects',
+  description: "A collection of software projects developed with various tools and languages.",
 };
 
 //games data
 const games = {
   icon: <CgGames/>,
   title: 'Games Related Projects',
-  description: "A compilation of 2D, 3D, AR, MR and VR projects.",
-};
-
-// python data
-const python = {
-  icon: <FaPython/>,
-  title: 'Python Projects',
-  description: "A compilation of projects developed with Python.",
-};
-
-// processing data
-const processing = {
-  icon: <SiProcessingfoundation />,
-  title: 'Processing Projects',
-  description: "A compilation of projects developed with Processing.",
-};
-
-//flutter data
-const flutter = {
-  icon: <TbBrandFlutter />,
-  title: 'Flutter Projects',
-  description: "A compilation of mobile applications developed with Flutter.",
+  description: "A collection of projects related to games, including 2D and 3D games, AR, MR, VR experiences, and documentation such as level design, game design documents, upgrade proposals adn more.",
 };
 
 //others data
@@ -98,17 +91,15 @@ const Work = () => {
 
           {/* BOTONES */}
           <TabsList className="flex flex-col xl:flex-row w-full max-w-[380px] xl:max-w-[1200px] mx-auto gap-6 ">
-            <TabsTrigger value="allProjects" onClick={() => handleTabClick('allProjects')}>All Projects</TabsTrigger>
+            <TabsTrigger value="allProjects" onClick={() => handleTabClick('allProjects')}>ALL PROJECTS</TabsTrigger>
+            
+            <TabsTrigger value="featured" onClick={() => handleTabClick('featured')}>FEATURED</TabsTrigger>
 
-            <TabsTrigger value="games" onClick={() => handleTabClick('games')}>Games Related</TabsTrigger>
+            <TabsTrigger value="software" onClick={() => handleTabClick('software')}>SOFTWARE</TabsTrigger>
 
-            <TabsTrigger value="python" onClick={() => handleTabClick('python')}>Python</TabsTrigger>
+            <TabsTrigger value="games" onClick={() => handleTabClick('games')}>GAMES-RELATED</TabsTrigger>
 
-            <TabsTrigger value="processing" onClick={() => handleTabClick('processing')}>Processing</TabsTrigger>
-
-            <TabsTrigger value="flutter" onClick={() => handleTabClick('flutter')}>Flutter</TabsTrigger>
-
-            <TabsTrigger value="others" onClick={() => handleTabClick('others')}>Others</TabsTrigger>
+            <TabsTrigger value="others" onClick={() => handleTabClick('others')}>OTHERS</TabsTrigger>
           </TabsList>
 
           {/* content */}
@@ -131,6 +122,30 @@ const Work = () => {
 
             </TabsContent>
 
+            {/* featured */}
+            <TabsContent value="featured" className="w-full text-center" id="featured">
+              <div className="flex flex-col gap-[30px]">
+                <div className="flex flex-row items-center justify-center gap-10">
+                  <h3 className="text-4xl font-bold">{featured.title}</h3>
+                  <p className="text-4xl">{featured.icon}</p>
+                </div>
+                <p className="max-w-[600px] text-white/60 mx-auto">{featured.description}</p>
+                <ExpandableCardDemo filterTag="featured" />
+              </div>
+            </TabsContent>
+
+            {/* software */}
+            <TabsContent value="software" className="w-full text-center" id="software">
+              <div className="flex flex-col gap-[30px]">
+                <div className="flex flex-row items-center justify-center gap-10">
+                  <h3 className="text-4xl font-bold">{software.title}</h3>
+                  <p className="text-4xl">{software.icon}</p>
+                </div>
+                <p className="max-w-[600px] text-white/60 mx-auto">{software.description}</p>
+                <ExpandableCardDemo filterTag="software" />
+              </div>
+            </TabsContent>
+
             {/* games */}
             <TabsContent value="games" className="w-full text-center" id="games">
               <div className="flex flex-col gap-[30px]">
@@ -140,42 +155,6 @@ const Work = () => {
                 </div>
                 <p className="max-w-[600px] text-white/60 mx-auto">{games.description}</p>
                 <ExpandableCardDemo filterTag="games" />
-              </div>
-            </TabsContent>
-
-            {/* python */}
-            <TabsContent value="python" className="w-full text-center" id="python">
-              <div className="flex flex-col gap-[30px]">
-                <div className="flex flex-row items-center justify-center gap-10">
-                  <h3 className="text-4xl font-bold">{python.title}</h3>
-                  <p className="text-4xl">{python.icon}</p>
-                </div>
-                <p className="max-w-[600px] text-white/60 mx-auto">{python.description}</p>
-                <ExpandableCardDemo filterTag="python" />
-              </div>
-            </TabsContent>
-
-            {/* processing */}
-            <TabsContent value="processing" className="w-full text-center" id="processing">
-              <div className="flex flex-col gap-[30px]">
-                <div className="flex flex-row items-center justify-center gap-10">
-                  <h3 className="text-4xl font-bold">{processing.title}</h3>
-                  <p className="text-4xl">{processing.icon}</p>
-                </div>
-                <p className="max-w-[600px] text-white/60 mx-auto">{processing.description}</p>
-                <ExpandableCardDemo filterTag="processing" />
-              </div>
-            </TabsContent>
-
-            {/* flutter */}
-            <TabsContent value="flutter" className="w-full text-center" id="flutter">
-              <div className="flex flex-col gap-[30px]">
-                <div className="flex flex-row items-center justify-center gap-10">
-                  <h3 className="text-4xl font-bold">{flutter.title}</h3>
-                  <p className="text-4xl">{flutter.icon}</p>
-                </div>
-                <p className="max-w-[600px] text-white/60 mx-auto">{flutter.description}</p>
-                <ExpandableCardDemo filterTag="flutter" />
               </div>
             </TabsContent>
 
@@ -190,7 +169,7 @@ const Work = () => {
                 <ExpandableCardDemo filterTag="others" />
               </div>
             </TabsContent>
-            
+
           </div>
         </Tabs>
       </div>
