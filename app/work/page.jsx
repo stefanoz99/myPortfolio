@@ -137,12 +137,16 @@ const Work = () => {
             {/* software */}
             <TabsContent value="software" className="w-full text-center" id="software">
               <div className="flex flex-col gap-[30px]">
+                
                 <div className="flex flex-row items-center justify-center gap-10">
                   <h3 className="text-4xl font-bold">{software.title}</h3>
                   <p className="text-4xl">{software.icon}</p>
                 </div>
+
                 <p className="max-w-[600px] text-white/60 mx-auto">{software.description}</p>
+
                 <ExpandableCardDemo filterTag="software" />
+
               </div>
             </TabsContent>
 

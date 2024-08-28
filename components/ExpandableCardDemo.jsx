@@ -232,6 +232,32 @@ const projects = {
 
   softwareProjects: [
     {
+      description: "Decentralized e-Signature System",
+      title: "Decentralized FirmaEC",
+      src: "/assets/projects/images/FirmaEC.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/HandTracker#readme",
+      tags: ["software","featured"],
+      content: () => (
+        <p> 
+          This project involves the development and implementation of a decentralized e-signature system tailored for Ecuador, with three distinct yet interrelated components. <br /> <br />
+          
+          The system is designed to ensure the secure signing and verification of documents and certificates, using the e-signature standards mandated by the Ecuadorian government. <br /> <br />
+          
+          The project is divided into three key parts:<br /> <br />
+
+          Architecture and Foundation: Setup and configure the system following Minka manual guidelines, including WildFly server, Docker with PostgreSQL, custom APIs, and secure MINTEL communication. This creates a backend for signing, validating, and verifying documents.<br /> <br />
+
+          Transversal Web Page: Develop a web app to use the backend for document signing, e-signature validation, and certificate verification with MINTEL, focusing on usability and expanded functionalities.<br /> <br />
+
+          DLL Implementation: Integrate the e-signature system into institutional applications using a C# DLL, ensuring secure signing and verification of all paperwork with MINTEL.<br /> <br />
+
+          Please refer to GitHub for more information on everything.
+        </p>
+      ),
+    },
+    {
       description: "Gesture-Based Control",
       title: "HandTrack Clicker",
       src: "/assets/projects/images/HandTrack.png",
@@ -320,7 +346,7 @@ const projects = {
     {
       description: "Sign Language Recognition with CNN and ViT",
       title: "Sign Language AI",
-      src: "/assets/projects/images/SignLanguage.png",
+      src: "/assets/projects/images/SignRecognition.png",
       btnText: "More",
       btnGitText: "GitHub",
       btnLink: "https://github.com/manosebas/SignLanguageRecognition#readme",
@@ -336,6 +362,80 @@ const projects = {
           Additionally, the project includes a live camera feature that allows users to perform sign language gestures in real-time, detecting and identifying the letters being shown. <br /> <br />
           
           This combination of deep learning models and real-time detection showcases a robust approach to sign language recognition.
+        </p>
+      ),
+    },
+    {
+      description: "Multi-Layered Database Application",
+      title: "Database Management App",
+      src: "/assets/projects/images/BookDB.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/BookDB#readme",
+      tags: ["software"],
+      content: () => (
+        <p>
+          This project involves the implementation of a multi-layered application that connects to a MySQL database, designed to manage book records.<br /> <br />
+          
+          The application features a graphical user interface (GUI) developed using QtDesigner and Python, enabling users to perform CRUD (Create, Read, Update, Delete) operations on the database.<br /> <br />
+          
+          The project demonstrates the integration of multiple windows for different operations, such as selecting, inserting, updating, and deleting records.<br /> <br />
+          
+          The application is highly expandable, with the potential to manage more complex data structures and interactions.
+        </p>
+      ),
+    },
+    {
+      description: "OOP-Based Management System",
+      title: "Student Management System",
+      src: "/assets/projects/images/Banner.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/Banner#readme",
+      tags: ["software"],
+      content: () => (
+        <p>
+          This project involves the development of a comprehensive Student Management System using Object-Oriented Programming (OOP) principles in C++. <br /> <br />
+          
+          The application is designed based on a UML class model that manages students, professors, and courses, implementing key concepts such as inheritance and polymorphism. <br /> <br />
+          
+          The system features a text-based interface that allows users to perform CRUD (Create, Read, Update, Delete) operations on various entities, including students, professors, and courses. <br /> <br />
+          
+          The program is structured to support multiple user roles with different access levels, ensuring that all functionalities are accessible depending on the user's credentials.<br /> <br />
+
+          The application begins with a main menu offering options to manage the system, access user information, or exit. <br /> <br />
+          
+          The management menu allows detailed operations on users, students, professors, and courses, including creating, editing, and deleting records, as well as associating students and professors with courses. <br /> <br />
+          
+          The project demonstrates a strong application of OOP, with each class and method carefully designed to ensure modularity, reusability, and scalability.          
+        </p>
+      ),
+    },
+    {
+      description: " COVID-19 Diagnostic and Management System",
+      title: "Diagnostic and Management System",
+      src: "/assets/projects/images/HospitalManager.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/HospitalManagerC19#readme",
+      tags: ["software"],
+      content: () => (
+        <p>
+          This project involves the development of a COVID-19 diagnostic and management system utilizing the Model-View-Controller (MVC) architecture. <br /> <br /> 
+          
+          The system is designed to manage and register doctors and patients within a hospital setting, focusing on the current real-world context of the COVID-19 pandemic. <br /> <br /> 
+          
+          The application allows for the input and management of patient data, including a series of diagnostic questions related to COVID-19 symptoms, which are answered on a scale of 1 to 10. <br /> <br /> 
+          
+          These questions assess symptoms like throat pain, fatigue, and breathing difficulty, and the system calculates an average score to estimate the likelihood of infection.<br /> <br /> 
+
+          The project also features robust data management capabilities, with patients stored as objects within the system, allowing for easy retrieval and manipulation of data. <br /> <br /> 
+          
+          The system's backend can utilize JSON or CSV for data storage, ensuring flexibility and ease of integration. The code is organized according to MVC principles, ensuring a clean separation between the user interface, the underlying data models, and the control logic. <br /> <br /> 
+          
+          The project includes a complete set of functionalities for managing doctor and patient records, calculating potential infection risks, and displaying patient health statuses.<br /> <br /> 
+
+          The source code, along with the UML diagrams and other project documentation, is available on GitHub, demonstrating the full functionality of the system, including patient and doctor registration, data management, and diagnostic evaluation.    
         </p>
       ),
     },
@@ -606,6 +706,30 @@ const projects = {
           Clicking changes the display to various images, with particles dynamically adjusting to the new graphic. <br /> <br /> 
           
           The project is highly customizable and expandable for diverse visual applications.
+        </p>
+      ),
+    },
+    {
+      description: "Binary Logic and Computer Understanding",
+      title: "Binary Logic Exploration",
+      src: "/assets/projects/images/BinaryImgTxt.png",
+      btnText: "More",
+      btnGitText: "GitHub",
+      btnLink: "https://github.com/manosebas/BinaryImgText#readme",
+      tags: ["others"],
+      content: () => (
+        <p>
+          This project combines investigative learning with hands-on code development to explore and demonstrate how computers understand images and text through binary systems and logic gates. <br /> <br /> 
+          
+          Through in-depth research, the project examines how binary numbers and logic gates like AND, OR, and XOR are fundamental to processing and interpreting data within a computer. <br /> <br /> 
+
+          The project features the development of two Java programs that practically demonstrate these concepts: one program converts text into binary code, and the other processes images by breaking them down into pixels and converting each color into binary using its RGB values. <br /> <br /> 
+          
+          This approach provides a tangible understanding of how computers interpret and store visual and textual information. <br /> <br /> 
+
+          The project is expansive, offering insights into the layers of abstraction that make up computer operations. <br /> <br /> 
+          
+          The code, along with examples of the conversion process, is available on GitHub to illustrate and verify the theoretical concepts presented.
         </p>
       ),
     },
