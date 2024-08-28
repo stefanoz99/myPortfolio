@@ -237,7 +237,7 @@ const projects = {
       src: "/assets/projects/images/FirmaEC.png",
       btnText: "More",
       btnGitText: "GitHub",
-      btnLink: "https://github.com/manosebas/HandTracker#readme",
+      btnLink: "https://github.com/manosebas/FirmaEcDescentralizada#readme",
       tags: ["software","featured"],
       content: () => (
         <p> 
