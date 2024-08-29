@@ -87,7 +87,7 @@ export function ExpandableCardDemo({ filterTag }) {
 
               <div>
                 
-                <div className="flex justify-between items-center p-4">
+                <div className="flex justify-between items-center p-4 bg-accent/10">
                   
                   {/* Titulo y Descripcion */}
                   <div className="text-start px-4">
@@ -107,26 +107,30 @@ export function ExpandableCardDemo({ filterTag }) {
                   </div>
 
                   {/* Boton */}
-                  <motion.a
-                    layoutId={`button-${active.title}-${id}`}
-                    href={active.btnLink}
-                    target="_blank"
-                    className="px-4 py-3 text-sm rounded-full font-bold bg-accent text-white hover:bg-primary hover:text-white"
-                  > 
-                    {active.btnGitText}
-                  </motion.a>
+                  <div className="flex-col">
+                    <motion.a
+                      layoutId={`button-${active.title}-${id}`}
+                      href={active.btnLink}
+                      target="_blank"
+                      className="px-4 py-3 text-sm rounded-full font-bold bg-accent text-white hover:bg-primary hover:text-white"
+                      > 
+                      {active.btnGitText}
+                    </motion.a>
+                    {/* Texto More */}
+                    <p className="flex text-sm text-black/40 pt-4 px-4">↑ More</p>
+                  </div>
 
 
                 </div>
 
-                {/* Texto ↓↑*/}
-                <div className="flex bg-accent/20 text-start text-sm text-black/80 px-10 justify-between p-1">
+                {/* Texto Scroll Down ↓*/}
+                <div className="flex text-start text-sm text-black/40 px-8 justify-between pt-2">
                   <p>Scroll Down ↓</p>
-                  <p>Even More Info ↑</p>
+                  {/* <p>Even More Info ↑</p> */}
                 </div>
 
                 {/* Texto Explicacion */}
-                <div className="pt-4 relative px-4">
+                <div className="pt-2 relative px-8">
                   <motion.div
                     layout
                     initial={{ opacity: 0 }}
