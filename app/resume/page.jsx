@@ -183,6 +183,13 @@ const certifications = {
       image: "/assets/certifications/images/certGit.png"
     },
     {
+      institution: "UDEMY",
+      topic: "Master in Unity 6 and C# Video Game Programming",
+      year: "2024",
+      pdf: "/assets/certifications/pdf/certUnity.pdf",
+      image: "/assets/certifications/images/certUnity.png"
+    },
+    {
       institution: "CONADIS",
       topic: "Human Rights and Labor Inclusion",
       year: "2024",
@@ -382,15 +389,15 @@ const Resume = () => {
         {/* Botones */}
         <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
 
-          <TabsTrigger value="about" onClick={() => handleTabClick('about')}>About Me</TabsTrigger>
+          <TabsTrigger value="about" onClick={() => handleTabClick('about')}>ABOUT ME</TabsTrigger>
 
-          <TabsTrigger value="experience" onClick={() => handleTabClick('experience')}>Experience</TabsTrigger>
+          <TabsTrigger value="experience" onClick={() => handleTabClick('experience')}>EXPERIENCE</TabsTrigger>
 
-          <TabsTrigger value="education" onClick={() => handleTabClick('education')}>Education</TabsTrigger>
+          <TabsTrigger value="education" onClick={() => handleTabClick('education')}>EDUCATION</TabsTrigger>
 
-          <TabsTrigger value="certifications" onClick={() => handleTabClick('certifications')}>Certifications</TabsTrigger>
+          <TabsTrigger value="certifications" onClick={() => handleTabClick('certifications')}>CERTIFICATIONS</TabsTrigger>
 
-          <TabsTrigger value="skills" onClick={() => handleTabClick('skills')}>Skills</TabsTrigger>
+          <TabsTrigger value="skills" onClick={() => handleTabClick('skills')}>SKILLS</TabsTrigger>
 
         </TabsList>
 
