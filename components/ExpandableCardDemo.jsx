@@ -48,7 +48,6 @@ export function ExpandableCardDemo({ filterTag }) {
         )}
       </AnimatePresence>
 
-        {/* Animacion */}
       <AnimatePresence>
         {active && typeof active === "object" ? (
 
@@ -87,7 +86,7 @@ export function ExpandableCardDemo({ filterTag }) {
               </motion.div>
 
               <div>
-                    {/* Tarjeta Expandida */}
+                
                 <div className="flex justify-between items-center p-4">
                   
                   {/* Titulo y Descripcion */}
@@ -117,10 +116,16 @@ export function ExpandableCardDemo({ filterTag }) {
                     {active.btnGitText}
                   </motion.a>
 
+
                 </div>
 
-                {/* Texto Historia */}
+                {/* Texto ↓↑*/}
+                <div className="flex bg-accent/20 text-start text-sm text-black/80 px-10 justify-between p-1">
+                  <p>Scroll Down ↓</p>
+                  <p>Even More Info ↑</p>
+                </div>
 
+                {/* Texto Explicacion */}
                 <div className="pt-4 relative px-4">
                   <motion.div
                     layout
@@ -241,7 +246,7 @@ const projects = {
       tags: ["software","featured"],
       content: () => (
         <p> 
-          This project involves the development and implementation of a decentralized e-signature system tailored for Ecuador, with three distinct yet interrelated components. <br /> <br />
+          This project involves the development and implementation of a decentralized e-signature system adapted to a public institution in Ecuador, with three distinct yet interrelated components. <br /> <br />
           
           The system is designed to ensure the secure signing and verification of documents and certificates, using the e-signature standards mandated by the Ecuadorian government. <br /> <br />
           
