@@ -176,6 +176,13 @@ const certifications = {
       image: "/assets/certifications/images/certScrum.png"
     },
     {
+      institution: "OLACEFS",
+      topic: "Data Science 2 (SQL and Python)",
+      year: "2024",
+      pdf: "/assets/certifications/pdf/certSQLPython.pdf",
+      image: "/assets/certifications/images/certSQLPython.png"
+    },
+    {
       institution: "UDEMY",
       topic: "Mastering Git and GitHub",
       year: "2024",
