@@ -51,11 +51,11 @@ import {
 //about me data
 const about = {
   title: "About Me",
-  description: "I am a versatile and driven developer with a strong background in computer science and a passion for technology. My experience spans multiple sectors, including academia, private industry, and government, where I have honed my technical skills and problem-solving abilities. I am constantly seeking new challenges that allow me to grow both personally and professionally.",
+  description: "Hi, I’m Stefano, an Economist and data analytics professional with expertise in business, operations, and education. My top achievement is two years as a Supervisor at EPMMOP, where I led teams, managed operations, and delivered impactful results. I also have experience in sales and commerce from my time at Pelotea, where I contributed to business growth and strategic partnerships. I hold an MSc in Big Data Analytics from UIDE-EIG and an Economics degree from USFQ. Currently, I’m pursuing a Master of Arts in Business Economics (MABE) at Wilfrid Laurier University. As a Google Data Analytics Certified professional with expertise in Excel and Power BI, I specialize in converting complex data into actionable insights that drive decisions.",
   info: [
     {
       fieldName: "Name",
-      fieldValue: "Manolo Iniguez"
+      fieldValue: "Stefano Zurita Perez"
     },
     {
       fieldName: "Nationality",
@@ -67,23 +67,23 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "2+ Years"
+      fieldValue: "3+ Years"
     },
     {
-      fieldName: "Freelance",
-      fieldValue: "Available"
+      fieldName: "Location",
+      fieldValue: "Waterloo, Ontario, Canada"
     },
     {
       fieldName: "Availability",
-      fieldValue: "Open to remote work"
+      fieldValue: "Open to Co-Op"
     },
     {
       fieldName: "Phone",
-      fieldValue: "(+593) 96 189 5248"
+      fieldValue: "(+1)519 722 6241"
     },
     {
       fieldName: "Email",
-      fieldValue: "iniguez.dev@gmail.com"
+      fieldValue: "stefano-s2@hotmail.com"
     },
   ]
 };
