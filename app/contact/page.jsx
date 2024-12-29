@@ -12,17 +12,17 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    description: "(+593) 96 189 5248",
+    description: "(+1) 519 722 6241",
   },
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "iniguez.dev@gmail.com",
+    description: "stefano-s2@hotmail.com",
   },
   {
     icon: <FaMapMarkedAlt />,
     title: "Address",
-    description: "170157, Cumbaya, Ecuador",
+    description: "Waterloo, Ontario, Canada",
   },
 ];
 
