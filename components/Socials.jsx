@@ -5,7 +5,7 @@ import {FaGithub, FaGithubAlt, FaGithubSquare, FaLinkedinIn, FaLinkedin, Fa, FaI
 
 const socials = [
     {icons: <FaGithub />, path:"https://github.com/stefanoz99/" },
-    {icons: <FaLinkedin />, path:"www.linkedin.com/in/stefano-zurita-perez" },
+    {icons: <FaLinkedin />, path:"https://www.linkedin.com/in/stefano-zurita-perez/" },
 ]
 
 
