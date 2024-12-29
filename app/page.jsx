@@ -26,8 +26,7 @@ const Home = () => {
       strings: [
         "Stefano Zurita Perez.",
         "an Economist.",
-        "a Data Analyst.",
-        "a Technology Enthusiast."
+        "a Data Analyst."
       ],
       typeSpeed: 50,
       backSpeed: 50,
