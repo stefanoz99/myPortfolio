@@ -23,7 +23,7 @@ const Photo = () => {
         >
           <div className="flex justify-center items-center w-full">
             <Image
-              // src="/assets/MainImage2.jpeg"
+              // src="/assets/MyPhoto.jpg"
               src="/assets/MainImage1.png"
               // src="/assets/x.png"
               priority
