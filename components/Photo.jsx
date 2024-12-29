@@ -24,7 +24,7 @@ const Photo = () => {
           <div className="flex justify-center items-center w-full">
             <Image
               // src="/assets/Subject.png"
-              src="/assets/Subject.png"
+              src="/assets/Subject_2.png"
               // src="/assets/x.png"
               priority
               quality={100}
