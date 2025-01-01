@@ -100,12 +100,12 @@ const experience = {
     duration: "2024 - Present"
   },
   {
-    company: "EPMMOP (Public Company for Public Infrastructure Management)",
+    company: "EPMMOP (Public Infrastructure Management Company)",
     position: "Process Supervisor",
     duration: "2023 - 2024"
   },
   {
-    company: "EPMMOP (Public Company for Public Infrastructure Management)",
+    company: "EPMMOP (Public Infrastructure Management Company)",
     position: "Process Executor",
     duration: "2022 - 2023"
   },
@@ -116,7 +116,7 @@ const experience = {
   },
   {
     company: "Universidad San Francisco de Quito",
-    position: "Teaching Assistant for Economic Thought",
+    position: "Teaching Assistant",
     duration: "2020 - 2021"
   }
 ]
