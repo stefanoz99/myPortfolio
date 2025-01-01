@@ -92,25 +92,35 @@ const about = {
 const experience = {
   icon: '/assets/resume/badge.svg',
   title: 'My Experience',
-  description: "Despite being early in my career, I have gained valuable experience across different roles and industries. My work in various environments, from academic settings and private companies to government institutions, has equipped me with a strong foundation in technical skills, problem-solving, and effective communication. Each experience, though brief, has significantly contributed to my professional growth, allowing me to quickly adapt and excel in any challenge presented.",
+  description: "In my professional experience, I have worked in various areas within both the public and private sectors in Ecuador. In each role, I have stood out for my efficiency and quick results, leveraging data to optimize outcomes and improve performance. I have also applied analytical techniques to provide valuable recommendations to managers and stakeholders, contributing to the success of the projects I have been involved in.",
   items: [
-    {
-      company: "TELCONET LATAM",
-      position: "Intern Developer",
-      duration: "2022 - 2022",
-    },
-    {
-      company: "University San Franscisco",
-      position: "Programming Tutor",
-      duration: "2022 - 2023",
-    },
-    {
-      company: "Office of the Comptroller General of the State",
-      position: "Service Management Developer",
-      duration: "2024 - Present",
-    },
-    
-  ]
+  {
+    company: "Wilfrid Laurier University",
+    position: "Graduate Teaching Assistant",
+    duration: "2024 - Present"
+  },
+  {
+    company: "EPMMOP (Public Company for Public Infrastructure Management)",
+    position: "Process Supervisor",
+    duration: "2023 - 2024"
+  },
+  {
+    company: "EPMMOP (Public Company for Public Infrastructure Management)",
+    position: "Process Executor",
+    duration: "2022 - 2023"
+  },
+  {
+    company: "Pelotea",
+    position: "Commercial Intern",
+    duration: "2021"
+  },
+  {
+    company: "Universidad San Francisco de Quito",
+    position: "Teaching Assistant for Economic Thought",
+    duration: "2020 - 2021"
+  }
+]
+
 };
 
 //education data
