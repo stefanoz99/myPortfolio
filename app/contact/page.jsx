@@ -99,8 +99,8 @@ const Contact = () => {
 
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="text" name="firstname" placeholder="Firstname" value={formData.firstname} onChange={handleChange} />
-                <Input type="text" name="lastname" placeholder="Lastname" value={formData.lastname} onChange={handleChange} />
+                <Input type="text" name="firstname" placeholder="First name" value={formData.firstname} onChange={handleChange} />
+                <Input type="text" name="lastname" placeholder="Last name" value={formData.lastname} onChange={handleChange} />
                 <Input type="email" name="email" placeholder="Email address" value={formData.email} onChange={handleChange} />
                 <Input type="text" name="phone" placeholder="Phone number" value={formData.phone} onChange={handleChange} />
               </div>
