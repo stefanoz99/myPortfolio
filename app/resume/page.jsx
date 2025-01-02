@@ -127,33 +127,29 @@ const experience = {
 const education = {
   icon: '/assets/resume/cap.svg',
   title: 'My Education',
-  description: "Having pursued my education across multiple countries, I have cultivated a global perspective and adaptability that uniquely positions me to thrive in diverse, dynamic environments. This international experience has broadened my horizons and sharpened my ability to navigate and excel in multicultural settings.",
-  items: [
-    {
-      institution: "Julius West MS, United States",
-      degree: "Middle School",
-      duration: "2012 - 2013",
-    },
-    {
-      institution: "Colegio San Gabriel, Ecuador",
-      degree: "High School",
-      duration: "2011 - 2014",
-    },
-    {
-      institution: "Patria High School, Colombia",
-      degree: "High School",
-      duration: "2014 - 2016",
-    },
-    {
-      institution: "Polytechnic Institute of Leiria, Portugal",
-      degree: "University",
-      duration: "2017 - 2019",
-    },
-    {
-      institution: "San Francisco de Quito University, Ecuador",
-      degree: "University",
-      duration: "2019 - 2023",
-    },
+  description: "I studied Economics at Universidad San Francisco de Quito, which opened the doors to my professional career. As I progressed, I focused on strengthening the areas I was most passionate about, completing courses like the Google Data Analytics Professional Certificate on Coursera. I then pursued a Master’s in Information Systems at Universidad Internacional del Ecuador (Ecuador) and Escuela Internacional de Gerencia (Spain), specializing in business intelligence and data analytics. Today, I’m combining all of this with my studies at Wilfrid Laurier University to apply these skills to real-world business challenges.",
+  items:[
+  {
+    institution: "Wilfrid Laurier University",
+    degree: "Master of Arts in Business Economics",
+    duration: "2024 - 2026"
+  },
+  {
+    institution: "Universidad Internacional del Ecuador / Escuela Internacional de Gerencia (Spain)",
+    degree: "Master in Information Systems (Business Intelligence and Data Analytics)",
+    duration: "2022 - 2024"
+  },
+  {
+    institution: "Universidad San Francisco de Quito",
+    degree: "Bachelor's in Economics",
+    duration: "2017 - 2022"
+  },
+  {
+    institution: "Colegio San Gabriel, Ecuador",
+    degree: "High School Diploma",
+    duration: "2011 - 2017"
+  }
+,
     
   ]
 };
