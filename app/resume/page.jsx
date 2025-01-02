@@ -135,9 +135,9 @@ const education = {
     duration: "2024 - 2026"
   },
   {
-    institution: "Universidad Internacional del Ecuador / Escuela Internacional de Gerencia (Spain)",
+    institution: "UIDE Ecuador / EIG (Spain)",
     degree: "Master in Information Systems (Business Intelligence and Data Analytics)",
-    duration: "2022 - 2024"
+    duration: "2023 - 2024"
   },
   {
     institution: "Universidad San Francisco de Quito",
