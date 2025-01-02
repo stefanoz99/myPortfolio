@@ -136,7 +136,7 @@ const education = {
   },
   {
     institution: "UIDE Ecuador / EIG (Spain)",
-    degree: "Master in Information Systems (Business Intelligence and Data Analytics)",
+    degree: "MSIS Big Data Analytics",
     duration: "2023 - 2024"
   },
   {
