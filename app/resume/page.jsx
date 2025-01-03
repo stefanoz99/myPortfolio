@@ -186,8 +186,8 @@ const certifications = {
       institution: "UIDE",
       topic: "Python Basics",
       year: "2023",
-      pdf: "/assets/certifications /pdf/Uide_python.pdf",
-      image: "/assets/certifications /images/Uide_python.png"
+      pdf: "/assets/certifications/pdf/Uide_python.pdf",
+      image: "/assets/certifications/images/Uide_python.png"
     },
      {
       institution: "UIDE",
