@@ -182,13 +182,6 @@ const certifications = {
       pdf: "/assets/certifications /pdf/Uide_python.pdf",
       image: "/assets/certifications /images/Uide_python.png"
     },
-    {
-      institution: "UIDE",
-      topic: "Python Basics",
-      year: "2023",
-      pdf: "/assets/certifications/pdf/Uide_python.pdf",
-      image: "/assets/certifications/images/Uide_python.png"
-    },
      {
       institution: "UIDE",
       topic: "Agile Methodologies with SCRUM",
@@ -202,6 +195,13 @@ const certifications = {
       year: "2017",
       pdf: "/assets/certifications /pdf/San Gabriel.pdf",
       image: "/assets/certifications /images/San Gabriel.png"
+    },
+     {
+      institution: "UIDE",
+      topic: "Introduction to Python",
+      year: "2023",
+      pdf: "/assets/certifications /pdf/Uide_python.pdf",
+      image: "/assets/certifications /images/Uide_python.png"
     },
   ]
 };
