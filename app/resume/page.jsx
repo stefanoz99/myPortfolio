@@ -164,8 +164,8 @@ const certifications = {
       institution: "USFQ",
       topic: "Bachelor in Economics",
       year: "2021",
-      pdf: "/assets/certifications/pdf/Titulo_USFQ.pdf",
-      image: "/assets/certifications/images/Titulo_USFQ.png"
+      pdf: "/assets/certifications /pdf/Titulo_USFQ.pdf",
+      image: "/assets/certifications /images/Titulo_USFQ.png"
     },
 
       {
