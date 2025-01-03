@@ -162,82 +162,47 @@ const certifications = {
   items: [
     {
       institution: "USFQ",
-      topic: "Bachelor in Computer Science",
+      topic: "Bachelor in Economics",
+      year: "2021",
+      pdf: "/assets/certifications/pdf/Titulo_USFQ.pdf",
+      image: "/assets/certifications/images/Titulo_USFQ.png"
+    },
+
+      {
+      institution: "UIDE-EIG",
+      topic: "Master in Information Systems (Business Intelligence and Data Analytics)",
+      year: "2024",
+      pdf: "/assets/certifications/pdf/UIDE_titulo.pdf",
+      image: "/assets/certifications/images/UIDE_titulo.png"
+    },
+     {
+      institution: "Google-Coursera",
+      topic: "Google Data Analyticsics",
+      year: "2024",
+      pdf: "/assets/certifications/pdf/Coursera_data.pdf",
+      image: "/assets/certifications/images/Coursera_data.png"
+    },
+    {
+      institution: "UIDE",
+      topic: "Python Basics",
       year: "2023",
-      pdf: "/assets/certifications/pdf/certTitleBachelor.pdf",
-      image: "/assets/certifications/images/certTitleBachelor.png"
+      pdf: "/assets/certifications/pdf/Uide_python.pdf",
+      image: "/assets/certifications/images/Uide_python.png"
     },
-    {
-      institution: "USFQ",
-      topic: "Minor in Game Developement",
+     {
+      institution: "UIDE",
+      topic: "Agile Methodologies with SCRUM",
       year: "2023",
-      pdf: "/assets/certifications/pdf/certMinorGameDev.pdf",
-      image: "/assets/certifications/images/certMinorGameDev.png"
+      pdf: "/assets/certifications/pdf/Scrum.pdf",
+      image: "/assets/certifications/images/Scrum.png"
     },
-    {
-      institution: "CERTIPROF",
-      topic: "Scrum Foundation SFPC",
-      year: "2024",
-      pdf: "/assets/certifications/pdf/certScrum.pdf",
-      image: "/assets/certifications/images/certScrum.png"
+     {
+      institution: "Colegio San Gabriel",
+      topic: "High School Degree",
+      year: "2017",
+      pdf: "/assets/certifications/pdf/San Gabriel.pdf",
+      image: "/assets/certifications/images/San Gabriel.png"
     },
-    {
-      institution: "OLACEFS",
-      topic: "Data Science 2 (SQL and Python)",
-      year: "2024",
-      pdf: "/assets/certifications/pdf/certSQLPython.pdf",
-      image: "/assets/certifications/images/certSQLPython.png"
-    },
-    {
-      institution: "UDEMY",
-      topic: "Mastering Git and GitHub",
-      year: "2024",
-      pdf: "/assets/certifications/pdf/certGit.pdf",
-      image: "/assets/certifications/images/certGit.png"
-    },
-    {
-      institution: "UDEMY",
-      topic: "Master in Unity 6 and C# Video Game Programming",
-      year: "2024",
-      pdf: "/assets/certifications/pdf/certUnity.pdf",
-      image: "/assets/certifications/images/certUnity.png"
-    },
-    {
-      institution: "CONADIS",
-      topic: "Human Rights and Labor Inclusion",
-      year: "2024",
-      pdf: "/assets/certifications/pdf/certIgualdad.pdf",
-      image: "/assets/certifications/images/certIgualdad.png"
-    },
-    {
-      institution: "CEA",
-      topic: "Gender Equality and Non-Discrimination",
-      year: "2024",
-      pdf: "/assets/certifications/pdf/certIGND.pdf",
-      image: "/assets/certifications/images/certIGND.png"
-    },
-    {
-      institution: "SERCOP",
-      topic: "Fundamentals of Public Procurement",
-      year: "2024",
-      pdf: "/assets/certifications/pdf/certSERCOP.pdf",
-      image: "/assets/certifications/images/certSERCOP.png"
-    },
-    {
-      institution: "FCD",
-      topic: "Open Government, Benefits, and Applications",
-      year: "2024",
-      pdf: "/assets/certifications/pdf/certEstadoAbierto.pdf",
-      image: "/assets/certifications/images/certEstadoAbierto.png"
-    },
-    {
-      institution: "USFQ",
-      topic: "Logistics and Port Operations: Challenges and Solutions",
-      year: "2022",
-      pdf: "/assets/certifications/pdf/certOpLogistica.pdf",
-      image: "/assets/certifications/images/certOpLogistica.png"
-    },
-    
   ]
 };
 
