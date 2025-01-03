@@ -158,8 +158,8 @@ const certifications = {
       institution: "USFQ",
       topic: "Bachelor in Computer Science",
       year: "2023",
-      pdf: "/assets/certifications/pdf/certTitleBachelor.pdf",
-      image: "/assets/certifications/images/certTitleBachelor.png"
+      pdf: "/assets/certifications /pdf/certTitleBachelor.pdf",
+      image: "/assets/certifications /images/certTitleBachelor.png"
     },
     {
       institution: "USFQ",
