@@ -179,8 +179,22 @@ const certifications = {
       institution: "Google-Coursera",
       topic: "Google Data Analyticsics",
       year: "2024",
+      pdf: "/assets/certifications /pdf/Coursera_data.pdf",
+      image: "/assets/certifications /images/Coursera_data.png"
+    },   
+     {
+      institution: "UIDE",
+      topic: "Introduction to Python",
+      year: "2023",
       pdf: "/assets/certifications /pdf/Uide_python.pdf",
       image: "/assets/certifications /images/Uide_python.png"
+    },   
+     {
+      institution: "EIG",
+      topic: "Executive Leadership",
+      year: "2023",
+      pdf: "/assets/certifications /pdf/Liderazgo.pdf",
+      image: "/assets/certifications /images/Liderazgo.png"
     },
      {
       institution: "UIDE",
@@ -195,13 +209,6 @@ const certifications = {
       year: "2017",
       pdf: "/assets/certifications /pdf/San Gabriel.pdf",
       image: "/assets/certifications /images/San Gabriel.png"
-    },
-     {
-      institution: "UIDE",
-      topic: "Introduction to Python",
-      year: "2023",
-      pdf: "/assets/certifications /pdf/Uide_python.pdf",
-      image: "/assets/certifications /images/Uide_python.png"
     },
   ]
 };
