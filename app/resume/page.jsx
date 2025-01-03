@@ -172,36 +172,36 @@ const certifications = {
       institution: "UIDE-EIG",
       topic: "Master in Information Systems (Business Intelligence and Data Analytics)",
       year: "2024",
-      pdf: "/assets/certifications/pdf/UIDE_titulo.pdf",
-      image: "/assets/certifications/images/UIDE_titulo.png"
+      pdf: "/assets/certifications /pdf/UIDE_titulo.pdf",
+      image: "/assets/certifications /images/UIDE_titulo.png"
     },
      {
       institution: "Google-Coursera",
       topic: "Google Data Analyticsics",
       year: "2024",
-      pdf: "/assets/certifications/pdf/Coursera_data.pdf",
-      image: "/assets/certifications/images/Coursera_data.png"
+      pdf: "/assets/certifications /pdf/Coursera_data.pdf",
+      image: "/assets/certifications /images/Coursera_data.png"
     },
     {
       institution: "UIDE",
       topic: "Python Basics",
       year: "2023",
-      pdf: "/assets/certifications/pdf/Uide_python.pdf",
-      image: "/assets/certifications/images/Uide_python.png"
+      pdf: "/assets/certifications /pdf/Uide_python.pdf",
+      image: "/assets/certifications /images/Uide_python.png"
     },
      {
       institution: "UIDE",
       topic: "Agile Methodologies with SCRUM",
       year: "2023",
-      pdf: "/assets/certifications/pdf/Scrum.pdf",
-      image: "/assets/certifications/images/Scrum.png"
+      pdf: "/assets/certifications /pdf/Scrum.pdf",
+      image: "/assets/certifications /images/Scrum.png"
     },
      {
       institution: "Colegio San Gabriel",
       topic: "High School Degree",
       year: "2017",
-      pdf: "/assets/certifications/pdf/San Gabriel.pdf",
-      image: "/assets/certifications/images/San Gabriel.png"
+      pdf: "/assets/certifications /pdf/San Gabriel.pdf",
+      image: "/assets/certifications /images/San Gabriel.png"
     },
   ]
 };
@@ -213,112 +213,6 @@ const skills = {
   skillList: [
     // Lenguajes de Programación
     {
-      icon: <FaPython/>,
-      name: "Python",
-    },
-    {
-      icon: <SiCsharp />,
-      name: "C#",
-    },
-    {
-      icon: <SiCplusplus />,
-      name: "C++",
-    },
-    {
-      icon: <FaPhp />,
-      name: "PHP",
-    },
-    {
-      icon: <FaJava/>,
-      name: "Java",
-    },
-    {
-      icon: <FaJs/>,
-      name: "JavaScript",
-    },
-
-    // Tecnologías y Herramientas
-    {
-      icon: <FaUnity/>,
-      name: "Unity",
-    },
-    {
-      icon: <FaDocker/>,
-      name: "Docker",
-    },
-    {
-      icon: <DiMsqlServer />,
-      name: "SQL Server",
-    },
-    {
-      icon: <SiVirtualbox />,
-      name: "Oracle VM VirtualBox",
-    },
-    {
-      icon: <FaGithub />,
-      name: "GitHub",
-    },
-    {
-      icon: <FaGitAlt />,
-      name: "Git",
-    },
-    {
-      icon: <SiXampp />,
-      name: "Xampp",
-    },
-    {
-      icon: <SiProcessingfoundation />,
-      name: "Processing",
-    },
-    {
-      icon: <TbBrandFlutter />,
-      name: "Flutter",
-    },
-    {
-      icon: <SiArduino />,
-      name: "Arduino",
-    },
-    {
-      icon: <SiAutodeskmaya />,
-      name: "Autodesk Maya 3D",
-    },
-    {
-      icon: <SiAndroidstudio />,
-      name: "Android Studio",
-    },
-    {
-      icon: <DiVisualstudio />,
-      name: "Visual Studio",
-    },
-    {
-      icon: <SiVisualstudiocode />,
-      name: "Visual Studio Code",
-    },
-    {
-      icon: <SiNotion />,
-      name: "Notion",
-    },
-    {
-      icon: <PiVirtualReality />,
-      name: "Virtual Reality",
-    },
-    {
-      icon: <TbAugmentedReality2 />,
-      name: "Augmented Reality",
-    },
-    {
-      icon: <SiAdobephotoshop />,
-      name: "Adobe Photoshop",
-    },
-    {
-      icon: <SiAdobeillustrator />,
-      name: "Adobe Illustrator",
-    },
-    {
-      icon: <SiCanva />,
-      name: "Canva",
-    },
-    {
       icon: <SiMicrosoftword />,
       name: "Microsoft Word", 
     },
@@ -329,6 +223,38 @@ const skills = {
     {
       icon: <SiMicrosoftpowerpoint />,
       name: "Microsoft PowerPoint",
+    },
+    {
+      icon: <FaPython/>,
+      name: "Python",
+    },
+    {
+      icon: <SiCsharp />,
+      name: "R",
+    },
+    {
+      icon: <SiCplusplus />,
+      name: "Stata",
+    },
+    {
+      icon: <FaGithub />,
+      name: "GitHub",
+    },
+    {
+      icon: <DiVisualstudio />,
+      name: "Visual Studio",
+    },
+    {
+      icon: <SiVisualstudiocode />,
+      name: "Visual Studio Code",
+    },
+    {
+      icon: <SiAdobephotoshop />,
+      name: "Adobe Photoshop",
+     },
+    {
+      icon: <SiCanva />,
+      name: "Canva",
     },
   ]
 };
