@@ -179,8 +179,15 @@ const certifications = {
       institution: "Google-Coursera",
       topic: "Google Data Analyticsics",
       year: "2024",
-      pdf: "/assets/certifications /pdf/Coursera_data.pdf",
-      image: "/assets/certifications /images/Coursera_data.png"
+      pdf: "/assets/certifications /pdf/Uide_python.pdf",
+      image: "/assets/certifications /images/Uide_python.png"
+    },
+    {
+      institution: "UIDE",
+      topic: "Agile Methodologies with SCRUM",
+      year: "2023",
+      pdf: "/assets/certifications /pdf/.pdf",
+      image: "/assets/certifications /images/Scrum.png"
     },
      {
       institution: "UIDE",
