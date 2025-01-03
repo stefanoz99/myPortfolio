@@ -184,10 +184,10 @@ const certifications = {
     },
     {
       institution: "UIDE",
-      topic: "Agile Methodologies with SCRUM",
+      topic: "Python Basics",
       year: "2023",
-      pdf: "/assets/certifications /pdf/.pdf",
-      image: "/assets/certifications /images/Scrum.png"
+      pdf: "/assets/certifications /pdf/Uide_python.pdf",
+      image: "/assets/certifications /images/Uide_python.png"
     },
      {
       institution: "UIDE",
