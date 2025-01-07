@@ -24,16 +24,16 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#1A1A2E', // Deep navy for backgrounds
+        primary: '#0A1128', // Deep navy for backgrounds
         accent: {
-          DEFAULT: '#E94560', // Vibrant coral red for highlights
-          hover: '#F7D9D9',   // Light pink for hover states
+          DEFAULT: '#0077B6', // Soft blue for highlights
+          hover: '#CAF0F8',   // Light aqua for hover states
         },
-        secondary: '#16213E', // Dark blue for secondary areas
-        text: '#FFFFFF',      // White text color
-        muted: '#B4B4B4',     // Muted gray for less important text
-        danger: '#FF4C4C',    // Red for warnings or errors
-        success: '#22C55E',   // Green for success messages
+        secondary: '#001F54', // Rich blue for secondary areas
+        text: '#FFFFFF',      // Clean white text
+        muted: '#B0C4DE',     // Soft gray-blue for less prominent text
+        danger: '#FFD700',    // Golden yellow for alerts or warnings
+        success: '#38B000',   // Fresh green for success states
       },
       keyframes: {
         "accordion-down": {
