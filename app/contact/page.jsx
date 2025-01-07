@@ -29,7 +29,7 @@ const info = [
 const Contact = () => {
 
   //secret
-  const serviceID = "service_b6ezaw7";
+  const serviceID = "service_h3gsetj";
   const templateID = "template_xxa6qar";
   const publicKey = "j7acwzWxWtRxjWZqS";
 
@@ -61,7 +61,7 @@ const Contact = () => {
           reply_to: formData.email, // Correo electrónico del remitente
           phone: formData.phone, // Número de teléfono del remitente
           message: formData.message, // Mensaje del remitente
-          to_name: "Manolo", // Nombre del destinatario
+          to_name: "Stefano", // Nombre del destinatario
         },
         publicKey
       );
