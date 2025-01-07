@@ -1,5 +1,3 @@
-for some reason the mail isn't working yet: 
-
 "use client";
 
 import { useState } from "react";
