@@ -12,7 +12,7 @@ const stats = [
         text: "Online Certifications"
     },
     {
-        num: 6,
+        num: 3,
         text: "Programming Languages"
     },
     {
