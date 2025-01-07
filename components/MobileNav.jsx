@@ -52,7 +52,7 @@ const MobileNav = () => {
             <div className = "mt-32 mb-40 text-center">
                 <Link href = "/">
                 <h1 className = "text-4xl font-semibold">
-                    Manolo<span className = "text-accent">.</span>
+                    Stefano Zurita Perez<span className = "text-accent">.</span>
                 </h1>
                 </Link>
             </div>
