@@ -24,16 +24,17 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#0A1128', // Deep navy for backgrounds
+        background: '#FFFFFF', // Clean white background
+        primary: '#0077B6',    // Bright blue for primary elements
         accent: {
-          DEFAULT: '#0077B6', // Soft blue for highlights
-          hover: '#CAF0F8',   // Light aqua for hover states
+          DEFAULT: '#023E8A', // Rich blue for accents
+          hover: '#90E0EF',   // Light blue for hover effects
         },
-        secondary: '#001F54', // Rich blue for secondary areas
-        text: '#FFFFFF',      // Clean white text
-        muted: '#B0C4DE',     // Soft gray-blue for less prominent text
-        danger: '#FFD700',    // Golden yellow for alerts or warnings
-        success: '#38B000',   // Fresh green for success states
+        secondary: '#03045E',  // Dark navy blue for secondary areas
+        text: '#03045E',       // Dark navy blue for text
+        muted: '#ADB5BD',      // Neutral gray for muted text
+        success: '#48CAE4',    // Aqua blue for success states
+        warning: '#00B4D8',    // Bright cyan for warnings
       },
       keyframes: {
         "accordion-down": {
