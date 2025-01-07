@@ -13,9 +13,8 @@ module.exports = {
       center: true,
       padding: "15px",
     },
-    fontFamily:{
+    fontFamily: {
       primary: "var(--font-jetbrainsMono)",
-
     },
     screens: {
       sm: "640px",
@@ -25,15 +24,16 @@ module.exports = {
     },
     extend: {
       colors: {
-        //primary: '#1F2937',
-        primary: '#060606',
-        
+        primary: '#1A1A2E', // Deep navy for backgrounds
         accent: {
-          // DEFAULT: '#10B981',
-          // hover: '#065F46',
-          DEFAULT: '#5c7aa1',
-          hover: '#FFFFFF',
+          DEFAULT: '#E94560', // Vibrant coral red for highlights
+          hover: '#F7D9D9',   // Light pink for hover states
         },
+        secondary: '#16213E', // Dark blue for secondary areas
+        text: '#FFFFFF',      // White text color
+        muted: '#B4B4B4',     // Muted gray for less important text
+        danger: '#FF4C4C',    // Red for warnings or errors
+        success: '#22C55E',   // Green for success messages
       },
       keyframes: {
         "accordion-down": {
@@ -52,4 +52,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
