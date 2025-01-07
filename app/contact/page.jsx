@@ -30,7 +30,7 @@ const Contact = () => {
   // EmailJS Configuration
   const serviceID = "service_h3gsetj";
   const templateID = "template_z9uv4w7"; // Updated template ID
-  const publicKey = "j7acwzWxWtRxjWZqS";
+  const publicKey = "SffavoT0yir6IQbZs";
 
   const [formData, setFormData] = useState({
     firstname: '',
