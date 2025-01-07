@@ -29,7 +29,7 @@ const info = [
 const Contact = () => {
   // EmailJS Configuration
   const serviceID = "service_h3gsetj";
-  const templateID = "template_xxa6qar";
+  const templateID = "template_z9uv4w7"; // Updated template ID
   const publicKey = "j7acwzWxWtRxjWZqS";
 
   const [formData, setFormData] = useState({
@@ -59,11 +59,11 @@ const Contact = () => {
         serviceID,
         templateID,
         {
-          from_name: `${formData.firstname} ${formData.lastname}`,
-          reply_to: formData.email,
-          phone: formData.phone,
-          message: formData.message,
-          to_name: "Stefano",
+          from_name: `${formData.firstname} ${formData.lastname}`, // Adjust to match your EmailJS template
+          from_email: formData.email, // Updated key name
+          phone_number: formData.phone, // Updated key name
+          message: formData.message, // Updated key name
+          to_name: "Stefano", // Ensure this matches your template variable, if used
         },
         publicKey
       );
