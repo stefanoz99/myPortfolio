@@ -216,7 +216,7 @@ const certifications = {
 //skills data
 const skills = {
   title: 'My Skills',
-  description: "With a diverse skill set in programming languages and tools, I am equipped to tackle a wide range of projects, from game development to web applications. My technical expertise is complemented by my adaptability and eagerness to learn new technologies.",
+  description: "With a diverse skill set in programming languages and tools, I am equipped to tackle a wide range of projects, specially in data analysis.",
   skillList: [
     // Lenguajes de Programación
     {
@@ -235,18 +235,7 @@ const skills = {
       icon: <FaPython/>,
       name: "Python",
     },
-    {
-      icon: <SiCsharp />,
-      name: "R",
-    },
-    {
-      icon: <SiCplusplus />,
-      name: "Stata",
-    },
-    {
-      icon: <FaGithub />,
-      name: "GitHub",
-    },
+
     {
       icon: <DiVisualstudio />,
       name: "Visual Studio",
@@ -262,6 +251,10 @@ const skills = {
     {
       icon: <SiCanva />,
       name: "Canva",
+    },
+    {
+      icon: <FaGithub />,
+      name: "GitHub",
     },
   ]
 };
