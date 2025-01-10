@@ -101,17 +101,17 @@ const experience = {
   },
   {
     company: "EPMMOP (Public Infrastructure Management Company)",
-    position: "Process Supervisor",
+    position: "Operations Supervisor",
     duration: "2023 - 2024"
   },
   {
     company: "EPMMOP (Public Infrastructure Management Company)",
-    position: "Process Executor",
+    position: "Operations Specialist",
     duration: "2022 - 2023"
   },
   {
     company: "Pelotea",
-    position: "Commercial Intern",
+    position: "Insurance Sales Intern",
     duration: "2021"
   },
   {
