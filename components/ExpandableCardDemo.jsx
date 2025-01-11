@@ -155,7 +155,7 @@ const thesisProjects = [
   {
     title: "Kepler.gl Visualizations",
     description:
-      "Geospatial data visualizations created using Kepler.gl to identify patterns and trends in urban infrastructure data.",
+      "Investment Trends: Developed an interactive and visually engaging graph using Kepler.gl to analyze potential investment trends from Canada to Ecuador. (WLU, Microeconomics Project)",
     src: "/assets/projects/images/KeplerVisualization.png",
     btnLink: "/assets/projects/documents/KeplerVisualizations.pdf",
     tags: ["data-visualization"],
