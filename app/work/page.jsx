@@ -7,17 +7,17 @@ import { ExpandableCardDemo } from "../../components/ExpandableCardDemo";
 // Thesis data
 const thesis = [
   {
-    title: "Automobile Markets",
-    description: "An econometric analysis of car demand in the United States using econometric techniques.",
+    title: "Supply Demand Analysis in Automobile Markets",
+    description: "Modeling U.S. Automotive Demand: A Multi-Stage Analysis of Price Sensitivity, and Brand Competition",
     filterTag: "automobile",
   },
   {
-    title: "Master's in Big Data",
+    title: "Master of Information Systems with a Specialization in Business Intelligence and Data Analytics Thesis",
     description: `Development of an unsupervised learning model to detect patterns and anomalies related to money laundering crimes, based on the processing of economic and social data in Ecuadorian cantons and provinces for the period 2013–2023. (Original thesis written in Spanish)`,
     filterTag: "bigdata",
   },
   {
-    title: "Economist Thesis",
+    title: "Bachelor's in Economics Thesis",
     description: "Influence of Accession to ICSID on Foreign Direct Investment.",
     filterTag: "economics",
   },
