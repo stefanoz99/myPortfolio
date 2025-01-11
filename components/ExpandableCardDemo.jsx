@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, useEffect, useRef, useId } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
@@ -29,7 +30,7 @@ export function ExpandableCardDemo({ filterTag }) {
       <AnimatePresence>
         {active && (
           <motion.div
-            className="fixed inset-0 bg-black/40 z-10"
+            className="fixed inset-0 bg-black/20 z-10"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -39,30 +40,49 @@ export function ExpandableCardDemo({ filterTag }) {
 
       <AnimatePresence>
         {active && (
-          <motion.div className="fixed inset-0 grid place-items-center z-20">
+          <motion.div className="fixed inset-0 grid place-items-center z-[100]">
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px] bg-white rounded-lg overflow-hidden shadow-lg"
+              className="w-full max-w-[500px] h-full lg:h-fit lg:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden shadow-lg"
             >
-              <Image
-                src={active.src}
-                alt={active.title}
-                width={500}
-                height={300}
-                className="w-full h-[200px] object-cover"
-              />
-              <div className="p-4">
-                <h3 className="text-xl font-bold">{active.title}</h3>
-                <p className="text-gray-600 my-2">{active.description}</p>
-                <a
-                  href={active.btnLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-accent hover:bg-accent-hover text-white px-4 py-2 rounded-md"
-                >
-                  Download
-                </a>
+              <motion.div layoutId={`image-${active.title}-${id}`}>
+                <Image
+                  priority
+                  width={500}
+                  height={300}
+                  src={active.src}
+                  alt={active.title}
+                  className="w-full h-60 lg:h-80 object-cover object-top"
+                />
+              </motion.div>
+
+              <div>
+                <div className="flex justify-between items-center p-4 bg-accent/10">
+                  <div className="text-start">
+                    <motion.h3
+                      layoutId={`title-${active.title}-${id}`}
+                      className="font-bold text-neutral-700 dark:text-neutral-200 text-lg"
+                    >
+                      {active.title}
+                    </motion.h3>
+                    <motion.p
+                      layoutId={`description-${active.description}-${id}`}
+                      className="text-neutral-600 dark:text-neutral-400"
+                    >
+                      {active.description}
+                    </motion.p>
+                  </div>
+                  <motion.a
+                    layoutId={`button-${active.title}-${id}`}
+                    href={active.btnLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 text-sm rounded-md font-bold bg-accent text-white hover:bg-primary hover:text-white"
+                  >
+                    Download
+                  </motion.a>
+                </div>
               </div>
               <button
                 onClick={() => setActive(null)}
@@ -80,18 +100,34 @@ export function ExpandableCardDemo({ filterTag }) {
           <motion.div
             key={card.title}
             layoutId={`card-${card.title}-${id}`}
-            className="bg-gray-100 p-4 rounded-lg shadow hover:shadow-lg cursor-pointer"
+            className="p-4 flex flex-col md:flex-row justify-center items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
             onClick={() => setActive(card)}
           >
-            <Image
-              src={card.src}
-              alt={card.title}
-              width={300}
-              height={200}
-              className="w-full h-[150px] object-cover rounded-md"
-            />
-            <h3 className="mt-4 text-lg font-semibold">{card.title}</h3>
-            <p className="text-gray-600">{card.description}</p>
+            <div className="flex flex-col items-center">
+              <motion.div layoutId={`image-${card.title}-${id}`}>
+                <Image
+                  width={100}
+                  height={100}
+                  src={card.src}
+                  alt={card.title}
+                  className="h-60 w-60 md:h-60 md:w-60 lg:h-40 lg:w-40 xl:h-40 xl:w-40 rounded-lg object-cover object-top"
+                />
+              </motion.div>
+              <div className="text-center mt-4">
+                <motion.h3
+                  layoutId={`title-${card.title}-${id}`}
+                  className="font-medium font-bold text-neutral-400 dark:text-neutral-400"
+                >
+                  {card.title}
+                </motion.h3>
+                <motion.p
+                  layoutId={`description-${card.description}-${id}`}
+                  className="text-neutral-600 dark:text-neutral-600"
+                >
+                  {card.description}
+                </motion.p>
+              </div>
+            </div>
           </motion.div>
         ))}
       </div>
