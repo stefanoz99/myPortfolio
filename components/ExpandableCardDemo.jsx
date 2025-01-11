@@ -47,7 +47,6 @@ export function ExpandableCardDemo({ filterTag }) {
       <AnimatePresence>
         {active && typeof active === "object" && (
           <div className="fixed inset-0 grid place-items-center z-[100]">
-            {/* Expanded Card */}
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
@@ -63,6 +62,7 @@ export function ExpandableCardDemo({ filterTag }) {
                   className="w-full h-60 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
                 />
               </motion.div>
+
               <div>
                 <div className="flex justify-between items-center p-3 bg-accent/10">
                   <div className="text-start px-4">
@@ -78,6 +78,17 @@ export function ExpandableCardDemo({ filterTag }) {
                     >
                       {active.description}
                     </motion.p>
+                  </div>
+
+                  <div className="flex-col px-4 pt-2">
+                    <motion.a
+                      layoutId={`button-${active.title}-${id}`}
+                      href={active.btnLink}
+                      target="_blank"
+                      className="px-4 py-3 text-sm rounded-full font-bold bg-accent text-white hover:bg-primary hover:text-white"
+                    >
+                      Download
+                    </motion.a>
                   </div>
                 </div>
               </div>
@@ -127,7 +138,7 @@ export function ExpandableCardDemo({ filterTag }) {
   );
 }
 
-// Projects Data
+// Thesis Project Data
 const thesisProjects = [
   {
     title: "Automobile Markets",
@@ -138,4 +149,54 @@ const thesisProjects = [
   },
   {
     title: "Master's Thesis in Big Data",
-    description: `Development of an unsupervised learn
+    description: `Development of an unsupervised learning model to detect patterns and anomalies related to money laundering crimes. (Original thesis in Spanish)`,
+    src: "/assets/projects/images/BigDataThesis.png",
+    btnLink: "/assets/projects/documents/BigDataThesis.pdf",
+    tags: ["bigdata"],
+  },
+  {
+    title: "Economist Thesis",
+    description: "Influence of Accession to ICSID on Foreign Direct Investment.",
+    src: "/assets/projects/images/EconomistThesis.png",
+    btnLink: "/assets/projects/documents/EconomistThesis.pdf",
+    tags: ["economics"],
+  },
+  {
+    title: "Power BI Dashboard",
+    description: "Interactive dashboards and insights built with Power BI.",
+    src: "/assets/projects/images/PowerBI.png",
+    btnLink: "/assets/projects/documents/PowerBI.pdf",
+    tags: ["visualization"],
+  },
+  {
+    title: "Kepler.gl Visualizations",
+    description: "Geospatial analysis and interactive visualizations with Kepler.gl.",
+    src: "/assets/projects/images/Kepler.png",
+    btnLink: "/assets/projects/documents/KeplerVisualization.pdf",
+    tags: ["visualization"],
+  },
+];
+
+export const CloseIcon = () => {
+  return (
+    <motion.svg
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.05 } }}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-4 w-4 text-black"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M18 6l-12 12" />
+      <path d="M6 6l12 12" />
+    </motion.svg>
+  );
+};
