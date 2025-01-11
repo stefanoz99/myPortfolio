@@ -28,7 +28,6 @@ export function ExpandableCardDemo({ filterTag }) {
 
   useOutsideClick(ref, () => setActive(null));
 
-  // Filter cards based on the tag
   const filteredCards = thesisProjects.filter((card) => card.tags.includes(filterTag));
 
   return (
@@ -46,21 +45,8 @@ export function ExpandableCardDemo({ filterTag }) {
       </AnimatePresence>
 
       <AnimatePresence>
-        {active && typeof active === "object" ? (
+        {active && typeof active === "object" && (
           <div className="fixed inset-0 grid place-items-center z-[100]">
-            {/* Close Button */}
-            <motion.button
-              key={`button-${active.title}-${id}`}
-              layout
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0, transition: { duration: 0.05 } }}
-              className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
-              onClick={() => setActive(null)}
-            >
-              <CloseIcon />
-            </motion.button>
-
             {/* Expanded Card */}
             <motion.div
               layoutId={`card-${active.title}-${id}`}
@@ -77,7 +63,6 @@ export function ExpandableCardDemo({ filterTag }) {
                   className="w-full h-60 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
                 />
               </motion.div>
-
               <div>
                 <div className="flex justify-between items-center p-3 bg-accent/10">
                   <div className="text-start px-4">
@@ -94,23 +79,11 @@ export function ExpandableCardDemo({ filterTag }) {
                       {active.description}
                     </motion.p>
                   </div>
-
-                  {/* Download Button */}
-                  <div className="flex-col px-4 pt-2">
-                    <motion.a
-                      layoutId={`button-${active.title}-${id}`}
-                      href={active.btnLink}
-                      target="_blank"
-                      className="px-4 py-3 text-sm rounded-full font-bold bg-accent text-white hover:bg-primary hover:text-white"
-                    >
-                      Download
-                    </motion.a>
-                  </div>
                 </div>
               </div>
             </motion.div>
           </div>
-        ) : null}
+        )}
       </AnimatePresence>
 
       {/* Cards */}
@@ -154,51 +127,15 @@ export function ExpandableCardDemo({ filterTag }) {
   );
 }
 
-// Thesis Project Data
+// Projects Data
 const thesisProjects = [
   {
     title: "Automobile Markets",
     description: "An econometric analysis of car demand in the United States using econometric techniques.",
     src: "/assets/projects/images/AutomobileMarkets.png",
     btnLink: "/assets/projects/documents/AutomobileMarkets.pdf",
-    tags: ["automobile"],
+    tags: ["economics"],
   },
   {
     title: "Master's Thesis in Big Data",
-    description: `Development of an unsupervised learning model to detect patterns and anomalies related to money laundering crimes, based on economic and social data in Ecuador from 2013–2023. (Original thesis in Spanish)`,
-    src: "/assets/projects/images/BigDataThesis.png",
-    btnLink: "/assets/projects/documents/BigDataThesis.pdf",
-    tags: ["bigdata"],
-  },
-  {
-    title: "Economist Thesis",
-    description: "Influence of Accession to ICSID on Foreign Direct Investment.",
-    src: "/assets/projects/images/EconomistThesis.png",
-    btnLink: "/assets/projects/documents/EconomistThesis.pdf",
-    tags: ["economics"],
-  },
-];
-
-export const CloseIcon = () => {
-  return (
-    <motion.svg
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.05 } }}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="h-4 w-4 text-black"
-    >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M18 6l-12 12" />
-      <path d="M6 6l12 12" />
-    </motion.svg>
-  );
-};
+    description: `Development of an unsupervised learn
