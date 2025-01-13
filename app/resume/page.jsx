@@ -260,7 +260,6 @@ const skills = {
 };
 // References data
 const references = {
-  icon: '/assets/resume/reference.svg',
   title: 'References',
   description: "Below are professional references who can vouch for my skills, experiences, and work ethics.",
   items: [
@@ -315,6 +314,8 @@ const Resume = () => {
           <TabsTrigger value="certifications" onClick={() => handleTabClick('certifications')}>CERTIFICATIONS</TabsTrigger>
 
           <TabsTrigger value="skills" onClick={() => handleTabClick('skills')}>SKILLS</TabsTrigger>
+          
+          <TabsTrigger value="skills" onClick={() => handleTabClick('references')}>REFERENCES</TabsTrigger>
 
         </TabsList>
 
