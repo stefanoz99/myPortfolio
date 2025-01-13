@@ -261,6 +261,7 @@ const skills = {
 // References data
 const references = {
   title: 'References',
+  icon: '/assets/resume/reference.svg'
   description: "Below are professional references who can vouch for my skills, experiences, and work ethics.",
   items: [
     { name: "Dr. Wing Chan", position: "Econometrics Professor, Wilfrid Laurier University", contact: "wchan@wlu.ca", phone: "N/A" },
