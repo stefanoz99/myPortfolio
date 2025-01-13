@@ -259,6 +259,45 @@ const skills = {
   ]
 };
 
+// References data
+const references = {
+  icon: '/assets/resume/reference.svg',
+  title: 'References',
+  description: "Below are professional references who can vouch for my skills, experiences, and work ethics.",
+  items: [
+    {
+      name: "Dr. Wing Chan",
+      position: "Econometrics Professor, Wilfrid Laurier University",
+      contact: "wchan@wlu.ca",
+      phone: "N/A",
+    },
+    {
+      name: "Dr. Zijian Wang",
+      position: "Macroeconomics Professor, Wilfrid Laurier University",
+      contact: "zijianwang@wlu.ca",
+      phone: "N/A",
+    },
+    {
+      name: "Andrea Espinoza",
+      position: "Planning Supervisor, EPMMOP",
+      contact: "andrea.espinoza@epmmop.gob.ec",
+      phone: "+593 96 906 4077",
+    },
+    {
+      name: "Diego Román",
+      position: "Former CEO, Pelotea",
+      contact: "droman@pelotea.com",
+      phone: "+593 99 710 0102",
+    },
+    {
+      name: "Luis Espinosa Goded",
+      position: "Professor and Researcher, USFQ",
+      contact: "lespinosa@usfq.edu.ec",
+      phone: "+593 99 562 4606",
+    },
+  ],
+};
+
 
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs';
 import {ScrollArea} from '@/components/ui/scroll-area'
@@ -492,6 +531,28 @@ const Resume = () => {
             </div>
 
           </TabsContent>
+          // Adding the References section to the Tabs component
+    <TabsTrigger value="references" onClick={() => handleTabClick('references')}>REFERENCES</TabsTrigger>
+    
+    <TabsContent value="references" className="w-full" id="references">
+      <div className="flex flex-col gap-[30px] text-center xl:text-left">
+        <h3 className="text-2xl xl:text-4xl font-bold">{references.title}</h3>
+        <p className="max-w-[500px] xl:max-w-[800px] text-white/60 mb-6 mx-auto xl:mx-0 leading-relaxed text-sm xl:text-[15px]">{references.description}</p>
+    
+        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+          {references.items.map((item, index) => {
+            return (
+              <li key={index} className="bg-[#232329] py-6 px-10 rounded-xl flex flex-col gap-3">
+                <h3 className="text-xl font-bold">{item.name}</h3>
+                <p className="text-white/60">{item.position}</p>
+                <p className="text-white/60">Email: <a href={`mailto:${item.contact}`} className="text-accent">{item.contact}</a></p>
+                <p className="text-white/60">Phone: {item.phone}</p>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </TabsContent>
         </div>
 
 
