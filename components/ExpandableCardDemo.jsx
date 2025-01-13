@@ -148,7 +148,7 @@ const thesisProjects = [
     title: "Power BI Visualization",
     description:
       "Interactive dashboard analyzing organizational performance and financial indicators, built using Power BI to streamline decision-making processes.",
-    src: "/assets/projects/images/PowerBI.png",
+    src: "/assets/projects/images/PowerBIVisualization.png",
     btnLink: "/assets/projects/documents/PowerBIVisualization.pdf",
     tags: ["data-visualization"],
   },
@@ -156,7 +156,7 @@ const thesisProjects = [
     title: "Kepler.gl Visualizations",
     description:
       "Geospatial data visualizations created using Kepler.gl to identify patterns and trends in urban infrastructure data.",
-    src: "/assets/projects/images/AutomobileMarkets.png",
+    src: "/assets/projects/images/KeplerVisualizations.png",
     btnLink: "/assets/projects/documents/KeplerVisualizations.pdf",
     tags: ["data-visualization"],
   },
