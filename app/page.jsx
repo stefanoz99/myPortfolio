@@ -63,7 +63,7 @@ const Home = () => {
 
             {/* BUTTON AND SOCIAL */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a href="/assets/cv/Stefano_Zurita_Resume.pdf" download="Stefano_Zurita_Resume.pdf">
+              <a href="/assets/Stefano_Zurita_Resume.pdf" download="Stefano_Zurita_Resume.pdf">
                 <Button variant="outline" size="md" className="uppercase flex items-center gap-2">
                   <span>Download Resume</span>
                   <FiDownload className="text-xl" />
