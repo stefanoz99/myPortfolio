@@ -100,7 +100,7 @@ const experience = {
     duration: "2024 - Present"
   },
   {
-    company: "EPMMOP (Public Infrastructure Management Company)",
+    company: "EPMMOP (Public Mobility and Infrastructure Company)",
     position: "Operations Supervisor",
     duration: "2023 - 2024"
   },
@@ -265,7 +265,7 @@ const references = {
   items: [
     { name: "Dr. Wing Chan", position: "Econometrics Professor, Wilfrid Laurier University", contact: "wchan@wlu.ca", phone: "N/A" },
     { name: "Dr. Zijian Wang", position: "Macroeconomics Professor, Wilfrid Laurier University", contact: "zijianwang@wlu.ca", phone: "N/A" },
-    { name: "Andrea Espinoza", position: "Planning Supervisor, EPMMOP", contact: "andrea.espinoza@epmmop.gob.ec", phone: "+593 96 906 4077" },
+    { name: "Andrea Espinoza", position: "Planning Supervisor, EPMMOP (Public Mobility and Infrastructure Company)", contact: "andrea.espinoza@epmmop.gob.ec", phone: "+593 96 906 4077" },
     { name: "Diego Román", position: "Former CEO, Pelotea", contact: "droman@pelotea.com", phone: "+593 99 710 0102" },
     { name: "Luis Espinosa Goded", position: "Professor and Researcher, USFQ", contact: "lespinosa@usfq.edu.ec", phone: "+593 99 562 4606" },
   ],
