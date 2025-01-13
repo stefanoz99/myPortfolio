@@ -82,9 +82,12 @@ const about = {
       fieldValue: "(+1)519 722 6241"
     },
     {
-      fieldName: "Email",
-      fieldValue: ["stefano-s2@hotmail.com", "zuri1990@mylaurier.ca"]
-        
+       fieldName: "Email (Personal)",
+      fieldValue: "stefano-s2@hotmail.com"
+    },
+    {
+      fieldName: "Email (Academic)",
+      fieldValue: "zuri1990@mylaurier.ca"
     },
   ]
 };
