@@ -74,8 +74,8 @@ const about = {
       fieldValue: "Waterloo, Ontario, Canada"
     },
     {
-      fieldName: "Availability",
-      fieldValue: "Open to Co-Op"
+      fieldName: "Email (Academic)",
+      fieldValue: "zuri1990@mylaurier.ca"
     },
     {
       fieldName: "Phone",
@@ -83,7 +83,7 @@ const about = {
     },
     {
        fieldName: "Email (Personal)",
-      fieldValue: "stefano-s2@hotmail.com zuri1990@mylaurier.ca"
+      fieldValue: "stefano-s2@hotmail.com"
     },
   ]
 };
