@@ -29,15 +29,15 @@ const Work = () => (
     className="py-8 md:py-12"
   >
     <div className="container mx-auto px-4">
-      <Tabs defaultValue={categories[0].filterTag} className="flex flex-col gap-6">
+      <Tabs defaultValue={categories[0].filterTag} className="flex flex-col gap-6 md:gap-8">
         {/* Tabs List */}
-        <div className="overflow-x-auto">
-          <TabsList className="flex gap-4 md:gap-8 justify-start md:justify-center flex-wrap">
+        <div className="md:flex md:justify-center overflow-x-auto md:overflow-visible">
+          <TabsList className="flex gap-4 md:gap-8 flex-wrap md:flex-nowrap">
             {categories.map((cat) => (
               <TabsTrigger
                 key={cat.filterTag}
                 value={cat.filterTag}
-                className="text-sm md:text-lg font-semibold px-4 py-2"
+                className="text-sm md:text-lg font-semibold px-4 py-2 md:px-6 md:py-3"
               >
                 {cat.title}
               </TabsTrigger>
@@ -46,13 +46,13 @@ const Work = () => (
         </div>
 
         {/* Tabs Content */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 md:gap-8">
           {categories.map((cat) => (
             <TabsContent key={cat.filterTag} value={cat.filterTag}>
-              <h3 className="text-xl md:text-2xl font-bold text-center">
+              <h3 className="text-xl md:text-2xl font-bold text-center md:text-left">
                 {cat.title}
               </h3>
-              <p className="text-center text-sm md:text-base text-muted my-2 md:my-4">
+              <p className="text-center md:text-left text-sm md:text-base text-muted my-2 md:my-4">
                 {cat.description}
               </p>
               <ExpandableCardDemo filterTag={cat.filterTag} />
