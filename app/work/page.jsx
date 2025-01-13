@@ -26,26 +26,35 @@ const Work = () => (
   <motion.section
     initial={{ opacity: 0 }}
     animate={{ opacity: 1, transition: { delay: 0.3, duration: 1 } }}
-    className="py-12"
+    className="py-8 md:py-12"
   >
-    <div className="container mx-auto">
-      <Tabs defaultValue={categories[0].filterTag} className="flex flex-col gap-8">
-        <TabsList className="flex gap-4 justify-center">
-          {categories.map((cat) => (
-            <TabsTrigger
-              key={cat.filterTag}
-              value={cat.filterTag}
-              className="text-lg font-semibold"
-            >
-              {cat.title}
-            </TabsTrigger>
-          ))}
-        </TabsList>
-        <div>
+    <div className="container mx-auto px-4">
+      <Tabs defaultValue={categories[0].filterTag} className="flex flex-col gap-6">
+        {/* Tabs List */}
+        <div className="overflow-x-auto">
+          <TabsList className="flex gap-4 md:gap-8 justify-start md:justify-center flex-wrap">
+            {categories.map((cat) => (
+              <TabsTrigger
+                key={cat.filterTag}
+                value={cat.filterTag}
+                className="text-sm md:text-lg font-semibold px-4 py-2"
+              >
+                {cat.title}
+              </TabsTrigger>
+            ))}
+          </TabsList>
+        </div>
+
+        {/* Tabs Content */}
+        <div className="flex flex-col gap-6">
           {categories.map((cat) => (
             <TabsContent key={cat.filterTag} value={cat.filterTag}>
-              <h3 className="text-2xl font-bold text-center">{cat.title}</h3>
-              <p className="text-center text-muted my-4">{cat.description}</p>
+              <h3 className="text-xl md:text-2xl font-bold text-center">
+                {cat.title}
+              </h3>
+              <p className="text-center text-sm md:text-base text-muted my-2 md:my-4">
+                {cat.description}
+              </p>
               <ExpandableCardDemo filterTag={cat.filterTag} />
             </TabsContent>
           ))}
