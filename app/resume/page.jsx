@@ -83,7 +83,7 @@ const about = {
     },
     {
       fieldName: "Email",
-      fieldValue: "stefano-s2@hotmail.com" , "zuri1990@mylaurier.ca"
+      fieldValue: ["stefano-s2@hotmail.com", "zuri1990@mylaurier.ca"]
         
     },
   ]
