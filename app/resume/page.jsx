@@ -83,11 +83,7 @@ const about = {
     },
     {
        fieldName: "Email (Personal)",
-      fieldValue: "stefano-s2@hotmail.com"
-    },
-    {
-      fieldName: "Email (Academic)",
-      fieldValue: "zuri1990@mylaurier.ca"
+      fieldValue: "stefano-s2@hotmail.com zuri1990@mylaurier.ca"
     },
   ]
 };
