@@ -156,7 +156,7 @@ const thesisProjects = [
     title: "Kepler.gl Visualizations",
     description:
       "Geospatial data visualizations created using Kepler.gl to identify patterns and trends in urban infrastructure data.",
-    src: "/assets/projects/images/KeplerVisualization.png",
+    src: "/assets/projects/images/AutomobileMarkets.png",
     btnLink: "/assets/projects/documents/KeplerVisualizations.pdf",
     tags: ["data-visualization"],
   },
