@@ -315,7 +315,7 @@ const Resume = () => {
 
           <TabsTrigger value="skills" onClick={() => handleTabClick('skills')}>SKILLS</TabsTrigger>
           
-          <TabsTrigger value="skills" onClick={() => handleTabClick('references')}>REFERENCES</TabsTrigger>
+          <TabsTrigger value="references" onClick={() => handleTabClick('references')}>REFERENCES</TabsTrigger>
 
         </TabsList>
 
@@ -506,9 +506,23 @@ const Resume = () => {
             </div>
 
           </TabsContent>
+          <TabsContent value="references" className="w-full" id="references">
+            <div className="flex flex-col gap-[30px] text-center xl:text-left">
+               <h3 className="text-2xl xl:text-4xl font-bold">{references.title}</h3>
+              <p className="max-w-[500px] xl:max-w-[800px] text-white/60 mb-6 mx-auto xl:mx-0 leading-relaxed text-sm xl:text-[15px]">{references.description}</p>
+              <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                {references.items.map((item, index) => (
+                  <li key={index} className="bg-[#232329] py-6 px-10 rounded-xl flex flex-col gap-3">
+                    <h3 className="text-xl font-bold">{item.name}</h3>
+                    <p className="text-white/60">{item.position}</p>
+                    <p className="text-white/60">Email: <a href={`mailto:${item.contact}`} className="text-accent">{item.contact}</a></p>
+                    <p className="text-white/60">Phone: {item.phone}</p>
+                  </li>
+            ))}
+                  </ul>
+                  </div>
+            </TabsContent>
         </div>
-
-
       </Tabs>
     </div>
     </motion.div>
