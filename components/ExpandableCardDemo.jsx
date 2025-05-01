@@ -161,6 +161,14 @@ const thesisProjects = [
     tags: ["data-visualization"],
   },
   {
+    title: "Singapore Forecast Project",
+    description:
+      "Forecasting Singapore’s Inflation Using LASSO: A Comparison with Traditional Time Series Models",
+    src: "/assets/projects/images/Singapore.png",
+    btnLink: "/assets/projects/documents/Singapore.pdf",
+    tags: ["economics-research"],
+  },
+  {
     title: "Automobile Markets Research",
     description:
       "Econometric analysis of U.S. automobile demand, exploring price sensitivity, competition, and consumer behavior.",
