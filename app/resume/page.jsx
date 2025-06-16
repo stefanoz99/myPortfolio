@@ -172,8 +172,8 @@ const certifications = {
       institution: "UIDE-EIG",
       topic: "Master in Information Systems (Business Intelligence and Data Analytics)",
       year: "2024",
-      pdf: "/assets/certifications /pdf/UIDE_titulo.pdf",
-      image: "/assets/certifications /images/UIDE_titulo.png"
+      pdf: "/assets/certifications /pdf/Titulo_UIDE.pdf",
+      image: "/assets/certifications /images/Titulo_UIDE.png"
     },
      {
       institution: "Google-Coursera",
