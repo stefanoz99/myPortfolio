@@ -95,9 +95,14 @@ const experience = {
   description: "In my professional experience, I have worked in various areas within both the public and private sectors in Ecuador. In each role, I have stood out for my efficiency and quick results, leveraging data to optimize outcomes and improve performance. I have also applied analytical techniques to provide valuable recommendations to managers and stakeholders, contributing to the success of the projects I have been involved in.",
   items: [
   {
+    company: "York Region",
+    position: "Budget Analyst CO-OP",
+    duration: "2025 - Present"
+  },
+  {
     company: "Wilfrid Laurier University",
     position: "Graduate Teaching Assistant",
-    duration: "2024 - Present"
+    duration: "2024"
   },
   {
     company: "EPMMOP (Public Mobility and Infrastructure Company)",
@@ -161,19 +166,18 @@ const certifications = {
   description: "Throughout my career, I have pursued various certifications to enhance my knowledge and skills in key areas. These certifications demonstrate my commitment to continuous learning and my ability to apply industry best practices in my work.",
   items: [
     {
-      institution: "USFQ",
-      topic: "Bachelor in Economics",
-      year: "2021",
-      pdf: "/assets/certifications /pdf/Titulo_USFQ.pdf",
-      image: "/assets/certifications /images/Titulo_USFQ.png"
-    },
-
-      {
       institution: "UIDE-EIG",
       topic: "Master in Information Systems (Business Intelligence and Data Analytics)",
       year: "2024",
       pdf: "/assets/certifications /pdf/Titulo_UIDE.pdf",
       image: "/assets/certifications /images/Titulo_UIDE.png"
+    },
+    {
+      institution: "USFQ",
+      topic: "Bachelor in Economics",
+      year: "2021",
+      pdf: "/assets/certifications /pdf/Titulo_USFQ.pdf",
+      image: "/assets/certifications /images/Titulo_USFQ.png"
     },
      {
       institution: "Google-Coursera",
