@@ -137,7 +137,15 @@ export function ExpandableCardDemo({ filterTag }) {
 
 const thesisProjects = [
   {
-    title: "Master’s Thesis in Business Intelligence",
+    title: "Master's Research Paper in Economics",
+    description:
+      "Criminal Involvement and Health Insurance Coverage Among Serious Youth Offenders: OLS and fixed-effects regression in Stata using the Pathways to Desistance dataset. A −6pp OLS association disappears under fixed effects.",
+    src: "/assets/projects/images/LaurierMRP.png",
+    btnLink: "/assets/projects/documents/LaurierMRP.pdf",
+    tags: ["economics-research"],
+  },
+  {
+    title: "Master's Thesis in Business Intelligence",
     description:
       "Development of an unsupervised learning model to detect patterns and anomalies related to money laundering crimes, based on economic and social data in Ecuador from 2013–2023. (Original thesis in Spanish)",
     src: "/assets/projects/images/BigDataThesis.png",
@@ -163,7 +171,7 @@ const thesisProjects = [
   {
     title: "Singapore Forecast Project",
     description:
-      "Forecasting Singapore’s Inflation Using LASSO: A Comparison with Traditional Time Series Models",
+      "Forecasting Singapore's Inflation Using LASSO: A Comparison with Traditional Time Series Models",
     src: "/assets/projects/images/Singapore.png",
     btnLink: "/assets/projects/documents/Singapore.pdf",
     tags: ["economics-research"],
@@ -177,7 +185,7 @@ const thesisProjects = [
     tags: ["economics-research"],
   },
   {
-    title: "Bachelor’s Thesis in Economics",
+    title: "Bachelor's Thesis in Economics",
     description:
       "Influence of accession to ICSID on foreign direct investment: A case study approach.",
     src: "/assets/projects/images/EconomistThesis.png",
