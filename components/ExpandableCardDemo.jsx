@@ -140,8 +140,8 @@ const thesisProjects = [
     title: "Master's Research Paper in Economics",
     description:
       "Criminal Involvement and Health Insurance Coverage Among Serious Youth Offenders: OLS and fixed-effects regression in Stata using the Pathways to Desistance dataset. A −6pp OLS association disappears under fixed effects.",
-    src: "/assets/projects/images/LaurierMRP.png",
-    btnLink: "/assets/projects/documents/LaurierMRP.pdf",
+    src: "/assets/projects/images/Laurier_Thesis.png",
+    btnLink: "/assets/projects/documents/Laurier_Thesis.pdf",
     tags: ["economics-research"],
   },
   {
