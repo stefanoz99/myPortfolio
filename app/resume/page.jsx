@@ -71,11 +71,11 @@ const about = {
     },
     {
       fieldName: "Location",
-      fieldValue: "Waterloo, Ontario, Canada"
+      fieldValue: "Vaughan, Ontario, Canada"
     },
     {
-      fieldName: "Email (Academic)",
-      fieldValue: "zuri1990@mylaurier.ca"
+      fieldName: "Email (Work)",
+      fieldValue: "stefano.zurita@york.ca"
     },
     {
       fieldName: "Phone",
@@ -96,8 +96,13 @@ const experience = {
   items: [
   {
     company: "York Region",
+    position: "Economist",
+    duration: "2026 - Present"
+  },
+    {
+    company: "York Region",
     position: "Budget Analyst CO-OP",
-    duration: "2025 - Present"
+    duration: "2025"
   },
   {
     company: "Wilfrid Laurier University",
@@ -166,7 +171,14 @@ const certifications = {
   description: "Throughout my career, I have pursued various certifications to enhance my knowledge and skills in key areas. These certifications demonstrate my commitment to continuous learning and my ability to apply industry best practices in my work.",
   items: [
     {
-      institution: "UIDE-EIG",
+      institution: "Wilfrid Laurier University, Waterloo, Canada",
+      topic: "Master in Information Systems (Business Intelligence and Data Analytics)",
+      year: "2024",
+      pdf: "/assets/certifications /pdf/Titulo_Laurier.pdf",
+      image: "/assets/certifications /images/Titulo_Laurier.png"
+    },
+    {
+      institution: "UIDE-EIG, Quito, Ecuador - Granada, Spain",
       topic: "Master in Information Systems (Business Intelligence and Data Analytics)",
       year: "2024",
       pdf: "/assets/certifications /pdf/Titulo_UIDE.pdf",
@@ -174,7 +186,7 @@ const certifications = {
     },
     {
       institution: "USFQ",
-      topic: "Bachelor in Economics",
+      topic: "Bachelor in Economics, Quito, Ecuador ",
       year: "2021",
       pdf: "/assets/certifications /pdf/Titulo_USFQ.pdf",
       image: "/assets/certifications /images/Titulo_USFQ.png"
