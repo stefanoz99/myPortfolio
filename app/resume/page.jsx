@@ -174,8 +174,8 @@ const certifications = {
       institution: "Wilfrid Laurier University, Waterloo, Canada",
       topic: "Master of Arts in Business Economics",
       year: "2026",
-      pdf: "public/assets/projects/documents/Titulo_Laurier.pdf",
-      image: "/assets/certifications /images/Titulo_Laurier.png"
+      pdf: "/assets/projects/documents/TituloLaurier.pdf",
+      image: "/assets/certifications /images/TituloLaurier.png"
     },
     {
       institution: "UIDE-EIG, Quito, Ecuador - Granada, Spain",
