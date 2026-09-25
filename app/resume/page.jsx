@@ -173,7 +173,7 @@ const certifications = {
     {
       institution: "Wilfrid Laurier University, Waterloo, Canada",
       topic: "Master in Information Systems (Business Intelligence and Data Analytics)",
-      year: "2024",
+      year: "2026",
       pdf: "/assets/certifications /pdf/Titulo_Laurier.pdf",
       image: "/assets/certifications /images/Titulo_Laurier.png"
     },
